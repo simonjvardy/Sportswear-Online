@@ -5,7 +5,7 @@ from django.test import TestCase
 
 class TestViews(TestCase):
     """
-    Test home page renders correct page
+    Tests the home page renders the correct page
     """
     def test_home_page(self):
         response = self.client.get('/')
