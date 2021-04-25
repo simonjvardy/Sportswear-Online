@@ -134,6 +134,10 @@ The **goal** of this project is to build a
   - Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
 - [AWS S3](https://aws.amazon.com/s3/)
   - Amazon Simple Storage Service (Amazon S3) is an object storage service used to store the site static files
+- [JSON Formatter](https://jsonformatter.org/)
+  - Online JSON Formatter, validator and conversion tool
+- [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/)
+  - The Django Secret Key Generator is used to generate a new SECRET_KEY for environment variables. 
 
 
 ---
@@ -142,6 +146,15 @@ The **goal** of this project is to build a
 
 ### **Images** ###
 
+- [Fashion Product Images Dataset](https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset)
+  - The dataset consists of 44,440 images and associated individual JSON data files containing the product information.
+
 ### **Acknowledgements** ###
 
-- [Code Institute](https://codeinstitute.net/full-stack-software-development-diploma/) Course material 
+- [Code Institute](https://codeinstitute.net/full-stack-software-development-diploma/) Course material - in particular the Boutique Ado Django mini project
+- [Simon Vardy](https://github.com/simonjvardy) for code snippets and README.md content.
+- [Neringa Bickmore](https://github.com/neringabickmore/art-ial) art-ial GitHub repo for inspiration and README.md content ideas
+- [Aukje van der Wal](https://github.com/byIlsa/story-chain) story-chain GitHub repo for inspiration and README.md content ideas
+- [Daisy McGirr](https://github.com/Daisy-McG/ChatToTheMat) ChatToTheMat GitHub repo for inspiration and README.md content ideas
+- [Stack Overflow](https://stackoverflow.com/)
+  - [Limiting Floats to 2 decimal places](https://stackoverflow.com/questions/455612/limiting-floats-to-two-decimal-points)
