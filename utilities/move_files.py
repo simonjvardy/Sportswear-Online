@@ -1,11 +1,12 @@
-import shutil, os
+import shutil
+import os
 
 src = r"D:\\FashionProductImageDataSet\\fashion-dataset\\styles\\"
 dest = r"D:\\FashionProductImageDataSet\\fashion-dataset\\curated_json\\"
 
 # read list of filenames to copy
 # https://stackoverflow.com/questions/3277503/how-to-read-a-file-line-by-line-into-a-list
-with open(r"D:\FashionProductImageDataSet\fashion-dataset\file_list.txt","r") as f:
+with open(r"D:\FashionProductImageDataSet\fashion-dataset\file_list.txt", "r") as f:
     src_files = [line.rstrip('\n') for line in f]
 
 files_count = 0
@@ -19,6 +20,4 @@ for file_name in src_files:
         shutil.copy(full_filename, dest)
         files_count += 1
 
-    # shutil.copy(file, r"D:\FashionProductImageDataSet\fashion-dataset\curated_json")
-
-print("Files copied:",files_count)
+print("Files copied:", files_count)
