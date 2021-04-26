@@ -6,10 +6,10 @@
             "discount_price": 11.22,
             "sku": "6814201",
             "product_description": "Puma Big Cat Backpack Black",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "1526.jpg"
         }
     },
@@ -21,10 +21,10 @@
             "discount_price": 30.23,
             "sku": "10186701",
             "product_description": "Puma Men's Ballistic Rubber Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1542.jpg"
         }
     },
@@ -36,10 +36,10 @@
             "discount_price": 8.63,
             "sku": "8149001",
             "product_description": "Puma Cat Trainer-WBL Football",
-            "gender": "Unisex",
-            "master_category": "Sporting Goods",
-            "sub_category": "Sports Equipment",
-            "article_type": "Footballs",
+            "gender": 3,
+            "master_category": 4,
+            "sub_category": 10,
+            "article_type": 8,
             "image": "1550.jpg"
         }
     },
@@ -51,10 +51,10 @@
             "discount_price": 8.63,
             "sku": "8149002",
             "product_description": "Puma Power Cat Trainer-OB Football",
-            "gender": "Unisex",
-            "master_category": "Sporting Goods",
-            "sub_category": "Sports Equipment",
-            "article_type": "Footballs",
+            "gender": 3,
+            "master_category": 4,
+            "sub_category": 10,
+            "article_type": 8,
             "image": "1551.jpg"
         }
     },
@@ -66,10 +66,10 @@
             "discount_price": 8.63,
             "sku": "8149004",
             "product_description": "Puma Power Cat Trainer-WR Football",
-            "gender": "Unisex",
-            "master_category": "Sporting Goods",
-            "sub_category": "Sports Equipment",
-            "article_type": "Footballs",
+            "gender": 3,
+            "master_category": 4,
+            "sub_category": 10,
+            "article_type": 8,
             "image": "1552.jpg"
         }
     },
@@ -81,10 +81,10 @@
             "discount_price": 8.63,
             "sku": "8140904",
             "product_description": "Puma Power Cat Hard Ground Football",
-            "gender": "Unisex",
-            "master_category": "Sporting Goods",
-            "sub_category": "Sports Equipment",
-            "article_type": "Footballs",
+            "gender": 3,
+            "master_category": 4,
+            "sub_category": 10,
+            "article_type": 8,
             "image": "1553.jpg"
         }
     },
@@ -96,10 +96,10 @@
             "discount_price": 2.15,
             "sku": "573579",
             "product_description": "Quechua  Blue Sipper",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Water Bottle",
-            "article_type": "Water Bottle",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 12,
+            "article_type": 14,
             "image": "1554.jpg"
         }
     },
@@ -111,10 +111,10 @@
             "discount_price": 4.50,
             "sku": "573581",
             "product_description": "Quechua Red Sipper",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Water Bottle",
-            "article_type": "Water Bottle",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 12,
+            "article_type": 14,
             "image": "1555.jpg"
         }
     },
@@ -126,10 +126,10 @@
             "discount_price": 6.05,
             "sku": "969536",
             "product_description": "Quechua Easy-to-Carry Blue Water Bottle",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Water Bottle",
-            "article_type": "Water Bottle",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 12,
+            "article_type": 14,
             "image": "1558.jpg"
         }
     },
@@ -141,10 +141,10 @@
             "discount_price": 8.63,
             "sku": "1262117",
             "product_description": "Artengo Men Black Tennis Shorts",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Shorts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 11,
             "image": "1569.jpg"
         }
     },
@@ -156,10 +156,10 @@
             "discount_price": 10.35,
             "sku": "1096645",
             "product_description": "Kalenji Men's Super Soft Sports Shoes",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1571.jpg"
         }
     },
@@ -171,10 +171,10 @@
             "discount_price": 8.65,
             "sku": "1255123",
             "product_description": "Kalenji Women Athletes Grey Track Pants",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Track Pants",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 18,
             "image": "1573.jpg"
         }
     },
@@ -186,10 +186,10 @@
             "discount_price": 18.99,
             "sku": "1123382",
             "product_description": "Kipsta Men Superfit Football White Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1587.jpg"
         }
     },
@@ -201,10 +201,10 @@
             "discount_price": 12.95,
             "sku": "1128768",
             "product_description": "Kipsta Men's F300 Football Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1590.jpg"
         }
     },
@@ -216,10 +216,10 @@
             "discount_price": 5.18,
             "sku": "1220858",
             "product_description": "Newfeel Unisex Grey Mesh Lightweight Shoe",
-            "gender": "Unisex",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Casual Shoes",
+            "gender": 3,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 5,
             "image": "1594.jpg"
         }
     },
@@ -231,10 +231,10 @@
             "discount_price": 6.00,
             "sku": "969542",
             "product_description": "Quechua Easy-to-Carry Pink Sipper",
-            "gender": "Men",
-            "master_category": "Accessories",
-            "sub_category": "Water Bottle",
-            "article_type": "Water Bottle",
+            "gender": 1,
+            "master_category": 1,
+            "sub_category": 12,
+            "article_type": 14,
             "image": "1596.jpg"
         }
     },
@@ -246,10 +246,10 @@
             "discount_price": 12.95,
             "sku": "I10360",
             "product_description": "Reebok Track Pants Women Blue",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Track Pants",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 18,
             "image": "1604.jpg"
         }
     },
@@ -261,10 +261,10 @@
             "discount_price": 12.95,
             "sku": "I10365",
             "product_description": "Reebok Black Track Pant",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Track Pants",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 18,
             "image": "1605.jpg"
         }
     },
@@ -276,10 +276,10 @@
             "discount_price": 12.95,
             "sku": "I19733",
             "product_description": "Reebok Men trackpant- male Track Pants",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Track Pants",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 18,
             "image": "1607.jpg"
         }
     },
@@ -291,10 +291,10 @@
             "discount_price": 12.95,
             "sku": "I19732",
             "product_description": "Reebok Track Pants Jet Black",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Track Pants",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 18,
             "image": "1608.jpg"
         }
     },
@@ -306,10 +306,10 @@
             "discount_price": 7.77,
             "sku": "I25912",
             "product_description": "Reebok Men Micro Shorts Grey and White",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Shorts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 11,
             "image": "1619.jpg"
         }
     },
@@ -321,10 +321,10 @@
             "discount_price": 10.50,
             "sku": "I16197",
             "product_description": "Reebok Unisex Red Backpack",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "1623.jpg"
         }
     },
@@ -336,10 +336,10 @@
             "discount_price": 12.95,
             "sku": "R406192",
             "product_description": "Reebok Silver-Black Laptop Backpack",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "1624.jpg"
         }
     },
@@ -351,10 +351,10 @@
             "discount_price": 5.50,
             "sku": "1128498",
             "product_description": "Kipsta F300 Football Size 5 Football",
-            "gender": "Unisex",
-            "master_category": "Sporting Goods",
-            "sub_category": "Sports Equipment",
-            "article_type": "Footballs",
+            "gender": 3,
+            "master_category": 4,
+            "sub_category": 10,
+            "article_type": 8,
             "image": "1626.jpg"
         }
     },
@@ -366,10 +366,10 @@
             "discount_price": 6.75,
             "sku": "1128500",
             "product_description": "Kipsta F300 Football",
-            "gender": "Unisex",
-            "master_category": "Sporting Goods",
-            "sub_category": "Sports Equipment",
-            "article_type": "Footballs",
+            "gender": 3,
+            "master_category": 4,
+            "sub_category": 10,
+            "article_type": 8,
             "image": "1627.jpg"
         }
     },
@@ -381,10 +381,10 @@
             "discount_price": 9.00,
             "sku": "1198296",
             "product_description": "Kipsta Xtra Bounce Basketball",
-            "gender": "Unisex",
-            "master_category": "Sporting Goods",
-            "sub_category": "Sports Equipment",
-            "article_type": "Basketballs",
+            "gender": 3,
+            "master_category": 4,
+            "sub_category": 10,
+            "article_type": 2,
             "image": "1628.jpg"
         }
     },
@@ -396,10 +396,10 @@
             "discount_price": 38.99,
             "sku": "1198065",
             "product_description": "Inesis Water Repellent Canaveral Shoes",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1634.jpg"
         }
     },
@@ -411,10 +411,10 @@
             "discount_price": 5.18,
             "sku": "1220757",
             "product_description": "Newfeel Unisex Red Comfy Shoes",
-            "gender": "Unisex",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Casual Shoes",
+            "gender": 3,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 5,
             "image": "1635.jpg"
         }
     },
@@ -426,10 +426,10 @@
             "discount_price": 40.99,
             "sku": "315713-161",
             "product_description": "Nike Men Air Zoom Century Shoes",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1636.jpg"
         }
     },
@@ -441,10 +441,10 @@
             "discount_price": 5.15,
             "sku": "247109",
             "product_description": "Nabaiji Swimming Goggles Blue Black",
-            "gender": "Unisex",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Swimwear",
+            "gender": 3,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 16,
             "image": "1638.jpg"
         }
     },
@@ -456,10 +456,10 @@
             "discount_price": 39.75,
             "sku": "J20758",
             "product_description": "Reebok Men's Hex Run Pure Silver Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1641.jpg"
         }
     },
@@ -471,10 +471,10 @@
             "discount_price": 31.15,
             "sku": "R953408",
             "product_description": "Reebok Men Winning Stride White Red",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1642.jpg"
         }
     },
@@ -486,10 +486,10 @@
             "discount_price": 12.50,
             "sku": "1212439",
             "product_description": "Quechua Unisex Ultralight 16 Ltr Green Backpack",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "1647.jpg"
         }
     },
@@ -501,10 +501,10 @@
             "discount_price": 5.18,
             "sku": "1220720",
             "product_description": "Newfeel Unisex Comfy Cool Blue Shoe",
-            "gender": "Unisex",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Casual Shoes",
+            "gender": 3,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 5,
             "image": "1649.jpg"
         }
     },
@@ -516,10 +516,10 @@
             "discount_price": 31.15,
             "sku": "V57336",
             "product_description": "Reebok Men's Frisker LP Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1654.jpg"
         }
     },
@@ -531,10 +531,10 @@
             "discount_price": 5.18,
             "sku": "1220666",
             "product_description": "Newfeel Unisex Black Lightweight Shoes",
-            "gender": "Unisex",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Casual Shoes",
+            "gender": 3,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 5,
             "image": "1727.jpg"
         }
     },
@@ -546,10 +546,10 @@
             "discount_price": 5.18,
             "sku": "1220762",
             "product_description": "Newfeel Unisex Green Sports Shoes",
-            "gender": "Unisex",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 3,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1728.jpg"
         }
     },
@@ -561,10 +561,10 @@
             "discount_price": 5.18,
             "sku": "1220846",
             "product_description": "Newfeel Unisex White Shoes",
-            "gender": "Unisex",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Casual Shoes",
+            "gender": 3,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 5,
             "image": "1729.jpg"
         }
     },
@@ -576,10 +576,10 @@
             "discount_price": 31.15,
             "sku": "V57352",
             "product_description": "Reebok Women Black Pink Frisker Shoe",
-            "gender": "Women",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 2,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1730.jpg"
         }
     },
@@ -591,10 +591,10 @@
             "discount_price": 31.15,
             "sku": "V57353",
             "product_description": "Reebok Women White Blue Frisker Shoes",
-            "gender": "Women",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 2,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1731.jpg"
         }
     },
@@ -606,10 +606,10 @@
             "discount_price": 15.99,
             "sku": "AR 0733",
             "product_description": "Lotto Men's Melbourne White-Red Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1784.jpg"
         }
     },
@@ -621,10 +621,10 @@
             "discount_price": 12.95,
             "sku": "AR 0891",
             "product_description": "Lotto Men Brighton White-Blue Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1785.jpg"
         }
     },
@@ -636,10 +636,10 @@
             "discount_price": 15.99,
             "sku": "AT 0871",
             "product_description": "Lotto Men's Court Logo White Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1786.jpg"
         }
     },
@@ -651,10 +651,10 @@
             "discount_price": 13.99,
             "sku": "AT 0881",
             "product_description": "Lotto Men's Court-White-Blue Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1788.jpg"
         }
     },
@@ -666,10 +666,10 @@
             "discount_price": 9.50,
             "sku": "H-5610",
             "product_description": "Lotto Men OSLO Grey-Orange Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1789.jpg"
         }
     },
@@ -681,10 +681,10 @@
             "discount_price": 3.45,
             "sku": "1101018",
             "product_description": "Quechua 10L Black Bag",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "1791.jpg"
         }
     },
@@ -696,10 +696,10 @@
             "discount_price": 10.99,
             "sku": "1180726",
             "product_description": "Newfeel Marine Blue Bag",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "1792.jpg"
         }
     },
@@ -711,10 +711,10 @@
             "discount_price": 4.31,
             "sku": "1101026",
             "product_description": "Quechua 10L Green Bag",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "1793.jpg"
         }
     },
@@ -726,10 +726,10 @@
             "discount_price": 10.99,
             "sku": "1180705",
             "product_description": "Newfeel Brown 22L Bag",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "1794.jpg"
         }
     },
@@ -741,10 +741,10 @@
             "discount_price": 8.99,
             "sku": "1180724",
             "product_description": "Newfeel 22L Black Bag",
-            "gender": "Men",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 1,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "1795.jpg"
         }
     },
@@ -756,10 +756,10 @@
             "discount_price": 11.45,
             "sku": "1212401",
             "product_description": "Quechua Unisex Black Solid Backpack",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "1800.jpg"
         }
     },
@@ -771,10 +771,10 @@
             "discount_price": 4.39,
             "sku": "1212396",
             "product_description": "Quechua Women 10L Pink Bag",
-            "gender": "Women",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 2,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "1801.jpg"
         }
     },
@@ -786,10 +786,10 @@
             "discount_price": 5.18,
             "sku": "684159",
             "product_description": "Kalenji Men Essential Baggy Black Shorts",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Shorts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 11,
             "image": "1804.jpg"
         }
     },
@@ -801,10 +801,10 @@
             "discount_price": 6.05,
             "sku": "1212497",
             "product_description": "Quechua Aluminium Print Water Bottle",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Water Bottle",
-            "article_type": "Water Bottle",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 12,
+            "article_type": 14,
             "image": "1808.jpg"
         }
     },
@@ -816,10 +816,10 @@
             "discount_price": 25.99,
             "sku": "415375-101",
             "product_description": "Nike Men's Downshifter White/Blue Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1827.jpg"
         }
     },
@@ -831,10 +831,10 @@
             "discount_price": 28.99,
             "sku": "397071-100",
             "product_description": "Nike Men's Air Afterburner Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1828.jpg"
         }
     },
@@ -846,10 +846,10 @@
             "discount_price": 22.99,
             "sku": "397074-001",
             "product_description": "Nike Men's Air Impetus Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1831.jpg"
         }
     },
@@ -861,10 +861,10 @@
             "discount_price": 44.99,
             "sku": "386365-006",
             "product_description": "Nike Lunarswift Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1832.jpg"
         }
     },
@@ -876,10 +876,10 @@
             "discount_price": 17.99,
             "sku": "397100-003",
             "product_description": "Nike Men's Ballista Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1833.jpg"
         }
     },
@@ -891,10 +891,10 @@
             "discount_price": 38.99,
             "sku": "395835-005",
             "product_description": "Nike Air Visi Sleek Shoes",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1836.jpg"
         }
     },
@@ -906,10 +906,10 @@
             "discount_price": 51.99,
             "sku": "10212202",
             "product_description": "Puma Men's Calibre Convertible Spike Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1841.jpg"
         }
     },
@@ -921,10 +921,10 @@
             "discount_price": 30.99,
             "sku": "10212302",
             "product_description": "Puma Men's Calibre Rubber Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1842.jpg"
         }
     },
@@ -936,10 +936,10 @@
             "discount_price": 13.82,
             "sku": "BAD1235(Grey)",
             "product_description": "FIFA Mens Heritage Collection Grey Track Pants",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Track Pants",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 18,
             "image": "1883.jpg"
         }
     },
@@ -951,10 +951,10 @@
             "discount_price": 13.82,
             "sku": "BAD1235(Old navy)",
             "product_description": "FIFA Mens 1905 Heritage Collection Track Pants",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Track Pants",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 18,
             "image": "1884.jpg"
         }
     },
@@ -966,10 +966,10 @@
             "discount_price": 11.99,
             "sku": "BAD1247",
             "product_description": "FIFA Mens 1904 Heritage Shorts",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Shorts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 11,
             "image": "1885.jpg"
         }
     },
@@ -981,10 +981,10 @@
             "discount_price": 8.65,
             "sku": "343486-015",
             "product_description": "Nike Mens Classic Black T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "1907.jpg"
         }
     },
@@ -996,10 +996,10 @@
             "discount_price": 8.65,
             "sku": "343486-535",
             "product_description": "Nike Mens Classic Sportswear T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "1909.jpg"
         }
     },
@@ -1011,10 +1011,10 @@
             "discount_price": 11.99,
             "sku": "378581-010",
             "product_description": "Nike Men's Classic Patterned T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "1910.jpg"
         }
     },
@@ -1026,10 +1026,10 @@
             "discount_price": 8.99,
             "sku": "380274-493",
             "product_description": "Nike Mens Manchester United Blues T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "1911.jpg"
         }
     },
@@ -1041,10 +1041,10 @@
             "discount_price": 8.99,
             "sku": "393796-103",
             "product_description": "Nike Mens Running White T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "1912.jpg"
         }
     },
@@ -1056,10 +1056,10 @@
             "discount_price": 8.99,
             "sku": "409215-010",
             "product_description": "Nike Mens Seize Victory Black T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "1913.jpg"
         }
     },
@@ -1071,10 +1071,10 @@
             "discount_price": 6.99,
             "sku": "572904",
             "product_description": "Quechua Yellow Sipper",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Accessories",
-            "article_type": "Water Bottle",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 1,
+            "article_type": 14,
             "image": "1915.jpg"
         }
     },
@@ -1086,10 +1086,10 @@
             "discount_price": 25.99,
             "sku": "34927704",
             "product_description": "Puma Men's Game Point Shoes",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1916.jpg"
         }
     },
@@ -1101,10 +1101,10 @@
             "discount_price": 14.99,
             "sku": "35152501",
             "product_description": "Puma Men White Sneakers",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Casual Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 5,
             "image": "1917.jpg"
         }
     },
@@ -1116,10 +1116,10 @@
             "discount_price": 8.99,
             "sku": "1246257",
             "product_description": "Domyos 300 Blue Bag",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "1918.jpg"
         }
     },
@@ -1131,10 +1131,10 @@
             "discount_price": 28.99,
             "sku": "35152506",
             "product_description": "Puma Men's Choco Brown Casual Shoes",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Casual Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 5,
             "image": "1919.jpg"
         }
     },
@@ -1146,10 +1146,10 @@
             "discount_price": 23.99,
             "sku": "35156706",
             "product_description": "Puma Men Graffiti FX Shoes",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Casual Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 5,
             "image": "1920.jpg"
         }
     },
@@ -1161,10 +1161,10 @@
             "discount_price": 10.99,
             "sku": "1096299",
             "product_description": "Kalenji Women Running Shoe",
-            "gender": "Women",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 2,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1923.jpg"
         }
     },
@@ -1176,10 +1176,10 @@
             "discount_price": 17.99,
             "sku": "1100876",
             "product_description": "Quechua Black Bag",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "1925.jpg"
         }
     },
@@ -1191,10 +1191,10 @@
             "discount_price": 5.99,
             "sku": "1120848",
             "product_description": "Domyos Navy Blue Bag",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "1927.jpg"
         }
     },
@@ -1206,10 +1206,10 @@
             "discount_price": 24.99,
             "sku": "1202192",
             "product_description": "Quechua Men's Lighweight Black Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1929.jpg"
         }
     },
@@ -1221,10 +1221,10 @@
             "discount_price": 12.99,
             "sku": "1205852",
             "product_description": "Quechua 22L Red Bag",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "1930.jpg"
         }
     },
@@ -1236,10 +1236,10 @@
             "discount_price": 29.99,
             "sku": "1206410",
             "product_description": "Quechua Women Arpenaz Flex Grey Shoe",
-            "gender": "Women",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Casual Shoes",
+            "gender": 2,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 5,
             "image": "1932.jpg"
         }
     },
@@ -1251,10 +1251,10 @@
             "discount_price": 14.99,
             "sku": "1212452",
             "product_description": "Quechua Arpenaz 20L Dark Grey Bag",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "1933.jpg"
         }
     },
@@ -1266,10 +1266,10 @@
             "discount_price": 12.95,
             "sku": "1214508",
             "product_description": "Quechua 22L Blue Bag",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "1935.jpg"
         }
     },
@@ -1281,10 +1281,10 @@
             "discount_price": 10.99,
             "sku": "1215898",
             "product_description": "Quechua Arpenaz 30L Brown Bag",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "1936.jpg"
         }
     },
@@ -1296,10 +1296,10 @@
             "discount_price": 17.99,
             "sku": "1246059",
             "product_description": "Kalenji Women Black Pink Shoe",
-            "gender": "Women",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 2,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1937.jpg"
         }
     },
@@ -1310,11 +1310,11 @@
             "price": 11.99,
             "discount_price": 10.99,
             "sku": "1069248",
-            "product_description": "Geonaute Women Large Outdoor Bag Bag",
-            "gender": "Women",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Handbags",
+            "product_description": "Geonaute Women Large Outdoor Bag",
+            "gender": 2,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 9,
             "image": "1939.jpg"
         }
     },
@@ -1326,10 +1326,10 @@
             "discount_price": 8.99,
             "sku": "1246255",
             "product_description": "Domyos Brown Bag",
-            "gender": "Women",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Handbags",
+            "gender": 2,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 9,
             "image": "1941.jpg"
         }
     },
@@ -1340,11 +1340,11 @@
             "price": 11.99,
             "discount_price": 10.99,
             "sku": "1273148",
-            "product_description": "Domyos Grey Duffle Duffle Bag",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Duffel Bag",
+            "product_description": "Domyos Grey Duffle Bag",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 6,
             "image": "1943.jpg"
         }
     },
@@ -1356,10 +1356,10 @@
             "discount_price": 34.55,
             "sku": "G44601",
             "product_description": "ADIDAS Men's Duramo Leather Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1962.jpg"
         }
     },
@@ -1371,10 +1371,10 @@
             "discount_price": 22.49,
             "sku": "L11265",
             "product_description": "ADIDAS Men's Azaro White Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "1963.jpg"
         }
     },
@@ -1386,10 +1386,10 @@
             "discount_price": 10.99,
             "sku": "L12084",
             "product_description": "ADIDAS Men's Blue Canvas Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Casual Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 5,
             "image": "1964.jpg"
         }
     },
@@ -1401,10 +1401,10 @@
             "discount_price": 10.99,
             "sku": "1323519",
             "product_description": "Tribord Mens Short Cargo Shorts",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Shorts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 11,
             "image": "1976.jpg"
         }
     },
@@ -1416,10 +1416,10 @@
             "discount_price": 10.99,
             "sku": "1323629",
             "product_description": "Tribord Mens Grey Cargo Shorts",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Shorts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 11,
             "image": "1977.jpg"
         }
     },
@@ -1431,10 +1431,10 @@
             "discount_price": 11.99,
             "sku": "55785301",
             "product_description": "Puma Women's Island Green Shorts",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Shorts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 11,
             "image": "1981.jpg"
         }
     },
@@ -1446,10 +1446,10 @@
             "discount_price": 11.99,
             "sku": "55785302",
             "product_description": "Puma Women's Island Shorts Purple",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Shorts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 11,
             "image": "1982.jpg"
         }
     },
@@ -1461,10 +1461,10 @@
             "discount_price": 13.99,
             "sku": "80874404",
             "product_description": "Puma Men's Grey Track Pants",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Track Pants",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 18,
             "image": "1999.jpg"
         }
     },
@@ -1476,10 +1476,10 @@
             "discount_price": 13.99,
             "sku": "E15056",
             "product_description": "ADIDAS Men's Climalite Track Pants",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Track Pants",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 18,
             "image": "2105.jpg"
         }
     },
@@ -1491,10 +1491,10 @@
             "discount_price": 8.99,
             "sku": "E18017",
             "product_description": "ADIDAS Men's Chelsea Striped Black Shorts",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Shorts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 11,
             "image": "2106.jpg"
         }
     },
@@ -1506,10 +1506,10 @@
             "discount_price": 6.05,
             "sku": "E18018",
             "product_description": "ADIDAS Men's Chelsea Striped Navy Shorts",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Shorts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 11,
             "image": "2107.jpg"
         }
     },
@@ -1521,10 +1521,10 @@
             "discount_price": 5.99,
             "sku": "E18050",
             "product_description": "ADIDAS Men's Black Football Shorts",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Shorts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 11,
             "image": "2108.jpg"
         }
     },
@@ -1536,10 +1536,10 @@
             "discount_price": 10.99,
             "sku": "L29651",
             "product_description": "ADIDAS Women's Slim Fit Lycra Track Pants",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Track Pants",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 18,
             "image": "2109.jpg"
         }
     },
@@ -1551,10 +1551,10 @@
             "discount_price": 11.99,
             "sku": "L29660",
             "product_description": "ADIDAS Women's Sunset Lycra Fit Track Pants",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Track Pants",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 18,
             "image": "2111.jpg"
         }
     },
@@ -1566,10 +1566,10 @@
             "discount_price": 7.99,
             "sku": "L39755",
             "product_description": "ADIDAS Women's Essential Black Capris",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Track Pants",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 18,
             "image": "2112.jpg"
         }
     },
@@ -1581,10 +1581,10 @@
             "discount_price": 9.99,
             "sku": "L39791",
             "product_description": "ADIDAS Women Essential Black Candy Pants",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Track Pants",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 18,
             "image": "2114.jpg"
         }
     },
@@ -1596,10 +1596,10 @@
             "discount_price": 12.95,
             "sku": "P91226",
             "product_description": "ADIDAS Men's Black Crest Track Pants",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Track Pants",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 18,
             "image": "2115.jpg"
         }
     },
@@ -1611,10 +1611,10 @@
             "discount_price": 12.00,
             "sku": "P91888",
             "product_description": "ADIDAS Men Smooth Striped Track Pants",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Track Pants",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 18,
             "image": "2116.jpg"
         }
     },
@@ -1626,10 +1626,10 @@
             "discount_price": 13.99,
             "sku": "P93760",
             "product_description": "ADIDAS Men Grey  Capris",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Shorts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 11,
             "image": "2117.jpg"
         }
     },
@@ -1641,10 +1641,10 @@
             "discount_price": 13.99,
             "sku": "P93788",
             "product_description": "ADIDAS Men's Foamy Striped Track Pants",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Track Pants",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 18,
             "image": "2118.jpg"
         }
     },
@@ -1656,10 +1656,10 @@
             "discount_price": 13.99,
             "sku": "E15055",
             "product_description": "ADIDAS Men Lead Light Track Pant",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Track Pants",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 18,
             "image": "2190.jpg"
         }
     },
@@ -1671,10 +1671,10 @@
             "discount_price": 26.99,
             "sku": "G42983",
             "product_description": "ADIDAS Men's Stripe White Run Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "2197.jpg"
         }
     },
@@ -1686,10 +1686,10 @@
             "discount_price": 15.99,
             "sku": "L39701",
             "product_description": "ADIDAS Women Streaks Blue Shoe",
-            "gender": "Women",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Casual Shoes",
+            "gender": 2,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 5,
             "image": "2199.jpg"
         }
     },
@@ -1701,10 +1701,10 @@
             "discount_price": 14.99,
             "sku": "IN 91111114",
             "product_description": "Puma Men Trek Navy Blue Floater",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Sandal",
-            "article_type": "Sandals",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 7,
+            "article_type": 10,
             "image": "2211.jpg"
         }
     },
@@ -1716,10 +1716,10 @@
             "discount_price": 1.72,
             "sku": "P83668",
             "product_description": "ADIDAS Women Black Socks",
-            "gender": "Women",
-            "master_category": "Accessories",
-            "sub_category": "Socks",
-            "article_type": "Socks",
+            "gender": 2,
+            "master_category": 1,
+            "sub_category": 9,
+            "article_type": 12,
             "image": "2214.jpg"
         }
     },
@@ -1731,10 +1731,10 @@
             "discount_price": 13.99,
             "sku": "IN 91390001",
             "product_description": "Puma Men Gypsy Olive Sandals",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Sandal",
-            "article_type": "Sandals",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 7,
+            "article_type": 10,
             "image": "2215.jpg"
         }
     },
@@ -1746,10 +1746,10 @@
             "discount_price": 1.29,
             "sku": "P83679",
             "product_description": "ADIDAS Women Pink Socks",
-            "gender": "Women",
-            "master_category": "Accessories",
-            "sub_category": "Socks",
-            "article_type": "Socks",
+            "gender": 2,
+            "master_category": 1,
+            "sub_category": 9,
+            "article_type": 12,
             "image": "2217.jpg"
         }
     },
@@ -1761,10 +1761,10 @@
             "discount_price": 26.99,
             "sku": "U44079",
             "product_description": "ADIDAS Men's Black Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Casual Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 5,
             "image": "2219.jpg"
         }
     },
@@ -1776,10 +1776,10 @@
             "discount_price": 10.99,
             "sku": "V00190",
             "product_description": "ADIDAS Classic Blue White Backpack",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "2221.jpg"
         }
     },
@@ -1791,10 +1791,10 @@
             "discount_price": 14.99,
             "sku": "91111111",
             "product_description": "Puma Men's Trek Olive Green Sandal",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Sandal",
-            "article_type": "Sandals",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 7,
+            "article_type": 10,
             "image": "2224.jpg"
         }
     },
@@ -1806,10 +1806,10 @@
             "discount_price": 13.99,
             "sku": "IN 91390003",
             "product_description": "Puma Men Gypsy Grey Sandal",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Sandal",
-            "article_type": "Sandals",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 7,
+            "article_type": 10,
             "image": "2227.jpg"
         }
     },
@@ -1821,10 +1821,10 @@
             "discount_price": 2.59,
             "sku": "V35759",
             "product_description": "ADIDAS Men Black Socks",
-            "gender": "Men",
-            "master_category": "Accessories",
-            "sub_category": "Socks",
-            "article_type": "Socks",
+            "gender": 1,
+            "master_category": 1,
+            "sub_category": 9,
+            "article_type": 12,
             "image": "2228.jpg"
         }
     },
@@ -1836,10 +1836,10 @@
             "discount_price": 13.99,
             "sku": "IN 91390004",
             "product_description": "Puma Men Gypsy Black Sandal",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Sandal",
-            "article_type": "Sandals",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 7,
+            "article_type": 10,
             "image": "2235.jpg"
         }
     },
@@ -1851,10 +1851,10 @@
             "discount_price": 7.99,
             "sku": "91115003",
             "product_description": "Puma Men's Winglet Grey Navy Flip Flop",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Flip Flops",
-            "article_type": "Flip Flops",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 5,
+            "article_type": 7,
             "image": "2238.jpg"
         }
     },
@@ -1866,10 +1866,10 @@
             "discount_price": 11.99,
             "sku": "V42464",
             "product_description": "ADIDAS Black Backpack",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "2246.jpg"
         }
     },
@@ -1881,10 +1881,10 @@
             "discount_price": 8.50,
             "sku": "91333401",
             "product_description": "Puma Men's Drifter Black Green Flip Flops",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Flip Flops",
-            "article_type": "Flip Flops",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 5,
+            "article_type": 7,
             "image": "2248.jpg"
         }
     },
@@ -1896,10 +1896,10 @@
             "discount_price": 10.50,
             "sku": "V42801",
             "product_description": "ADIDAS Unisex Classic Blue Backpack",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "2249.jpg"
         }
     },
@@ -1911,10 +1911,10 @@
             "discount_price": 7.99,
             "sku": "91115001",
             "product_description": "Puma Mens Winglet Red Flip Flop",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Flip Flops",
-            "article_type": "Flip Flops",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 5,
+            "article_type": 7,
             "image": "2250.jpg"
         }
     },
@@ -1926,10 +1926,10 @@
             "discount_price": 7.99,
             "sku": "91115002",
             "product_description": "Puma Mens Winglet Brown Flip Flop",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Flip Flops",
-            "article_type": "Flip Flops",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 5,
+            "article_type": 7,
             "image": "2251.jpg"
         }
     },
@@ -1941,10 +1941,10 @@
             "discount_price": 12.99,
             "sku": "391391-060",
             "product_description": "Nike Mens Blue Polo T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2260.jpg"
         }
     },
@@ -1956,10 +1956,10 @@
             "discount_price": 11.99,
             "sku": "BA4297-002",
             "product_description": "Nike Unisex Grey & Black Backpack",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "2261.jpg"
         }
     },
@@ -1971,10 +1971,10 @@
             "discount_price": 11.99,
             "sku": "BA4297-664",
             "product_description": "Nike Unisex Tetron Pink Backpack",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "2262.jpg"
         }
     },
@@ -1986,10 +1986,10 @@
             "discount_price": 12.99,
             "sku": "BA4299-007",
             "product_description": "Nike Black Backpack",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "2263.jpg"
         }
     },
@@ -2001,10 +2001,10 @@
             "discount_price": 12.99,
             "sku": "BA4303-067",
             "product_description": "Nike Soleday Black Backpack",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "2264.jpg"
         }
     },
@@ -2016,10 +2016,10 @@
             "discount_price": 9.99,
             "sku": "364471-105",
             "product_description": "Nike Womens NIKE MILER SS TOP T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2265.jpg"
         }
     },
@@ -2031,10 +2031,10 @@
             "discount_price": 7.99,
             "sku": "342084-328",
             "product_description": "Nike Green Women T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2266.jpg"
         }
     },
@@ -2046,10 +2046,10 @@
             "discount_price": 7.99,
             "sku": "342084-682",
             "product_description": "Nike Pink Women T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2267.jpg"
         }
     },
@@ -2061,10 +2061,10 @@
             "discount_price": 11.99,
             "sku": "343515-063",
             "product_description": "Nike Grey Women Sweatshirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Sweatshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 15,
             "image": "2268.jpg"
         }
     },
@@ -2076,10 +2076,10 @@
             "discount_price": 6.99,
             "sku": "369988-349",
             "product_description": "Nike Light Green Women T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2269.jpg"
         }
     },
@@ -2091,10 +2091,10 @@
             "discount_price": 6.99,
             "sku": "369988-652",
             "product_description": "Nike JDI Pink Women T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2270.jpg"
         }
     },
@@ -2106,10 +2106,10 @@
             "discount_price": 12.55,
             "sku": "391391-600",
             "product_description": "Nike Mens Red Polo T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2271.jpg"
         }
     },
@@ -2121,10 +2121,10 @@
             "discount_price": 8.99,
             "sku": "391394-478",
             "product_description": "Nike Mens Blue Polo T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2272.jpg"
         }
     },
@@ -2136,10 +2136,10 @@
             "discount_price": 8.99,
             "sku": "391394-648",
             "product_description": "Nike Mens Red Polo T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2273.jpg"
         }
     },
@@ -2151,10 +2151,10 @@
             "discount_price": 6.99,
             "sku": "392542-100",
             "product_description": "Nike Mens AS White T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2274.jpg"
         }
     },
@@ -2166,10 +2166,10 @@
             "discount_price": 11.99,
             "sku": "396073-100",
             "product_description": "Nike Mens Challenger Graphic White T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2275.jpg"
         }
     },
@@ -2181,10 +2181,10 @@
             "discount_price": 11.99,
             "sku": "396073-493",
             "product_description": "Nike Mens Challenger Graphic Blue T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2276.jpg"
         }
     },
@@ -2196,10 +2196,10 @@
             "discount_price": 13.99,
             "sku": "405150-104",
             "product_description": "Nike Mens Sphere White T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2278.jpg"
         }
     },
@@ -2211,10 +2211,10 @@
             "discount_price": 13.99,
             "sku": "405150-617",
             "product_description": "Nike Mens Nike Sphere Red T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2279.jpg"
         }
     },
@@ -2226,10 +2226,10 @@
             "discount_price": 11.99,
             "sku": "405442-609",
             "product_description": "Nike Womens Sphere Pink T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2280.jpg"
         }
     },
@@ -2241,10 +2241,10 @@
             "discount_price": 9.99,
             "sku": "371684-091",
             "product_description": "Nike Men Grey T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2282.jpg"
         }
     },
@@ -2256,10 +2256,10 @@
             "discount_price": 9.49,
             "sku": "371684-475-DKOBS/CARB H/(MSLVR)-2283",
             "product_description": "Nike Men Poly Black T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2283.jpg"
         }
     },
@@ -2271,10 +2271,10 @@
             "discount_price": 9.49,
             "sku": "371684-703",
             "product_description": "Nike Men Yellow T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2284.jpg"
         }
     },
@@ -2286,10 +2286,10 @@
             "discount_price": 10.39,
             "sku": "373523-503",
             "product_description": "Nike Men Lavender T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2285.jpg"
         }
     },
@@ -2301,10 +2301,10 @@
             "discount_price": 17.49,
             "sku": "378535-010",
             "product_description": "Nike Men Black Sweatshirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Sweatshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 15,
             "image": "2286.jpg"
         }
     },
@@ -2316,10 +2316,10 @@
             "discount_price": 11.99,
             "sku": "378581-102",
             "product_description": "Nike Men White T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2287.jpg"
         }
     },
@@ -2331,10 +2331,10 @@
             "discount_price": 12.99,
             "sku": "380936-010",
             "product_description": "Nike Women Black T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2288.jpg"
         }
     },
@@ -2346,10 +2346,10 @@
             "discount_price": 12.99,
             "sku": "380936-402",
             "product_description": "Nike Women Blue T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2289.jpg"
         }
     },
@@ -2361,10 +2361,10 @@
             "discount_price": 12.99,
             "sku": "380936-639",
             "product_description": "Nike Women SS Pink T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2290.jpg"
         }
     },
@@ -2376,10 +2376,10 @@
             "discount_price": 8.99,
             "sku": "383735-151",
             "product_description": "Nike Men White Polo T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2291.jpg"
         }
     },
@@ -2391,10 +2391,10 @@
             "discount_price": 12.99,
             "sku": "391365-010",
             "product_description": "Nike Women Accuracy Black T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2292.jpg"
         }
     },
@@ -2406,10 +2406,10 @@
             "discount_price": 12.99,
             "sku": "391365-652",
             "product_description": "Nike Women Accuracy Pink T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2293.jpg"
         }
     },
@@ -2421,10 +2421,10 @@
             "discount_price": 9.99,
             "sku": "364471-688",
             "product_description": "Nike Women's Miller Top",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tops",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 17,
             "image": "2294.jpg"
         }
     },
@@ -2436,10 +2436,10 @@
             "discount_price": 8.99,
             "sku": "393814-644",
             "product_description": "Nike Women Cruiser Pink T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2295.jpg"
         }
     },
@@ -2451,10 +2451,10 @@
             "discount_price": 6.00,
             "sku": "397702-010",
             "product_description": "Nike Women DPT Black T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2296.jpg"
         }
     },
@@ -2466,10 +2466,10 @@
             "discount_price": 6.00,
             "sku": "397702-694",
             "product_description": "Nike Women DPT Pink T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2297.jpg"
         }
     },
@@ -2481,10 +2481,10 @@
             "discount_price": 8.99,
             "sku": "405629-620",
             "product_description": "Nike Mens Core Cotton Red T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2298.jpg"
         }
     },
@@ -2496,10 +2496,10 @@
             "discount_price": 11.99,
             "sku": "383670-540",
             "product_description": "Nike Women Purple Polo T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2299.jpg"
         }
     },
@@ -2511,10 +2511,10 @@
             "discount_price": 11.99,
             "sku": "383670-612",
             "product_description": "Nike Women Pink Polo T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2300.jpg"
         }
     },
@@ -2526,10 +2526,10 @@
             "discount_price": 9.99,
             "sku": "405635-100",
             "product_description": "Nike Mens Manchester United White T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2301.jpg"
         }
     },
@@ -2541,10 +2541,10 @@
             "discount_price": 7.75,
             "sku": "392413-105",
             "product_description": "Nike Women Icon SS White T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2302.jpg"
         }
     },
@@ -2556,10 +2556,10 @@
             "discount_price": 7.75,
             "sku": "392413-635",
             "product_description": "Nike Women Icon SS Pink T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2303.jpg"
         }
     },
@@ -2571,10 +2571,10 @@
             "discount_price": 9.49,
             "sku": "405635-650",
             "product_description": "Nike Men's Manchester United Red T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2304.jpg"
         }
     },
@@ -2586,10 +2586,10 @@
             "discount_price": 10.99,
             "sku": "387636-474",
             "product_description": "Nike Women Blue Polo T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2305.jpg"
         }
     },
@@ -2601,10 +2601,10 @@
             "discount_price": 8.59,
             "sku": "403973-010",
             "product_description": "Nike Women Cuffed Black Capris",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Bottomwear",
-            "article_type": "Capris",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 4,
+            "article_type": 3,
             "image": "2306.jpg"
         }
     },
@@ -2616,10 +2616,10 @@
             "discount_price": 10.99,
             "sku": "387636-535",
             "product_description": "Nike Women Purple Polo T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2307.jpg"
         }
     },
@@ -2631,10 +2631,10 @@
             "discount_price": 9.49,
             "sku": "364471-402",
             "product_description": "Nike Women Miller Blue T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2309.jpg"
         }
     },
@@ -2646,10 +2646,10 @@
             "discount_price": 11.99,
             "sku": "405889-636",
             "product_description": "Nike Mens Raffel Red T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2310.jpg"
         }
     },
@@ -2661,10 +2661,10 @@
             "discount_price": 7.99,
             "sku": "405936-609",
             "product_description": "Nike Womens Pink T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2311.jpg"
         }
     },
@@ -2676,10 +2676,10 @@
             "discount_price": 9.49,
             "sku": "405960-100",
             "product_description": "Nike Mens White Polo T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2312.jpg"
         }
     },
@@ -2691,10 +2691,10 @@
             "discount_price": 12.99,
             "sku": "407445-328",
             "product_description": "Nike Womens Green Polo T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2313.jpg"
         }
     },
@@ -2706,10 +2706,10 @@
             "discount_price": 8.99,
             "sku": "409894-010",
             "product_description": "Nike Mens JDI Black T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2314.jpg"
         }
     },
@@ -2721,10 +2721,10 @@
             "discount_price": 8.99,
             "sku": "415335-609",
             "product_description": "Nike Womens Cruiser Pink T-shirt",
-            "gender": "Women",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 2,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2315.jpg"
         }
     },
@@ -2736,10 +2736,10 @@
             "discount_price": 5.99,
             "sku": "417260-392",
             "product_description": "Nike Mens Athletic Green T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2316.jpg"
         }
     },
@@ -2751,10 +2751,10 @@
             "discount_price": 5.99,
             "sku": "417260-452",
             "product_description": "Nike Men's Athletic Navy Blue T-shirt",
-            "gender": "Men",
-            "master_category": "Apparel",
-            "sub_category": "Topwear",
-            "article_type": "Tshirts",
+            "gender": 1,
+            "master_category": 2,
+            "sub_category": 11,
+            "article_type": 19,
             "image": "2318.jpg"
         }
     },
@@ -2766,10 +2766,10 @@
             "discount_price": 31.99,
             "sku": "J82642",
             "product_description": "Reebok Men Frisky Attraction Grey Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "2353.jpg"
         }
     },
@@ -2781,10 +2781,10 @@
             "discount_price": 5.10,
             "sku": "279008",
             "product_description": "ADIDAS Black Bounce Unisex Basketball",
-            "gender": "Unisex",
-            "master_category": "Sporting Goods",
-            "sub_category": "Sports Equipment",
-            "article_type": "Basketballs",
+            "gender": 3,
+            "master_category": 4,
+            "sub_category": 10,
+            "article_type": 2,
             "image": "2354.jpg"
         }
     },
@@ -2796,10 +2796,10 @@
             "discount_price": 6.99,
             "sku": "E42358",
             "product_description": "ADIDAS Red Bull Trophy Soccer Unisex Football",
-            "gender": "Unisex",
-            "master_category": "Sporting Goods",
-            "sub_category": "Sports Equipment",
-            "article_type": "Footballs",
+            "gender": 3,
+            "master_category": 4,
+            "sub_category": 10,
+            "article_type": 8,
             "image": "2355.jpg"
         }
     },
@@ -2811,10 +2811,10 @@
             "discount_price": 5.19,
             "sku": "P82170",
             "product_description": "ADIDAS Black & White Unisex Basketball",
-            "gender": "Unisex",
-            "master_category": "Sporting Goods",
-            "sub_category": "Sports Equipment",
-            "article_type": "Basketballs",
+            "gender": 3,
+            "master_category": 4,
+            "sub_category": 10,
+            "article_type": 2,
             "image": "2356.jpg"
         }
     },
@@ -2826,10 +2826,10 @@
             "discount_price": 2.15,
             "sku": "V00133",
             "product_description": "ADIDAS White Water Sipper",
-            "gender": "Men",
-            "master_category": "Accessories",
-            "sub_category": "Accessories",
-            "article_type": "Water Bottle",
+            "gender": 1,
+            "master_category": 1,
+            "sub_category": 1,
+            "article_type": 14,
             "image": "2357.jpg"
         }
     },
@@ -2841,10 +2841,10 @@
             "discount_price": 13.45,
             "sku": "E17564",
             "product_description": "ADIDAS Red Men Cap",
-            "gender": "Men",
-            "master_category": "Accessories",
-            "sub_category": "Headwear",
-            "article_type": "Caps",
+            "gender": 1,
+            "master_category": 1,
+            "sub_category": 6,
+            "article_type": 4,
             "image": "2358.jpg"
         }
     },
@@ -2856,10 +2856,10 @@
             "discount_price": 13.45,
             "sku": "E17576",
             "product_description": "ADIDAS Navy Blue Men Cap",
-            "gender": "Men",
-            "master_category": "Accessories",
-            "sub_category": "Headwear",
-            "article_type": "Caps",
+            "gender": 1,
+            "master_category": 1,
+            "sub_category": 6,
+            "article_type": 4,
             "image": "2359.jpg"
         }
     },
@@ -2871,10 +2871,10 @@
             "discount_price": 16.05,
             "sku": "P42594",
             "product_description": "ADIDAS White Cap",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Headwear",
-            "article_type": "Caps",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 6,
+            "article_type": 4,
             "image": "2360.jpg"
         }
     },
@@ -2886,10 +2886,10 @@
             "discount_price": 16.49,
             "sku": "P93981",
             "product_description": "ADIDAS Black Cap",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Headwear",
-            "article_type": "Caps",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 6,
+            "article_type": 4,
             "image": "2362.jpg"
         }
     },
@@ -2901,10 +2901,10 @@
             "discount_price": 16.49,
             "sku": "V00346",
             "product_description": "ADIDAS Black Backpack",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "2363.jpg"
         }
     },
@@ -2916,10 +2916,10 @@
             "discount_price": 16.49,
             "sku": "V35832",
             "product_description": "ADIDAS Blue Cap",
-            "gender": "Unisex",
-            "master_category": "Accessories",
-            "sub_category": "Headwear",
-            "article_type": "Caps",
+            "gender": 3,
+            "master_category": 1,
+            "sub_category": 6,
+            "article_type": 4,
             "image": "2364.jpg"
         }
     },
@@ -2931,10 +2931,10 @@
             "discount_price": 8.99,
             "sku": "V42374",
             "product_description": "ADIDAS Pink Women Bag",
-            "gender": "Women",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Handbags",
+            "gender": 2,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 9,
             "image": "2365.jpg"
         }
     },
@@ -2946,10 +2946,10 @@
             "discount_price": 9.59,
             "sku": "V42535",
             "product_description": "ADIDAS Black Girls Backpack",
-            "gender": "Girls",
-            "master_category": "Accessories",
-            "sub_category": "Bags",
-            "article_type": "Backpacks",
+            "gender": 5,
+            "master_category": 1,
+            "sub_category": 3,
+            "article_type": 1,
             "image": "2366.jpg"
         }
     },
@@ -2961,10 +2961,10 @@
             "discount_price": 12.99,
             "sku": "IN 91440004",
             "product_description": "Puma Women Commander White Pink Shoe",
-            "gender": "Women",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Sports Shoes",
+            "gender": 2,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 13,
             "image": "2489.jpg"
         }
     },
@@ -2976,10 +2976,10 @@
             "discount_price": 12.99,
             "sku": "IN 91440005",
             "product_description": "Puma Women Commander White Blue Shoe",
-            "gender": "Women",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Casual Shoes",
+            "gender": 2,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 5,
             "image": "2490.jpg"
         }
     },
@@ -2991,10 +2991,10 @@
             "discount_price": 8.99,
             "sku": "NU-101 - BK",
             "product_description": "Numero Uno Men's Casual Black Canvas Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Casual Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 5,
             "image": "2498.jpg"
         }
     },
@@ -3006,10 +3006,10 @@
             "discount_price": 18.15,
             "sku": "NU-101 - DG",
             "product_description": "Numero Uno Men's Casual Grey Canvas Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Casual Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 5,
             "image": "2499.jpg"
         }
     },
@@ -3021,10 +3021,10 @@
             "discount_price": 8.99,
             "sku": "NU-101 - N.BL",
             "product_description": "Numero Uno Men's Casual Navy Blue Canvas Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Casual Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 5,
             "image": "2500.jpg"
         }
     },
@@ -3036,10 +3036,10 @@
             "discount_price": 8.99,
             "sku": "NU-101 - RED",
             "product_description": "Numero Uno Men's Casual Red Canvas Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Casual Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 5,
             "image": "2501.jpg"
         }
     },
@@ -3051,10 +3051,10 @@
             "discount_price": 10.99,
             "sku": "NU-103 - BRN",
             "product_description": "Numero Uno Men's Casual Brown Canvas Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Casual Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 5,
             "image": "2503.jpg"
         }
     },
@@ -3066,10 +3066,10 @@
             "discount_price": 10.99,
             "sku": "NU-103 - WHT",
             "product_description": "Numero Uno Men's Casual White Canvas Shoe",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Shoes",
-            "article_type": "Casual Shoes",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 8,
+            "article_type": 5,
             "image": "2504.jpg"
         }
     },
@@ -3081,10 +3081,10 @@
             "discount_price": 4.58,
             "sku": "NUF-010 - GRN",
             "product_description": "Numero Uno Men's Casual Green Flip Flop",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Flip Flops",
-            "article_type": "Flip Flops",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 5,
+            "article_type": 7,
             "image": "2543.jpg"
         }
     },
@@ -3096,10 +3096,10 @@
             "discount_price": 4.58,
             "sku": "NUF-010 - NV",
             "product_description": "Numero Uno Men's Casual Blue Flip Flop",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Flip Flops",
-            "article_type": "Flip Flops",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 5,
+            "article_type": 7,
             "image": "2544.jpg"
         }
     },
@@ -3111,10 +3111,10 @@
             "discount_price": 4.58,
             "sku": "NUF-010 - RED",
             "product_description": "Numero Uno Men's Casual Red Flip Flop",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Flip Flops",
-            "article_type": "Flip Flops",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 5,
+            "article_type": 7,
             "image": "2545.jpg"
         }
     },
@@ -3126,10 +3126,10 @@
             "discount_price": 4.58,
             "sku": "NUF-012 - BK",
             "product_description": "Numero Uno Men's Casual Black Graphic Flip Flop",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Flip Flops",
-            "article_type": "Flip Flops",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 5,
+            "article_type": 7,
             "image": "2550.jpg"
         }
     },
@@ -3141,10 +3141,10 @@
             "discount_price": 4.58,
             "sku": "NUF-012 - GRN",
             "product_description": "Numero Uno Men's Casual Green Graphic Flip Flop",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Flip Flops",
-            "article_type": "Flip Flops",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 5,
+            "article_type": 7,
             "image": "2551.jpg"
         }
     },
@@ -3156,10 +3156,10 @@
             "discount_price": 4.58,
             "sku": "NUF-012 - NV",
             "product_description": "Numero Uno Men's Casual Blue Graphic Flip Flop",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Flip Flops",
-            "article_type": "Flip Flops",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 5,
+            "article_type": 7,
             "image": "2552.jpg"
         }
     },
@@ -3171,10 +3171,10 @@
             "discount_price": 4.58,
             "sku": "NUF-012 - RED",
             "product_description": "Numero Uno Men's Casual Red Graphic Flip Flop",
-            "gender": "Men",
-            "master_category": "Footwear",
-            "sub_category": "Flip Flops",
-            "article_type": "Flip Flops",
+            "gender": 1,
+            "master_category": 3,
+            "sub_category": 5,
+            "article_type": 7,
             "image": "2553.jpg"
         }
     }

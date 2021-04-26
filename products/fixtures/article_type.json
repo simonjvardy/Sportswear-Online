@@ -1,0 +1,153 @@
+[{
+        "pk": 1,
+        "model": "products.category",
+        "column_names": {
+            "name": "backpacks",
+            "display_name": "Backpacks"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "column_names": {
+            "name": "basketballs",
+            "display_name": "Basketballs"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "column_names": {
+            "name": "capris",
+            "display_name": "Capris"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "column_names": {
+            "name": "caps",
+            "display_name": "Caps"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "column_names": {
+            "name": "casual_shoes",
+            "display_name": "Casual Shoes"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "column_names": {
+            "name": "duffel_bag",
+            "display_name": "Duffel Bag"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "column_names": {
+            "name": "flip_flops",
+            "display_name": "Flip Flops"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.category",
+        "column_names": {
+            "name": "footballs",
+            "display_name": "Footballs"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.category",
+        "column_names": {
+            "name": "handbags",
+            "display_name": "Handbags"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.category",
+        "column_names": {
+            "name": "sandals",
+            "display_name": "Sandals"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.category",
+        "column_names": {
+            "name": "shorts",
+            "display_name": "Shorts"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.category",
+        "column_names": {
+            "name": "socks",
+            "display_name": "Socks"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.category",
+        "column_names": {
+            "name": "sports_shoes",
+            "display_name": "Sports Shoes"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.category",
+        "column_names": {
+            "name": "water_bottle",
+            "display_name": "Water Bottle"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.category",
+        "column_names": {
+            "name": "sweatshirts",
+            "display_name": "Sweatshirts"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.category",
+        "column_names": {
+            "name": "swimwear",
+            "display_name": "Swimwear"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.category",
+        "column_names": {
+            "name": "tops",
+            "display_name": "Topse"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.category",
+        "column_names": {
+            "name": "track_pants",
+            "display_name": "Track Pants"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.category",
+        "column_names": {
+            "name": "tshirts",
+            "display_name": "T-Shirts"
+        }
+    }
+]
