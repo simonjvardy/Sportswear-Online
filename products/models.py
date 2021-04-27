@@ -28,6 +28,10 @@ class ArticleType(models.Model):
 
 
 class MasterCategory(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Master Categories'
+
     name = models.CharField(
         max_length=254)
     display_name = models.CharField(
@@ -41,6 +45,10 @@ class MasterCategory(models.Model):
 
 
 class SubCategory(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Sub Categories'
+
     name = models.CharField(
         max_length=254)
     display_name = models.CharField(

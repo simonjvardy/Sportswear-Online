@@ -44,7 +44,7 @@ def json_data(path):
                 json_data = {
                     "pk": pk,
                     "model": "products.product",
-                    "column_names": {
+                    "fields": {
                         "price": price_new,
                         "discount_price": discount_price_new,
                         "sku": json_data['data']['articleNumber'],
