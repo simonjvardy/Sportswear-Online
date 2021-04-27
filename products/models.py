@@ -68,26 +68,26 @@ class Product(models.Model):
     gender = models.ForeignKey(
         'Gender',
         null=True,
-        Blank=True,
+        blank=True,
         on_delete=models.SET_NULL)
     master_category = models.ForeignKey(
         'MasterCategory',
         null=True,
-        Blank=True,
+        blank=True,
         on_delete=models.SET_NULL)
     sub_category = models.ForeignKey(
         'SubCategory',
         null=True,
-        Blank=True,
+        blank=True,
         on_delete=models.SET_NULL)
     article_type = models.ForeignKey(
         'ArticleType',
         null=True,
-        Blank=True,
+        blank=True,
         on_delete=models.SET_NULL)
     image = models.ImageField(
         null=True,
         blank=True)
 
     def __str__(self):
-        return self.product_description
+        return self.name

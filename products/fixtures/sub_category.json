@@ -1,7 +1,7 @@
 [{
         "pk": 1,
         "model": "products.subcategory",
-        "column_names": {
+        "fields": {
             "name": "accessories",
             "display_name": "Accessories"
         }
@@ -9,7 +9,7 @@
     {
         "pk": 2,
         "model": "products.subcategory",
-        "column_names": {
+        "fields": {
             "name": "apparel_set",
             "display_name": "Apparel Set"
         }
@@ -17,7 +17,7 @@
     {
         "pk": 3,
         "model": "products.subcategory",
-        "column_names": {
+        "fields": {
             "name": "bags",
             "display_name": "Bags"
         }
@@ -25,7 +25,7 @@
     {
         "pk": 4,
         "model": "products.subcategory",
-        "column_names": {
+        "fields": {
             "name": "bottomwear",
             "display_name": "Bottomwear"
         }
@@ -33,7 +33,7 @@
     {
         "pk": 5,
         "model": "products.subcategory",
-        "column_names": {
+        "fields": {
             "name": "flip_flops",
             "display_name": "Flip Flops"
         }
@@ -41,7 +41,7 @@
     {
         "pk": 6,
         "model": "products.subcategory",
-        "column_names": {
+        "fields": {
             "name": "headwear",
             "display_name": "Headwear"
         }
@@ -49,7 +49,7 @@
     {
         "pk": 7,
         "model": "products.subcategory",
-        "column_names": {
+        "fields": {
             "name": "sandals",
             "display_name": "Sandals"
         }
@@ -57,7 +57,7 @@
     {
         "pk": 8,
         "model": "products.subcategory",
-        "column_names": {
+        "fields": {
             "name": "shoes",
             "display_name": "Shoes"
         }
@@ -65,7 +65,7 @@
     {
         "pk": 9,
         "model": "products.subcategory",
-        "column_names": {
+        "fields": {
             "name": "socks",
             "display_name": "Socks"
         }
@@ -73,7 +73,7 @@
     {
         "pk": 10,
         "model": "products.subcategory",
-        "column_names": {
+        "fields": {
             "name": "sports_equipment",
             "display_name": "Sports Equipment"
         }
@@ -81,7 +81,7 @@
     {
         "pk": 11,
         "model": "products.subcategory",
-        "column_names": {
+        "fields": {
             "name": "topwear",
             "display_name": "Topwear"
         }
@@ -89,7 +89,7 @@
     {
         "pk": 12,
         "model": "products.subcategory",
-        "column_names": {
+        "fields": {
             "name": "water_bottle",
             "display_name": "Water Bottle"
         }

@@ -1,7 +1,7 @@
 [{
         "pk": 1,
         "model": "products.gender",
-        "column_names": {
+        "fields": {
             "name": "men",
             "display_name": "Men"
         }
@@ -9,7 +9,7 @@
     {
         "pk": 2,
         "model": "products.gender",
-        "column_names": {
+        "fields": {
             "name": "women",
             "display_name": "Women"
         }
@@ -17,7 +17,7 @@
     {
         "pk": 3,
         "model": "products.gender",
-        "column_names": {
+        "fields": {
             "name": "unisex",
             "display_name": "Unisex"
         }
@@ -25,7 +25,7 @@
     {
         "pk": 4,
         "model": "products.gender",
-        "column_names": {
+        "fields": {
             "name": "boys",
             "display_name": "Boys"
         }
@@ -33,7 +33,7 @@
     {
         "pk": 5,
         "model": "products.gender",
-        "column_names": {
+        "fields": {
             "name": "girls",
             "display_name": "Girls"
         }

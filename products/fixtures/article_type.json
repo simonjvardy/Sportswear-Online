@@ -1,7 +1,7 @@
 [{
         "pk": 1,
         "model": "products.articletype",
-        "column_names": {
+        "fields": {
             "name": "backpacks",
             "display_name": "Backpacks"
         }
@@ -9,7 +9,7 @@
     {
         "pk": 2,
         "model": "products.articletype",
-        "column_names": {
+        "fields": {
             "name": "basketballs",
             "display_name": "Basketballs"
         }
@@ -17,7 +17,7 @@
     {
         "pk": 3,
         "model": "products.articletype",
-        "column_names": {
+        "fields": {
             "name": "capris",
             "display_name": "Capris"
         }
@@ -25,7 +25,7 @@
     {
         "pk": 4,
         "model": "products.articletype",
-        "column_names": {
+        "fields": {
             "name": "caps",
             "display_name": "Caps"
         }
@@ -33,7 +33,7 @@
     {
         "pk": 5,
         "model": "products.articletype",
-        "column_names": {
+        "fields": {
             "name": "casual_shoes",
             "display_name": "Casual Shoes"
         }
@@ -41,7 +41,7 @@
     {
         "pk": 6,
         "model": "products.articletype",
-        "column_names": {
+        "fields": {
             "name": "duffel_bag",
             "display_name": "Duffel Bag"
         }
@@ -49,7 +49,7 @@
     {
         "pk": 7,
         "model": "products.articletype",
-        "column_names": {
+        "fields": {
             "name": "flip_flops",
             "display_name": "Flip Flops"
         }
@@ -57,7 +57,7 @@
     {
         "pk": 8,
         "model": "products.articletype",
-        "column_names": {
+        "fields": {
             "name": "footballs",
             "display_name": "Footballs"
         }
@@ -65,7 +65,7 @@
     {
         "pk": 9,
         "model": "products.articletype",
-        "column_names": {
+        "fields": {
             "name": "handbags",
             "display_name": "Handbags"
         }
@@ -73,7 +73,7 @@
     {
         "pk": 10,
         "model": "products.articletype",
-        "column_names": {
+        "fields": {
             "name": "sandals",
             "display_name": "Sandals"
         }
@@ -81,7 +81,7 @@
     {
         "pk": 11,
         "model": "products.articletype",
-        "column_names": {
+        "fields": {
             "name": "shorts",
             "display_name": "Shorts"
         }
@@ -89,7 +89,7 @@
     {
         "pk": 12,
         "model": "products.articletype",
-        "column_names": {
+        "fields": {
             "name": "socks",
             "display_name": "Socks"
         }
@@ -97,7 +97,7 @@
     {
         "pk": 13,
         "model": "products.articletype",
-        "column_names": {
+        "fields": {
             "name": "sports_shoes",
             "display_name": "Sports Shoes"
         }
@@ -105,7 +105,7 @@
     {
         "pk": 14,
         "model": "products.articletype",
-        "column_names": {
+        "fields": {
             "name": "water_bottle",
             "display_name": "Water Bottle"
         }
@@ -113,7 +113,7 @@
     {
         "pk": 15,
         "model": "products.articletype",
-        "column_names": {
+        "fields": {
             "name": "sweatshirts",
             "display_name": "Sweatshirts"
         }
@@ -121,7 +121,7 @@
     {
         "pk": 16,
         "model": "products.articletype",
-        "column_names": {
+        "fields": {
             "name": "swimwear",
             "display_name": "Swimwear"
         }
@@ -129,7 +129,7 @@
     {
         "pk": 17,
         "model": "products.articletype",
-        "column_names": {
+        "fields": {
             "name": "tops",
             "display_name": "Tops"
         }
@@ -137,7 +137,7 @@
     {
         "pk": 18,
         "model": "products.articletype",
-        "column_names": {
+        "fields": {
             "name": "track_pants",
             "display_name": "Track Pants"
         }
@@ -145,7 +145,7 @@
     {
         "pk": 19,
         "model": "products.articletype",
-        "column_names": {
+        "fields": {
             "name": "tshirts",
             "display_name": "T-Shirts"
         }
