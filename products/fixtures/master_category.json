@@ -1,31 +1,31 @@
 [{
     "pk": 1,
-    "model": "products.category",
-    "column_names": {
+    "model": "products.mastercategory",
+    "fields": {
       "name": "accessories",
       "display_name": "Accessories"
     }
   },
   {
     "pk": 2,
-    "model": "products.category",
-    "column_names": {
+    "model": "products.mastercategory",
+    "fields": {
       "name": "apparel",
       "display_name": "Apparel"
     }
   },
   {
     "pk": 3,
-    "model": "products.category",
-    "column_names": {
+    "model": "products.mastercategory",
+    "fields": {
       "name": "footwear",
       "display_name": "Footwear"
     }
   },
   {
     "pk": 4,
-    "model": "products.category",
-    "column_names": {
+    "model": "products.mastercategory",
+    "fields": {
       "name": "sporting_goods",
       "display_name": "Sporting Goods"
     }

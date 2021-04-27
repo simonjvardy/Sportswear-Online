@@ -48,6 +48,7 @@ def json_data(path):
                         "price": price_new,
                         "discount_price": discount_price_new,
                         "sku": json_data['data']['articleNumber'],
+                        "name": json_data['data']['variantName'],
                         "product_description": json_data['data']['productDisplayName'],
                         "gender": json_data['data']['gender'],
                         "master_category": json_data['data']['masterCategory']['typeName'],
