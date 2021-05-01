@@ -31,10 +31,40 @@
                 Men
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="menswear-link">
-                <a href="" class="dropdown-item">Footwear</a>
-                <a href="" class="dropdown-item">Clothing</a>
-                <a href="" class="dropdown-item">Accessories</a>
-                <a href="" class="dropdown-item">All Menswear</a>
+                <a href="{% url 'products' %}?gender=men,unisex&master_category=footwear"
+                    class="dropdown-item"><strong>Footwear</strong></a>
+                <a href="{% url 'products' %}?gender=men,unisex&master_category=footwear&sub_category=shoes"
+                    class="dropdown-item">Trainers & Shoes</a>
+                <a href="{% url 'products' %}?gender=men,unisex&master_category=footwear&sub_category=flip_flops"
+                    class="dropdown-item">Flip-flops</a>
+                <a href="{% url 'products' %}?gender=men,unisex&master_category=footwear&sub_category=sandals"
+                    class="dropdown-item">Sandals</a>
+                <div class="dropdown-divider"></div>
+                <a href="{% url 'products' %}?gender=men,unisex&master_category=apparel,topwear,bottomwear"
+                    class="dropdown-item"><strong>Clothing</strong></a>
+                <a href="{% url 'products' %}?gender=men,unisex&master_category=apparel,topwear,bottomwear&sub_category=apparel_set"
+                    class="dropdown-item">Apparel Set</a>
+                <a href="{% url 'products' %}?gender=men,unisex&master_category=apparel,topwear,bottomwear&sub_category=bottomwear"
+                    class="dropdown-item">Bottomwear</a>
+                <a href="{% url 'products' %}?gender=men,unisex&master_category=apparel,topwear,bottomwear&sub_category=topwear"
+                    class="dropdown-item">Topwear</a>
+                <a href="{% url 'products' %}?gender=men,unisex&master_category=apparel,topwear,bottomwear&sub_category=socks"
+                    class="dropdown-item">Socks</a>
+                <div class="dropdown-divider"></div>
+                <a href="{% url 'products' %}?gender=men,unisex&master_category=accessories"
+                    class="dropdown-item"><strong>Accessories</strong></a>
+                <a href="{% url 'products' %}?gender=men,unisex&master_category=accessories&sub_category=accessories"
+                    class="dropdown-item">Accessroies</a>
+                <a href="{% url 'products' %}?gender=men,unisex&master_category=accessories&sub_category=bags"
+                    class="dropdown-item">Bags</a>
+                <a href="{% url 'products' %}?gender=men,unisex&master_category=accessories&sub_category=headwear"
+                    class="dropdown-item">Headwear</a>
+                <a href="{% url 'products' %}?gender=men,unisex&master_category=accessories&sub_category=sports_equipment"
+                    class="dropdown-item">Sports Equipment</a>
+                <a href="{% url 'products' %}?gender=men,unisex&master_category=accessories&sub_category=water_bottle"
+                    class="dropdown-item">Water Bottles</a>
+                <div class="dropdown-divider"></div>
+                <a href="{% url 'products' %}?gender=men,unisex" class="dropdown-item"><strong>All Menswear</strong></a>
             </div>
         </li>
 
@@ -44,11 +74,42 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Women
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Footwear</a>
-                <a href="" class="dropdown-item">Clothing</a>
-                <a href="" class="dropdown-item">Accessories</a>
-                <a href="" class="dropdown-item">All Womenswear</a>
+            <div class="dropdown-menu border-0" aria-labelledby="womenswear-link">
+                <a href="{% url 'products' %}?gender=women,unisex&master_category=footwear"
+                    class="dropdown-item"><strong>Footwear</strong></a>
+                <a href="{% url 'products' %}?gender=women,unisex&master_category=footwear&sub_category=shoes"
+                    class="dropdown-item">Trainers & Shoes</a>
+                <a href="{% url 'products' %}?gender=women,unisex&master_category=footwear&sub_category=flip_flops"
+                    class="dropdown-item">Flip-flops</a>
+                <a href="{% url 'products' %}?gender=women,unisex&master_category=footwear&sub_category=sandals"
+                    class="dropdown-item">Sandals</a>
+                <div class="dropdown-divider"></div>
+                <a href="{% url 'products' %}?gender=women,unisex&master_category=apparel,topwear,bottomwear"
+                    class="dropdown-item"><strong>Clothing</strong></a>
+                <a href="{% url 'products' %}?gender=women,unisex&master_category=apparel,topwear,bottomwear&sub_category=apparel_set"
+                    class="dropdown-item">Apparel Set</a>
+                <a href="{% url 'products' %}?gender=women,unisex&master_category=apparel,topwear,bottomwear&sub_category=bottomwear"
+                    class="dropdown-item">Bottomwear</a>
+                <a href="{% url 'products' %}?gender=women,unisex&master_category=apparel,topwear,bottomwear&sub_category=topwear"
+                    class="dropdown-item">Topwear</a>
+                <a href="{% url 'products' %}?gender=women,unisex&master_category=apparel,topwear,bottomwear&sub_category=socks"
+                    class="dropdown-item">Socks</a>
+                <div class="dropdown-divider"></div>
+                <a href="{% url 'products' %}?gender=women,unisex&master_category=accessories"
+                    class="dropdown-item"><strong>Accessories</strong></a>
+                <a href="{% url 'products' %}?gender=women,unisex&master_category=accessories&sub_category=accessories"
+                    class="dropdown-item">Accessroies</a>
+                <a href="{% url 'products' %}?gender=women,unisex&master_category=accessories&sub_category=bags"
+                    class="dropdown-item">Bags</a>
+                <a href="{% url 'products' %}?gender=women,unisex&master_category=accessories&sub_category=headwear"
+                    class="dropdown-item">Headwear</a>
+                <a href="{% url 'products' %}?gender=women,unisex&master_category=accessories&sub_category=sports_equipment"
+                    class="dropdown-item">Sports Equipment</a>
+                <a href="{% url 'products' %}?gender=women,unisex&master_category=accessories&sub_category=water_bottle"
+                    class="dropdown-item">Water Bottles</a>
+                <div class="dropdown-divider"></div>
+                <a href="{% url 'products' %}?gender=women,unisex" class="dropdown-item"><strong>All
+                        Womenswear</strong></a>
             </div>
         </li>
 
@@ -58,11 +119,41 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Kids
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Footwear</a>
-                <a href="" class="dropdown-item">Clothing</a>
-                <a href="" class="dropdown-item">Accessories</a>
-                <a href="" class="dropdown-item">All Kidswear</a>
+            <div class="dropdown-menu border-0" aria-labelledby="kidswear-link">
+                <a href="{% url 'products' %}?gender=boys,girls&master_category=footwear"
+                    class="dropdown-item"><strong>Footwear</strong></a>
+                <a href="{% url 'products' %}?gender=boys,girls&master_category=footwear&sub_category=shoes"
+                    class="dropdown-item">Trainers & Shoes</a>
+                <a href="{% url 'products' %}?gender=boys,girls&master_category=footwear&sub_category=flip_flops"
+                    class="dropdown-item">Flip-flops</a>
+                <a href="{% url 'products' %}?gender=boys,girls&master_category=footwear&sub_category=sandals"
+                    class="dropdown-item">Sandals</a>
+                <div class="dropdown-divider"></div>
+                <a href="{% url 'products' %}?gender=boys,girls&master_category=apparel,topwear,bottomwear"
+                    class="dropdown-item"><strong>Clothing</strong></a>
+                <a href="{% url 'products' %}?gender=boys,girls&master_category=apparel,topwear,bottomwear&sub_category=apparel_set"
+                    class="dropdown-item">Apparel Set</a>
+                <a href="{% url 'products' %}?gender=boys,girls&master_category=apparel,topwear,bottomwear&sub_category=bottomwear"
+                    class="dropdown-item">Bottomwear</a>
+                <a href="{% url 'products' %}?gender=boys,girls&master_category=apparel,topwear,bottomwear&sub_category=topwear"
+                    class="dropdown-item">Topwear</a>
+                <a href="{% url 'products' %}?gender=boys,girls&master_category=apparel,topwear,bottomwear&sub_category=socks"
+                    class="dropdown-item">Socks</a>
+                <div class="dropdown-divider"></div>
+                <a href="{% url 'products' %}?gender=boys,girls&master_category=accessories"
+                    class="dropdown-item"><strong>Accessories</strong></a>
+                <a href="{% url 'products' %}?gender=boys,girls&master_category=accessories&sub_category=accessories"
+                    class="dropdown-item">Accessroies</a>
+                <a href="{% url 'products' %}?gender=boys,girls&master_category=accessories&sub_category=bags"
+                    class="dropdown-item">Bags</a>
+                <a href="{% url 'products' %}?gender=boys,girls&master_category=accessories&sub_category=headwear"
+                    class="dropdown-item">Headwear</a>
+                <a href="{% url 'products' %}?gender=boys,girls&master_category=accessories&sub_category=sports_equipment"
+                    class="dropdown-item">Sports Equipment</a>
+                <a href="{% url 'products' %}?gender=boys,girls&master_category=accessories&sub_category=water_bottle"
+                    class="dropdown-item">Water Bottles</a>
+                <div class="dropdown-divider"></div>
+                <a href="{% url 'products' %}?gender=boys,girls" class="dropdown-item"><strong>All Kidswear</strong></a>
             </div>
         </li>
 
