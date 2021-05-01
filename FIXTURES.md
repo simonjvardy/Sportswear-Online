@@ -32,7 +32,7 @@ The images needed to be curated down to a manageable number for this project and
 
 The image files were manually sorted through and any suitable images of sportswear related clothing, footwear or accessories were copied into a separate folder. The images files were reduced from 44,400 down to 212 images.
 
-A small python utility app ([move_files.py](utilities/move_files.py))was written to read the curated image file names and then move the associated JSON files into a separate folder, ready for further work.
+A small python utility app ([move_files.py](utilities/move_files.py)) was written to read the curated image file names and then move the associated JSON files into a separate folder, ready for further work.
 
 ```Python
 import shutil
@@ -156,7 +156,7 @@ json_data(json_path)
 The source dataset was originally for an online store website based in India so the prices needed to have an exchange rate from Rupees to GBP applied as part of the data export.
 
 
-Unfortunately, the output file data isn't in true JSON format so the full list of JSON objects was copied into [JSON Formatter](https://jsonformatter.org/) and the "Repair JSON" and Format / Beautify functions were applied.
+Unfortunately, the output file data isn't in true JSON format so the full list of JSON objects was copied into [JSON Formatter](https://jsonformatter.org/) to use the "Repair JSON" and Format / Beautify functions on the JSON objects.
 
 
 ![JSON Formatter screenshot](readme_content/json_formatter.jpg)
