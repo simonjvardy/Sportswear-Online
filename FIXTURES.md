@@ -28,64 +28,66 @@ The images needed to be curated down to a manageable number for this project and
 
 ## products.json File creation ##
 
-### ***Curate the images*** ##
+### ***Curate the Images*** ##
 
-The dataset contained a full list of filenames in a csv file which was used to create the final list of images and JSON files to be used for this project.
+The image files were manually sorted through and any suitable images of sportswear related clothing, footwear or accessories were copied into a separate folder. The images files were reduced from 44,400 down to 212 images.
 
-![style.csv screenshot](readme_content/style-csv.jpg)
-
-The filtered list of id codes was used to create a python utility app ([move_files.py](utilities/move_files.py)) to move the required list of source product JSON files into a new local folder.
-
-The total number of images in the curated dataset was reduced to 212 images along with their associated JSON files.
+A small python utility app ([move_files.py](utilities/move_files.py))was written to read the curated image file names and then move the associated JSON files into a separate folder, ready for further work.
 
 ```Python
 import shutil
 import os
 
-src = r"D:\\FashionProductImageDataSet\\fashion-dataset\\styles\\"
-dest = r"D:\\FashionProductImageDataSet\\fashion-dataset\\curated_json\\"
+def move_listed_files():
+    """
+    Function to read the curated image filenames and extract the associated
+    JSON files from the kaggle.com data set and move them to a new folder
+    for further work.
+    """
 
-# read list of filenames to copy
-# https://stackoverflow.com/questions/3277503/how-to-read-a-file-line-by-line-into-a-list
-with open(r"D:\FashionProductImageDataSet\fashion-dataset\file_list.txt", "r") as f:
-    src_files = [line.rstrip('\n') for line in f]
+    src_images = r"D:\\FashionProductImageDataSet\\fashion-dataset\\curated_images\\"
+    src_json = r"D:\\FashionProductImageDataSet\\fashion-dataset\\styles\\"
+    dest = r"D:\\FashionProductImageDataSet\\fashion-dataset\\curated_json\\"
 
-files_count = 0
+    files_count = 0
 
-# Copy the selected files from the list into the destination folder
-# https://stackoverflow.com/questions/3397752/copy-multiple-files-in-python/3399299
-for file_name in src_files:
-    full_filename = os.path.join(src, file_name)
-    print(full_filename)
-    if os.path.isfile(full_filename):
-        shutil.copy(full_filename, dest)
-        files_count += 1
+    for files in os.walk(src_images, topdown=False):
+        for filename in files:
 
-print("Files copied:", files_count)
+            image_filename = os.path.join(filename)
+            str = image_filename.split('.')
+            json_file = str[0] + '.json'
+            full_json_filename = os.path.join(src_json, json_file)
+
+            if os.path.isfile(full_json_filename):
+                shutil.copy(full_json_filename, dest)
+                files_count += 1
+
+    print("Files copied:", files_count)
+
+
+move_listed_files()
 
 ```
 
 
+
+
 ![Product images screenshot](readme_content/product-image-files.jpg)
+
+
 ![Product images screenshot](readme_content/product-json-files.jpg)
 
 
-### ***Create the products.json fixtures file*** ###
+### ***Create the products.json Fixtures File*** ###
 
 The source JSON files contained extremely detailed product information and was far more than required for this project.
 
 However, they did contain all the required name value pairs needed for the Sportswear Online products model.
 
-To extract only the required data from each of the 212 JSON files, another Python utility app ([create_json.py](utilities/create_json.py)) was created to open and read all of the source JSON files from the local file directory and to loop through each one to extract the required name value pairs; appending the data to products.json fixtures file.
+To extract only the required data from each of the 212 JSON source files, another Python utility app ([create_json.py](utilities/create_json.py)) was written to open and read all of the source JSON files from the local file directory and to loop through each one, extracting the required name value pairs, before appending the data to the products.json fixtures file.
 
 ```Python
-"""
-Open multiple files in a directory:
-    https://stackoverflow.com/questions/38991923/how-to-open-multiple-files-in-a-directory/38992988
-Appending data to a file:
-    https://thispointer.com/how-to-append-text-or-lines-to-a-file-in-python/
-"""
-
 import json
 import os
 
@@ -125,10 +127,11 @@ def json_data(path):
                 json_data = {
                     "pk": pk,
                     "model": "products.product",
-                    "column_names": {
+                    "fields": {
                         "price": price_new,
                         "discount_price": discount_price_new,
                         "sku": json_data['data']['articleNumber'],
+                        "name": json_data['data']['variantName'],
                         "product_description": json_data['data']['productDisplayName'],
                         "gender": json_data['data']['gender'],
                         "master_category": json_data['data']['masterCategory']['typeName'],
@@ -148,6 +151,8 @@ def json_data(path):
 json_data(json_path)
 
 ```
+
+
 The source dataset was originally for an online store website based in India so the prices needed to have an exchange rate from Rupees to GBP applied as part of the data export.
 
 
@@ -156,7 +161,9 @@ Unfortunately, the output file data isn't in true JSON format so the full list o
 
 ![JSON Formatter screenshot](readme_content/json_formatter.jpg)
 
-This data was copied back into [products.json](products/fixtures/products.json)
+This formatted JSON data was copied back into [products.json](products/fixtures/products.json)
 
- ---
+The products.json file was further manually editied to cleanse the data of any noticeable errors and to replace string values for integer foreign keys when the [master_category](products/fixtures/master_category.json), [sub_category](products/fixtures/sub_category.json), [gender](products/fixtures/gender.json) and [article_type](products/fixtures/article_type.json) Fixture files were created. 
+
+---
 
