@@ -3,6 +3,16 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block breadcrumbs %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-white text-dark">
+        <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'products' %}">Products</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ product.name }}</li>
+    </ol>
+</nav>
+{% endblock %}
+
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
