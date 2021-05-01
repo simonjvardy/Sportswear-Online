@@ -5,7 +5,7 @@
 
 {% block breadcrumbs %}
 <nav aria-label="breadcrumb">
-    <ol class="breadcrumb bg-white text-dark">
+    <ol class="breadcrumb bg-white text-dark small">
         <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
         <li class="breadcrumb-item active" aria-current="page">Products</li>
     </ol>
@@ -60,6 +60,16 @@
                                             RRP <strike>£{{ product.price }}</strike>
                                         </span>
                                     </p>
+                                    {% if product.master_category %}
+                                    <p class="small mt-1 mb-0">
+                                        <a href="{% url 'products' %}?category={{ products.master_category.name }}"
+                                            class="text-muted">
+                                            <i class="fas fa-tag mr-1"></i>
+                                            {{ product.master_category.display_name }} /
+                                            {{ product.sub_category.display_name }}
+                                        </a>
+                                    </p>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>

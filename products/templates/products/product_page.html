@@ -5,9 +5,30 @@
 
 {% block breadcrumbs %}
 <nav aria-label="breadcrumb">
-    <ol class="breadcrumb bg-white text-dark">
-        <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
-        <li class="breadcrumb-item"><a href="{% url 'products' %}">Products</a></li>
+    <ol class="breadcrumb bg-white text-dark small">
+        <li class="breadcrumb-item">
+            <a href="{% url 'home' %}">
+                Home
+            </a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="{% url 'products' %}">
+                Products
+            </a>
+        </li>
+        <li class="breadcrumb-item">
+            <a
+                href="{% url 'products' %}?gender={{ product.gender.name }}&master_category={{ product.master_category.name }}">
+                {{ product.gender.display_name }}
+                {{ product.master_category.display_name }}
+            </a>
+        </li>
+        <li class="breadcrumb-item">
+            <a
+                href="{% url 'products' %}?gender={{ product.gender.name }}&sub_category={{ product.sub_category.name }}">
+                {{ product.sub_category.display_name }}
+            </a>
+        </li>
         <li class="breadcrumb-item active" aria-current="page">{{ product.name }}</li>
     </ol>
 </nav>
@@ -49,6 +70,13 @@
                         RRP <strike>£{{ product.price }}</strike>
                     </span>
                 </p>
+                {% if product.master_category %}
+                <p class="small mt-1 mb-0">
+                    <a href="{% url 'products' %}?category={{ products.master_category.name }}" class="text-muted">
+                        <i class="fas fa-tag mr-1"></i>{{ product.master_category.display_name }}
+                    </a>
+                </p>
+                {% endif %}
                 <p class="mt-3">{{ product.product_description }}</p>
             </div>
         </div>
