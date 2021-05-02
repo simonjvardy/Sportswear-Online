@@ -190,7 +190,7 @@
 
         let selectedVal = selector.val();
         if (selectedVal != "reset") {
-            // Fix: Allows names separated by underscores to be split correctly for sort and direction
+            // Fix: Allows field names containing underscores to be split correctly for sort and direction
             // e.g. master_category_desc or name_desc will be split appropriately.
             count = (selectedVal.match(/_/g)).length
             let sort;
