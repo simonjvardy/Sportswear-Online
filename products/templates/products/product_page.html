@@ -1,4 +1,4 @@
-<!-- Template adapted from Code Institute Boutique Ado mini projects -->
+<!-- Template adapted from Code Institute Boutique Ado mini project -->
 
 {% extends "base.html" %}
 {% load static %}
@@ -6,16 +6,22 @@
 {% block breadcrumbs %}
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb bg-white text-dark small">
+
+        <!-- Home Link -->
         <li class="breadcrumb-item">
             <a href="{% url 'home' %}">
                 Home
             </a>
         </li>
+
+        <!-- All Products link -->
         <li class="breadcrumb-item">
             <a href="{% url 'products' %}">
                 Products
             </a>
         </li>
+
+        <!-- Gender and Master Category filtering -->
         <li class="breadcrumb-item">
             <a
                 href="{% url 'products' %}?gender={{ product.gender.name }}&master_category={{ product.master_category.name }}">
@@ -23,12 +29,16 @@
                 {{ product.master_category.display_name }}
             </a>
         </li>
+
+        <!-- Product Sub-category filtering -->
         <li class="breadcrumb-item">
             <a
                 href="{% url 'products' %}?gender={{ product.gender.name }}&sub_category={{ product.sub_category.name }}">
                 {{ product.sub_category.display_name }}
             </a>
         </li>
+
+        <!-- Product Display Name -->
         <li class="breadcrumb-item active" aria-current="page">{{ product.name }}</li>
     </ol>
 </nav>
@@ -46,22 +56,36 @@
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
+
+        <!-- Product Image Container -->
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <div class="image-container my-5">
+
+                <!-- Display the product image -->
                 {% if product.image %}
                 <a href="{{ product.image.url }}" target="_blank">
                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
+
+                <!-- Else display the default "No Image" placeholder file -->
                 <a href="">
                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                 </a>
                 {% endif %}
             </div>
         </div>
+
+        <!-- Product Details Section -->
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product_page_container mb-5 mt-md-5">
-                <p class="mb-0">{{ product.name }}</p>
+
+                <!-- Product Name -->
+                <p class="mb-0">
+                    {{ product.name }}
+                </p>
+
+                <!-- Product RRP & Discount Prices -->
                 <p>
                     <span class="lead mb-0 text-left text-danger font-weight-bold">
                         £{{ product.discount_price }}
@@ -70,6 +94,8 @@
                         RRP <strike>£{{ product.price }}</strike>
                     </span>
                 </p>
+
+                <!-- Product Master Category -->
                 {% if product.master_category %}
                 <p class="small mt-1 mb-0">
                     <a href="{% url 'products' %}?category={{ products.master_category.name }}" class="text-muted">
@@ -77,7 +103,11 @@
                     </a>
                 </p>
                 {% endif %}
-                <p class="mt-3">{{ product.product_description }}</p>
+
+                <!-- Product Description -->
+                <p class="mt-3">
+                    {{ product.product_description }}
+                </p>
             </div>
         </div>
     </div>

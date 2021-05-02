@@ -32,7 +32,7 @@ def all_products(request):
             if sortkey == 'name':
                 sortkey = 'lower_name'
                 products = products.annotate(lowername=Lower('name'))
-
+            
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
