@@ -57,10 +57,10 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
-                        <input class="form-control border border-black rounded-0" type="text" name="q"
-                            placeholder="Search product or category">
+                        <input class="form-control border border-dark rounded-left" type="text" name="q"
+                            placeholder="Search by product, category or name...">
                         <div class="input-group-append">
-                            <button class="form-control btn btn-white border border-black rounded-0" type="submit">
+                            <button class="form-control btn btn-white border border-dark rounded-right" type="submit">
                                 <span class="icon">
                                     <i class="fas fa-search"></i>
                                 </span>
@@ -76,7 +76,7 @@
 
                     <!-- My Account dropdown menu -->
                     <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
+                        <a class="text-light nav-link" href="#" id="user-options" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
@@ -100,10 +100,10 @@
 
                     <!-- Shopping Basket -->
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-light{% endif %} nav-link"
                             href="">
                             <div class="text-center">
-                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                                <div><i class="fas fa-shopping-cart fa-lg"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
                                     ${{ grand_total|floatformat:2 }}

@@ -33,6 +33,18 @@
     color: #000
 }
 
+/* From CI Boutique Ado mini project */
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
+}
 
 /* -------------------------------------Search Bar Section */
 
