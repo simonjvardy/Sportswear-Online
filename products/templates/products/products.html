@@ -1,7 +1,16 @@
-<!-- Template adapted from Code Institute Boutique Ado mini projects -->
+<!-- Template adapted from Code Institute Boutique Ado mini project -->
 
 {% extends "base.html" %}
 {% load static %}
+
+{% block breadcrumbs %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-white text-dark small">
+        <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Products</li>
+    </ol>
+</nav>
+{% endblock %}
 
 {% block page_header %}
 <div class="container header-container">
@@ -14,19 +23,82 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container-fluid">
+    <!-- Page Title -->
     <div class="row">
         <div class="col text-center mt-3">
             <h2>Products</h2>
             <hr class="w-50 mb-1">
         </div>
     </div>
+
+    <!-- Products Container panel -->
     <div class="row">
         <div class="product-container col-10 offset-1">
-            <div class="row mt-1 mb-2"></div>
+            <!-- Sort Selection Box -->
+            <div class="row mt-1 mb-2">
+                <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                    <div class="sort-select-wrapper w-50">
+                        <select id="sort-selector"
+                            class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>
+                                Sort by...
+                            </option>
+                            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>
+                                Price (low to high)
+                            </option>
+                            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>
+                                Price (high to low)
+                            </option>
+                            <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>
+                                Name (A-Z)
+                            </option>
+                            <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>
+                                Name (Z-A)
+                            </option>
+                            <option value="master_category_asc"
+                                {% if current_sorting == 'master_category_asc' %}selected{% endif %}>
+                                Main Category (A-Z)
+                            </option>
+                            <option value="master_category_desc"
+                                {% if current_sorting == 'master_category_desc' %}selected{% endif %}>
+                                Main Category (Z-A)
+                            </option>
+                            <option value="sub_category_asc"
+                                {% if current_sorting == 'sub_category_asc' %}selected{% endif %}>
+                                Product Category (A-Z)
+                            </option>
+                            <option value="sub_category_desc"
+                                {% if current_sorting == 'sub_category_desc' %}selected{% endif %}>
+                                Product Category (Z-A)
+                            </option>
+                            <option value="article_type_asc"
+                                {% if current_sorting == 'article_type_asc' %}selected{% endif %}>
+                                Product Type (A-Z)
+                            </option>
+                            <option value="article_type_desc"
+                                {% if current_sorting == 'article_type_desc' %}selected{% endif %}>
+                                Product Type (Z-A)
+                            </option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Products Search Results Count -->
+                <div class="col-12 col-md-6 order-md-first">
+                    <p class="text-muted mt-3 text-center text-md-left">
+                        {{ products|length }} Products{% if search_term %} found for
+                        <strong>"{{ search_term }}"</strong>{% endif %}
+                    </p>
+                </div>
+            </div>
+
+            <!-- Product Card -->
             <div class="row">
                 {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                     <div class="card h-100 border-0">
+
+                        <!-- Product Image section -->
                         {% if product.image %}
                         <a href="{% url 'product_page' product.id %}">
                             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -37,12 +109,17 @@
                                 alt="{{ product.name }}">
                         </a>
                         {% endif %}
+
+                        <!-- Product Name section -->
                         <div class="card-body pb-0">
                             <p class="mb-0">{{ product.name }}</p>
                         </div>
+
+                        <!-- Product card footer section -->
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row">
                                 <div class="col">
+                                    <!-- Display RRP & Discount prices -->
                                     <p>
                                         <span class="lead mb-0 text-left text-danger font-weight-bold">
                                             £{{ product.discount_price }}
@@ -51,11 +128,26 @@
                                             RRP <strike>£{{ product.price }}</strike>
                                         </span>
                                     </p>
+
+                                    <!-- Display Product Category / Sub-category -->
+                                    {% if product.master_category %}
+                                    <p class="small mt-1 mb-0">
+                                        <a href="{% url 'products' %}?sub_category={{ product.sub_category.name }}&article_type={{ product.article_type.name}}"
+                                            class="text-muted">
+                                            <i class="fas fa-tag mr-1"></i>
+                                            {{ product.master_category.display_name }} /
+                                            {{ product.sub_category.display_name }} /
+                                            {{ product.article_type.display_name}}
+                                        </a>
+                                    </p>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Product section divider line calculations for different screen widths -->
                 {% if forloop.counter|divisibleby:1 %}
                 <div class="col-12 d-sm-none mb-5">
                     <hr>
@@ -81,4 +173,36 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript">
+    $('.btt-link').click(function (e) {
+        window.scrollTo(0, 0)
+    })
+</script>
+
+<script type="text/javascript">
+    $('#sort-selector').change(function () {
+        var selector = $(this);
+        var currentUrl = new URL(window.location);
+
+        var selectedVal = selector.val();
+        if (selectedVal != "reset") {
+            var sort = selectedVal.split("_")[0];
+            var direction = selectedVal.split("_")[1];
+
+            currentUrl.searchParams.set("sort", sort);
+            currentUrl.searchParams.set("direction", direction);
+
+            window.location.replace(currentUrl);
+        } else {
+            currentUrl.searchParams.delete("sort");
+            currentUrl.searchParams.delete("direction");
+
+            window.location.replace(currentUrl);
+        }
+    })
+</script>
 {% endblock %}

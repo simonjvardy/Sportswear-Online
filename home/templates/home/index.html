@@ -1,6 +1,14 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block breadcrumbs %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-white text-dark small">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+    </ol>
+</nav>
+{% endblock %}
+
 {% block page_header %}
 <div class="container-fluid header-container">
     <div class="row">
