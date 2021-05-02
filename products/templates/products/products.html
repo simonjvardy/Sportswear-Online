@@ -185,13 +185,23 @@
 
 <script type="text/javascript">
     $('#sort-selector').change(function () {
-        var selector = $(this);
-        var currentUrl = new URL(window.location);
+        let selector = $(this);
+        let currentUrl = new URL(window.location);
 
-        var selectedVal = selector.val();
+        let selectedVal = selector.val();
         if (selectedVal != "reset") {
-            var sort = selectedVal.split("_")[0];
-            var direction = selectedVal.split("_")[1];
+            // Fix: Allows names separated by underscores to be split correctly for sort and direction
+            // e.g. master_category_desc or name_desc will be split appropriately.
+            count = (selectedVal.match(/_/g)).length
+            let sort;
+            let direction;
+            if (count == 1) {
+                sort = selectedVal.split("_")[0];
+                direction = selectedVal.split("_")[1];
+            } else {
+                sort = selectedVal.split("_")[0] + "_" + selectedVal.split("_")[1];
+                direction = selectedVal.split("_")[2];
+            }
 
             currentUrl.searchParams.set("sort", sort);
             currentUrl.searchParams.set("direction", direction);
