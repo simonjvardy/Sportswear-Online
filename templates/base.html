@@ -100,13 +100,13 @@
 
                     <!-- Shopping Cart -->
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-light{% endif %} nav-link"
+                        <a class="{% if grand_total %}text-success font-weight-bold{% else %}text-light{% endif %} nav-link"
                             href="{% url 'view_cart' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-cart fa-lg"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
-                                    ${{ grand_total|floatformat:2 }}
+                                    £{{ grand_total|floatformat:2 }}
                                     {% else %}
                                     £0.00
                                     {% endif %}
@@ -132,6 +132,14 @@
 
         <!-- Free Delivery Banner -->
         <div id="delivery-banner" class="row text-center">
+            <div class="col bg-warning text-dark">
+                <h4 class="logo-font my-1">
+                    Shop online 24/7
+                    <strong>
+                        Extended returns available!
+                    </strong>
+                </h4>
+            </div>
             <div class="col bg-warning text-dark">
                 <h4 class="logo-font my-1">
                     Free standard delivery

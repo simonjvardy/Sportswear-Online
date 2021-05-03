@@ -28,14 +28,91 @@
     <div class="row">
         <div class="col">
             <hr>
-            <h2 class="logo-font mb-4">Shopping Cart</h2>
+            <h2 class="logo-font mb-4">My Shopping Cart</h2>
             <hr>
         </div>
     </div>
     <div class="row">
         <div class="col">
             {% if cart_items %}
-            <div class="table-responsive rounded"></div>
+            <div class="table-responsive rounded">
+                <table class="table">
+                    <thead class="text-dark thead-light">
+                        <tr>
+                            <th scope="col">Your Order Details</th>
+                            <th scope="col"></th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in cart_items %}
+                        <tr>
+                            <td class="p-3 w-25">
+                                <!-- <img src="{{ item.product.image.url }}" alt="" class="image-fluid rounded"> -->
+                            </td>
+                            <td class="py-3">
+                                <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                                <p class="my-0 small text-muted">Code: {{ item.product.sku }}</p>
+                                <p class="my-0 small text-success">In Stock</p>
+                            </td>
+                            <td class="py-3">
+                                <p class="my-0">£{{ item.product.discount_price }}</p>
+                            </td>
+                            <td class="py-3">
+                                <p class="my-0">{{ item.quantity }}</p>
+                            </td>
+                            <td class="py-3 w-25">
+                                <p class="my-0">£{{ item.product.discount_price }}</p>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                        <tr>
+                            <td colspan="5" class="pt-1 text-left">
+                                <p class="my-0 small text-dark">
+                                    <span>
+                                        <i class="fas fa-exclamation-circle"></i>
+                                    </span>
+                                    Items placed in this shopping cart are not reserved.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" class="pt-5 text-right">
+                                <h6><strong>Cart Total: £{{ total|floatformat:2 }}</strong></h6>
+                                <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
+                                <h4 class="mt-4"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
+                                {% if free_delivery_delta > 0 %}
+                                <p class="mb-1 text-danger">
+                                    You could still get free delivery by spending just
+                                    <strong>£{{ free_delivery_delta }}</strong> more!
+                                </p>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" class="text-reight">
+                                <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-0 btn-lg">
+                                    <span class="icon">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="text-uppercase">Keep Shopping</span>
+                                </a>
+                                <a href="" class="btn btn-outline-success rounded-0 btn-lg">
+                                    <span class="text-uppercase">
+                                        Checkout Securely
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
             {% else %}
             <p class="lead mb5">Your Shopping Cart is empty.</p>
             <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-0 btn-lg">
