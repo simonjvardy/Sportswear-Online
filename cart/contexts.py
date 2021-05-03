@@ -1,8 +1,8 @@
 """
 Code adapted from the Code Institute Boutique Ado mini project
 
-Context processor to make the cart_contents dictionary available to all
-templates across the entire application
+Context processor to make the cart_contents returned dictionary 
+available to all templates across the entire application
 """
 
 from decimal import Decimal
