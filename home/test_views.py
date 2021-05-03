@@ -3,7 +3,7 @@ from django.test import TestCase
 # Create your tests here.
 
 
-class TestViews(TestCase):
+class TestHomeViews(TestCase):
     """
     Tests the home page renders the correct page
     """
