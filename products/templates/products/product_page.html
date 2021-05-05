@@ -113,8 +113,22 @@
                 <form action="{% url 'add_to_cart' product.id %}" class="form" method="POST">
                     {% csrf_token %}
 
-                    <!-- Item quantity selector -->
+                    <!-- Item size & quantity selectors -->
                     <div class="form-row">
+                        {% with product.sizes as s %}
+                        {% if s %}
+                        <div class="col-12">
+                            <p><strong>Size:</strong></p>
+                            <select name="product_size" id="id_product_size" class="form-control rounded-0 w-25">
+                                <option value="xs">XS</option>
+                                <option value="s">S</option>
+                                <option value="m" selected>M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                                <option value="2xl">2XL</option>
+                            </select>
+                        </div>
+                        {% endif %}
                         <div class="col-12">
                             <p class="mt-3"><strong>Quantity:</strong></p>
                             <div class="form-group w-25">
@@ -122,22 +136,23 @@
                                     max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Keep Shopping & Add to Cart Buttons -->
-                    <div class="col-12">
-                        <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-0 btn-lg mt-5">
-                            <span class="icon">
-                                <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="text-uppercase">Keep Shopping</span>
-                        </a>
-                        <input type="submit" class="btn btn-dark rounded-0 text-uppercase btn-lg mt-5"
-                            value="Add to Shopping Cart">
-                    </div>
+                        <!-- Keep Shopping & Add to Cart Buttons -->
+                        <div class="col{% if s %}-12 mt-2{% endif %}">
+                            <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-0 btn-lg mt-5">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">Keep Shopping</span>
+                            </a>
+                            <input type="submit" class="btn btn-dark rounded-0 text-uppercase btn-lg mt-5"
+                                value="Add to Shopping Cart">
+                        </div>
 
-                    <!-- Redirects user back to product page after item added to shopping cart -->
-                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        <!-- Redirects user back to product page after item added to shopping cart -->
+                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        {% endwith %}
+                    </div>
                 </form>
             </div>
         </div>

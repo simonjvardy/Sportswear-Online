@@ -54,6 +54,8 @@
                             </td>
                             <td class="py-3">
                                 <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                                <p class="my-0">Size:
+                                    {% if item.product.sizes %}{{ item.size|uppoer }}{% else %}N/A{% endif %}</p>
                                 <p class="my-0 small text-muted">Code: {{ item.product.sku }}</p>
                                 <p class="my-0 small text-success">In Stock</p>
                             </td>
