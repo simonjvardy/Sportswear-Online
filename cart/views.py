@@ -1,6 +1,8 @@
 # Code adapted from the CI Boutique Ado mini project
 
-from django.shortcuts import render, redirect
+from django.shortcuts import (
+    render, redirect, reverse, HttpResponse)
+
 
 # Create your views here.
 
@@ -48,3 +50,76 @@ def add_to_cart(request, item_id):
 
     request.session['cart'] = cart
     return redirect(redirect_url)
+
+
+def update_cart(request, item_id):
+    """
+    Functionality for the update button in the shopping cart
+    """
+
+    quantity = int(request.POST.get('quantity'))
+    size = None
+    if 'product_size' in request.POST:
+        size = request.POST['product_size']
+
+    # Store the shopping cart in the HTTP session
+    cart = request.session.get('cart', {})
+
+    """
+    If a product with sizes is being updated in the cart, then:
+        if the updated qty is greater than zero, update the qty
+        otherwise remove the item from the cart if qty is zero
+    If a product without sizes is being updated in the cart, then:
+        if the updated qty is greater than zero, update the qty
+        otherwise remove the item from the cart if the qty is zero
+    After the update, redirect back to the shopping cart page.
+    """
+    if size:
+        if quantity > 0:
+            cart[item_id]['items_by_size'][size] = quantity
+        else:
+            del cart[item_id]['items_by_size'][size]
+            if not cart[item_id]['items_by_size']:
+                cart.pop(item_id)
+    else:
+        if quantity > 0:
+            cart[item_id] = quantity
+        else:
+            cart.pop(item_id)
+
+    request.session['cart'] = cart
+    return redirect(reverse('view_cart'))
+
+
+def remove_from_cart(request, item_id):
+    """
+    Functionality for the remove button in the shopping cart
+    """
+    try:
+        size = None
+        if 'product_size' in request.POST:
+            size = request.POST['product_size']
+
+        # Store the shopping cart in the HTTP session
+        cart = request.session.get('cart', {})
+
+        """
+        If a product with sizes is being updated in the cart, then:
+            if the updated qty is greater than zero, update the qty
+            otherwise remove the item from the cart if qty is zero
+        If a product without sizes is being updated in the cart, then:
+            if the updated qty is greater than zero, update the qty
+            otherwise remove the item from the cart if the qty is zero
+        After the update, redirect back to the shopping cart page.
+        """
+        if size:
+            del cart[item_id]['items_by_size'][size]
+            if not cart[item_id]['items_by_size']:
+                cart.pop(item_id)
+        else:
+            cart.pop(item_id)
+
+        request.session['cart'] = cart
+        return HttpResponse(status=200)
+    except Exception as e:
+        return HttpResponse(status=500)
