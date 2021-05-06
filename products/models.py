@@ -73,6 +73,7 @@ class Product(models.Model):
     name = models.CharField(
         max_length=254)
     product_description = models.TextField()
+    sizes = models.BooleanField(default=False, null=True, blank=True)
     gender = models.ForeignKey(
         'Gender',
         null=True,
