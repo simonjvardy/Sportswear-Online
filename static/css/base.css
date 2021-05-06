@@ -64,6 +64,12 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
+/* Corrects the product qty input field size to the the +/- buttons */
+.form-row .form-group .input-group input {
+    max-width: 60px;
+    border: 1px solid;
+    height: 38.5px;
+}
 
 /* -------------------------------------Search Bar Section */
 
