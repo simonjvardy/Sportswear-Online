@@ -74,6 +74,9 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'cart.contexts.cart_contents',
             ],
+            'libraries':{
+                'cart_tools': 'cart.templatetags.cart_tools',
+            }
         },
     },
 ]

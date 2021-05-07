@@ -2,6 +2,7 @@
 
 {% extends "base.html" %}
 {% load static %}
+{% load cart_tools %}
 
 {% block breadcrumbs %}
 <nav aria-label="breadcrumb">
@@ -101,7 +102,9 @@
                                     data-product_size="{{ item.size }}"><small>Remove</small></a>
                             </td>
                             <td class="py-3 w-25 text-right">
-                                <p class="my-0">£{{ item.product.discount_price }}</p>
+                                <p class="my-0">
+                                    £{{ item.product.discount_price | calculate_subtotal:item.quantity }}
+                                </p>
                             </td>
                         </tr>
                         {% endfor %}
@@ -179,11 +182,11 @@
     $('.remove-item').click(function (e) {
         let csrfToken = "{{ csrf_token }}";
         let itemId = $(this).attr('id').split('remove_')[1];
-        let size = $(this).data('size');
-        let url = `/cart/remove/${itemId}`;
+        let size = $(this).data('product_size');
+        let url = `/cart/remove/${itemId}/`;
         let data = {
             'csrfmiddlewaretoken': csrfToken,
-            'size': size
+            'product_size': size
         };
 
         $.post(url, data)
