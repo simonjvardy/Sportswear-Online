@@ -2,7 +2,8 @@
 
 from django.shortcuts import (
     render, redirect, reverse, HttpResponse)
-
+from django.contrib import messages
+from products.models import Product
 
 # Create your views here.
 
@@ -18,6 +19,7 @@ def add_to_cart(request, item_id):
     Add the item & quantity to the shopping cart
     """
 
+    product = Product.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     size = None
@@ -47,6 +49,8 @@ def add_to_cart(request, item_id):
             cart[item_id] += quantity
         else:
             cart[item_id] = quantity
+            messages.success(
+                request, f'{product.name} has been added to your cart')
 
     request.session['cart'] = cart
     return redirect(redirect_url)
@@ -121,5 +125,5 @@ def remove_from_cart(request, item_id):
 
         request.session['cart'] = cart
         return HttpResponse(status=200)
-    except Exception as e:
+    except Exception:
         return HttpResponse(status=500)
