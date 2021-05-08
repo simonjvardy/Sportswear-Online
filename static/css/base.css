@@ -1,6 +1,9 @@
 /* -------------------------------------Special Styling */
 
-
+/* From CI Boutique Ado mini project */
+.logo-font {
+    text-transform: uppercase;
+}
 
 /* -------------------------------------HEADER SECTION */
 /* -------------------------------------Navbar */
@@ -161,6 +164,24 @@ input[type=number] {
 /* -------------------------------------Media Queries */
 /* -------------------------------------Responsive Design - TABLET */
 
+/* From CI Boutique Ado mini project */
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+}
 
 
 /* -------------------------------------Responsive Design - MOBILE */
