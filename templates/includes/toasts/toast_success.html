@@ -4,13 +4,80 @@
 <div class="toast custom-toast rounded-0 border-top-0" data-autohide="false">
     <div class="arrow-up arrow-success"></div>
     <div class="w-100 toast-capper bg-success"></div>
+
+    <!-- Toast Header section -->
     <div class="toast-header bg-white text-dark">
         <strong class="mr-auto">Success!</strong>
         <button type="button" class="ml-2 mb-1 close text-dark" data-dismiss="toast" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
+
+    <!-- Toast message section -->
     <div class="toast-body bg-white">
-        {{ message }}
+        <div class="row">
+            <div class="col">
+                {{ message }}
+                <hr class="mt-1 mb-3">
+            </div>
+        </div>
+
+        <!-- Shopping cart details -->
+        {% if grand_total %}
+        <p class="logo-font bg-white text-dark py-1">My Shopping Cart ({{ product_count }} items)</p>
+        <div class="cart-notification-wrapper">
+            {% for item in cart_items %}
+            <div class="row">
+                <div class="col-3 my-1">
+                    <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="w-100">
+                </div>
+                <div class="col-9">
+                    <p class="my-0">
+                        <strong>
+                            {{ item.product.name }}
+                        </strong>
+                    </p>
+                    <p class="my-0 small">
+                        Size: {% if item.product.sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}
+                    </p>
+                    <p class="my-0 small text-muted">
+                        Qty: {{ item.quantity }}
+                    </p>
+                </div>
+            </div>
+            {% endfor  %}
+        </div>
+
+        <!-- Shopping Cart Footer section -->
+        <div class="row">
+            <div class="col">
+                <strong>
+                    <p class="mt-4 mb-2 text-dark">
+                        Total{% if free_delivery_delta > 0 %} (Excl. delivery):{% endif %}
+                        <span class="float-right">
+                            £{{ total|floatformat:2 }}
+                        </span>
+                    </p>
+                </strong>
+
+                <!-- free delivery warning CTA -->
+                {% if free_delivery_delta > 0 %}
+                <p class="mb-1 p-2 bg-warning shadow-sm text-dark text-center">
+                    Spend <strong>£{{ free_delivery_delta }}</strong> more to get free standard delivery!
+                </p>
+                {% endif %}
+
+                <!-- Secure Checkout button -->
+                <a href="{% url 'view_cart' %}" class="btn btn-outline-success btn-block rounded-0">
+                    <span class="text-uppercase">
+                        Go To Secure Checkout
+                    </span>
+                    <span class="icon">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+        {% endif %}
     </div>
 </div>

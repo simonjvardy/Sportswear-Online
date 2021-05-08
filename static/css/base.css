@@ -1,6 +1,9 @@
 /* -------------------------------------Special Styling */
 
-
+/* From CI Boutique Ado mini project */
+.logo-font {
+    text-transform: uppercase;
+}
 
 /* -------------------------------------HEADER SECTION */
 /* -------------------------------------Navbar */
@@ -14,7 +17,7 @@
 
 
 /* -------------------------------------Toast Messages */
-/* CI Boutique Ado mini project */
+/* from CI Boutique Ado mini project */
 .message-container {
     position: fixed;
     top: 72px;
@@ -27,10 +30,61 @@
 }
 
 .toast-capper {
-    height: 2px;
+    height: 5px;
 }
 
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
 
+/* Convenience classes - colors copied from Bootstrap */
+/* From CI Boutique Ado mini project */
+.arrow-primary {
+    border-bottom-color: #007bff !important;
+}
+
+.arrow-secondary {
+    border-bottom-color: #6c757d !important;
+}
+
+.arrow-success {
+    border-bottom-color: #28a745 !important;
+}
+
+.arrow-danger {
+    border-bottom-color: #dc3545 !important;
+}
+
+.arrow-warning {
+    border-bottom-color: #ffc107 !important;
+}
+
+.arrow-info {
+    border-bottom-color: #17a2b8 !important;
+}
+
+.arrow-light {
+    border-bottom-color: #f8f9fa !important;
+}
+
+.arrow-dark {
+    border-bottom-color: #343a40 !important;
+}
+
+/* From CI Boutique Ado mini project */
+.cart-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
 /* -------------------------------------Buttons */
 
@@ -110,6 +164,24 @@ input[type=number] {
 /* -------------------------------------Media Queries */
 /* -------------------------------------Responsive Design - TABLET */
 
+/* From CI Boutique Ado mini project */
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+}
 
 
 /* -------------------------------------Responsive Design - MOBILE */
