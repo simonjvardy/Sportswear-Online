@@ -36,6 +36,7 @@ class Order(models.Model):
         blank=False)
     address_line2 = models.CharField(
         max_length=80,
+        null=True,
         blank=True)
     town_or_city = models.CharField(
         max_length=40,
@@ -43,9 +44,11 @@ class Order(models.Model):
         blank=False)
     county = models.CharField(
         max_length=80,
+        null=True,
         blank=True)
     postcode = models.CharField(
         max_length=20,
+        null=True,
         blank=True)
     country = CountryField(
         blank_label='Country *',
@@ -115,6 +118,7 @@ class OrderLineItem(models.Model):
         on_delete=models.CASCADE)
     product_size = models.CharField(
         max_length=2,
+        null=True,
         blank=True)
     quantity = models.IntegerField(
         null=False,

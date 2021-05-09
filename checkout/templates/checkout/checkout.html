@@ -5,14 +5,14 @@
 {% load cart_tools %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static .'checkout/css/checkout.css' %}">
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
 {% block breadcrumbs %}
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb bg-white text-dark small">
         <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
-        <li class="breadcrumb-item"><a href="{% url 'cart' %}">Shopping Cart</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'view_cart' %}">Shopping Cart</a></li>
         <li class="breadcrumb-item active" aria-current="page">Checkout</li>
     </ol>
 </nav>
@@ -34,7 +34,7 @@
     <div class="row">
         <div class="col">
             <hr>
-            <h2 class="logo-font mb-4">My Shopping Cart</h2>
+            <h2 class="logo-font mb-4">Checkout</h2>
             <hr>
         </div>
     </div>
@@ -54,7 +54,7 @@
             {% for item in cart_items %}
             <div class="row">
                 <div class="col-2 mb-1">
-                    <a href="{% url 'product_detail' item.product.id %}">
+                    <a href="{% url 'product_page' item.product.id %}">
                         {% if item.product.image %}
                         <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
                         {% else %}
@@ -69,7 +69,8 @@
                     <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                 </div>
                 <div class="col-3 text-right">
-                    <p class="my-0 small text-muted">${{ item.product.discount_price | calc_subtotal:item.quantity }}
+                    <p class="my-0 small text-muted">
+                        £{{ item.product.discount_price | calculate_subtotal:item.quantity }}
                     </p>
                 </div>
             </div>
@@ -153,7 +154,7 @@
                     </a>
 
                     <!-- Confirm Order Button -->
-                    <button id="submit-button" class="btn btn-success rounded-0">
+                    <button id="submit-button" class="btn btn-outline-success rounded-0">
                         <span class="font-weight-bold">Complete Order</span>
                         <span class="icon">
                             <i class="fas fa-lock"></i>
