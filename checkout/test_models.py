@@ -40,10 +40,3 @@ class TestCheckoutModels(TestCase):
             order_number='Test Order'
         )
         self.assertEqual(str(order), 'Test Order')
-
-    def test_order_line_item_string_method_returns_display_name(self):
-        product = Product.objects.get(
-            sku='abc123'
-        )
-        line_item = Order.objects.get(order_number='Test Order')
-        self.assertEqual('Code ' + str(product.sku) + ' on order ' + str(line_item), 'Code abc123 on order Test Order')
