@@ -95,8 +95,8 @@ class Product(models.Model):
         blank=True,
         on_delete=models.SET_NULL)
     image = models.ImageField(
-        null=True,
-        blank=True)
+        blank=True,
+        null=True)
 
     def __str__(self):
         return self.name
