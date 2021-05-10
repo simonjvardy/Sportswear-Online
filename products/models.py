@@ -2,6 +2,10 @@ from django.db import models
 
 
 class Gender(models.Model):
+    """
+    Model Gender allows the grouping of product
+    for easier searches
+    """
     name = models.CharField(
         max_length=254)
     display_name = models.CharField(
@@ -15,6 +19,10 @@ class Gender(models.Model):
 
 
 class ArticleType(models.Model):
+    """
+    Model ArticleType allows the grouping of products
+    for easier searches by type of item or product
+    """
     name = models.CharField(
         max_length=254)
     display_name = models.CharField(
@@ -28,7 +36,10 @@ class ArticleType(models.Model):
 
 
 class MasterCategory(models.Model):
-
+    """
+    Model MasterCategory allows the grouping of products
+    for easier searches by main category of item or product
+    """
     class Meta:
         verbose_name_plural = 'Master Categories'
 
@@ -45,6 +56,10 @@ class MasterCategory(models.Model):
 
 
 class SubCategory(models.Model):
+    """
+    Model SubCategory allows the grouping of products
+    for easier searches by sub-category of item or product
+    """
 
     class Meta:
         verbose_name_plural = 'Sub Categories'
@@ -62,6 +77,11 @@ class SubCategory(models.Model):
 
 
 class Product(models.Model):
+    """
+    Model Product contains the detailed product information
+    with foreign keys to the related category models
+    """
+
     price = models.DecimalField(
         max_digits=6,
         decimal_places=2)

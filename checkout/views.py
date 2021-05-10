@@ -43,7 +43,7 @@ def checkout(request):
         delete the order and return the user to the shopping cart page
         """
         if order_form.is_valid():
-            order_form.save()
+            order = order_form.save()
             for item_id, item_data in cart.items():
                 try:
                     product = Product.objects.get(id=item_id)
@@ -92,8 +92,10 @@ def checkout(request):
         current_cart = cart_contents(request)
         total = current_cart['grand_total']
 
-        # stripe requires the value as an integer as a zero-decimal currency
-        # e.g. £4.99 = 499p
+        """
+        stripe requires the value as an integer as it's a zero-decimal currency
+        e.g. £4.99 = 499p
+        """
         stripe_total = round(total * 100)
         stripe.api_key = stripe_secret_key
         intent = stripe.PaymentIntent.create(
@@ -104,7 +106,9 @@ def checkout(request):
         order_form = OrderForm()
 
     if not stripe_public_key:
-        messages.warning(request, 'Stripe public key missing. Please set it in your environment.')
+        messages.warning(
+            request,
+            'Stripe public key missing. Please set it in your environment.')
 
     template = 'checkout/checkout.html'
     context = {
