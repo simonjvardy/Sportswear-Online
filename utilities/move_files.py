@@ -11,7 +11,7 @@ General help:
 Read the image filenames and create an associated json filename:
     https://stackoverflow.com/questions/3277503/how-to-read-a-file-line-by-line-into-a-list
 Copy the selected files from the list into the destination folder:
-    # https://stackoverflow.com/questions/3397752/copy-multiple-files-in-python/3399299
+    https://stackoverflow.com/questions/3397752/copy-multiple-files-in-python/3399299
 """
 
 
