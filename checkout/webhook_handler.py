@@ -1,11 +1,16 @@
 # Code adapted from CI Boutique Ado mini project
 
 from django.http import HttpResponse
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
+from django.conf import settings
 
 from .models import Order, OrderLineItem
 from products.models import Product
 
+
 import json
+import time
 
 
 class StripeWH_Handler:
@@ -14,12 +19,13 @@ class StripeWH_Handler:
     def __init__(self, request):
         self.request = request
 
+
     def handle_event(self, event):
         """
         Handle a generic/unknown/unexpected webhook event
         """
         return HttpResponse(
-            content=f'Webhook received: {event["type"]}',
+            content=f'Unhandled webhook received: {event["type"]}',
             status=200)
 
     def handle_payment_intent_succeeded(self, event):
@@ -37,33 +43,45 @@ class StripeWH_Handler:
         first_name = shipping_details.name.split(' ')[0]
         last_name = shipping_details.name.split(' ')[1]
 
-        # Clean the data in the shipping details
+        # Clean data in the shipping details
         for field, value in shipping_details.address.items():
             if value == "":
                 shipping_details.address[field] = None
 
+        # If the order doesn't exist, wait 1 second then retry - repeat 5 times
         order_exists = False
-        try:
-            order = Order.objects.get(
-                first_name__iexact=first_name,
-                last_name__iexact=last_name,
-                email__iexact=billing_details.email,
-                telephone__iexact=shipping_details.phone,
-                country__iexact=shipping_details.address.country,
-                postcode__iexact=shipping_details.address.postal_code,
-                town_or_city__iexact=shipping_details.address.city,
-                address_line1__iexact=shipping_details.address.line1,
-                address_line2__iexact=shipping_details.address.line2,
-                county__iexact=shipping_details.address.state,
-                grand_total=grand_total,
-                original_bag=bag,
-                stripe_pid=pid,
-            )
-            order_exists = True
+        attempt = 1
+        while attempt <= 5:
+            try:
+                order = Order.objects.get(
+                    first_name__iexact=first_name,
+                    last_name__iexact=last_name,
+                    email__iexact=billing_details.email,
+                    telephone__iexact=shipping_details.phone,
+                    country__iexact=shipping_details.address.country,
+                    postcode__iexact=shipping_details.address.postal_code,
+                    town_or_city__iexact=shipping_details.address.city,
+                    address_line1__iexact=shipping_details.address.line1,
+                    address_line2__iexact=shipping_details.address.line2,
+                    county__iexact=shipping_details.address.state,
+                    grand_total=grand_total,
+                    original_cart=cart,
+                    stripe_pid=pid,
+                )
+                order_exists = True
+                break
+            except Order.DoesNotExist:
+                attempt += 1
+                time.sleep(1)
+        # If the order exists, return the HttpResponese status 200
+        if order_exists:
             return HttpResponse(
-                content=f'Webhook received: {event["type"]} SUCCESS: Verified order already in database',
+                content=(f'Webhook received: {event["type"]} | SUCCESS: '
+                         'Verified order already in database'),
                 status=200)
-        except Order.DoesNotExist:
+        else:
+            # If the order really doesn't exist, then create the order
+            order = None
             try:
                 order = Order.objects.create(
                     first_name=first_name,
@@ -76,9 +94,11 @@ class StripeWH_Handler:
                     address_line1=shipping_details.address.line1,
                     address_line2=shipping_details.address.line2,
                     county=shipping_details.address.state,
+                    original_cart=cart,
+                    stripe_pid=pid,
                 )
                 for item_id, item_data in json.loads(cart).items():
-                    product = Product.objects.get(id_item_id)
+                    product = Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
                             order=order,
@@ -91,18 +111,21 @@ class StripeWH_Handler:
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
-                                quantity=item_data,
+                                quantity=quantity,
+                                product_size=size,
                             )
                             order_line_item.save()
+            # If creating the order fails, delete the order
             except Exception as e:
                 if order:
                     order.delete()
                 return HttpResponse(
                     content=f'Webhook received: {event["type"]} | ERROR: {e}',
-                    status=200)
+                    status=500)
 
         return HttpResponse(
-            content=f'Webhook received: {event["type"]}',
+            content=(f'Webhook received: {event["type"]} | SUCCESS: '
+                     'Created order in webhook'),
             status=200)
 
     def handle_payment_intent_payment_failed(self, event):

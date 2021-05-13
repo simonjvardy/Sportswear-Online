@@ -55,6 +55,7 @@ def checkout(request):
             'postcode': request.POST['postcode'],
             'country': request.POST['country'],
         }
+
         order_form = OrderForm(form_data)
 
         """
@@ -64,7 +65,15 @@ def checkout(request):
         delete the order and return the user to the shopping cart page
         """
         if order_form.is_valid():
-            order = order_form.save()
+            order = order_form.save(commit=False)
+            pid = []
+            if not request.POST.get('client_secret') == None:
+                pid = request.POST.get('client_secret').split('_secret')[0]
+            print(pid)
+            order.stripe_pid = pid
+            print(order)
+            order.original_cart = json.dumps(cart)
+            order.save()
             for item_id, item_data in cart.items():
                 try:
                     product = Product.objects.get(id=item_id)
@@ -106,7 +115,7 @@ def checkout(request):
         if not cart:
             messages.error(
                 request,
-                "There's nothing in you shopping cart at the moment!"
+                "There's nothing in your shopping cart at the moment!"
             )
             return redirect(reverse('products'))
 
