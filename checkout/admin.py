@@ -20,13 +20,17 @@ class OrderAdmin(admin.ModelAdmin):
         'delivery_cost',
         'order_total',
         'grand_total',
+        'original_cart',
+        'stripe_pid'
     )
 
     fieldsets = (
         ('Order Details', {
             'fields': (
                 'order_number',
-                'order_date'
+                'order_date',
+                'original_cart',
+                'stripe_pid'
             )
         }),
         ('Customer', {
