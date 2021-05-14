@@ -14,7 +14,8 @@ class Order(models.Model):
         max_length=32,
         null=False,
         editable=False)
-    order_date = models.DateTimeField(auto_now_add=True)
+    order_date = models.DateTimeField(
+        auto_now_add=True)
     user_profile = models.ForeignKey(
         UserProfile,
         on_delete=models.SET_NULL,
