@@ -5,6 +5,16 @@
 <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
 {% endblock %}
 
+{% block breadcrumbs %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-white text-dark small">
+        <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">My Profile</li>
+    </ol>
+</nav>
+{% endblock %}
+
+
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -23,7 +33,25 @@
             <hr>
         </div>
     </div>
-    {{ profile }}
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <p class="text-muted">Your Details</p>
+            <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <button class="btn btn-outline-dark rounded-0 text-uppercase float-right">Update Information</button>
+            </form>
+        </div>
+        <div class="col-12 col-lg-6">
+            <p class="text-muted">Order History</p>
+            {{ orders }}
+        </div>
+    </div>
 </div>
 
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
 {% endblock %}

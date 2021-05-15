@@ -9,7 +9,8 @@ class TestorderForm(TestCase):
         self.assertEqual(form.Meta.fields, (
             'first_name',
             'last_name',
-            'email', 'telephone',
+            'email',
+            'telephone',
             'address_line1',
             'address_line2',
             'town_or_city',
