@@ -274,9 +274,19 @@
             </div>
         </div>
 
-        <!-- Mega Offers CTA Button -->
+        <!-- Mega Offers CTA & Back to Profile Buttons -->
         <div class="row">
             <div class="col-12 col-lg7 text-right">
+                {% if from_profile %}
+                <a href="{% url 'profile' %}" class="btn btn-outline-dark rounded-0">
+                    <span class="icon mr-2">
+                        <i class="fas fa-angle-left"></i>
+                    </span>
+                    <span class="text-uppercase">
+                        Back to Profile
+                    </span>
+                </a>
+                {% else %}
                 <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-0">
                     <span class="icon mr-2">
                         <i class="fas fa-gifts"></i>
@@ -285,6 +295,7 @@
                         Now check out our latest deals!
                     </span>
                 </a>
+                {% endif %}
             </div>
         </div>
     </div>
