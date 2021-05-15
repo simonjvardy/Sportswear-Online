@@ -23,13 +23,17 @@
         </div>
 
         <!-- Shopping cart details -->
-        {% if grand_total %}
+        {% if grand_total and not on_profile_page %}
         <p class="logo-font bg-white text-dark py-1">My Shopping Cart ({{ product_count }} items)</p>
         <div class="cart-notification-wrapper">
             {% for item in cart_items %}
             <div class="row">
                 <div class="col-3 my-1">
+                    {% if item.product.image %}
                     <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="w-100">
+                    {% else %}
+                    <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                    {% endif %}
                 </div>
                 <div class="col-9">
                     <p class="my-0">
