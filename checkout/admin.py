@@ -30,7 +30,8 @@ class OrderAdmin(admin.ModelAdmin):
                 'order_number',
                 'order_date',
                 'original_cart',
-                'stripe_pid'
+                'stripe_pid',
+                'user_profile'
             )
         }),
         ('Customer', {
