@@ -11,8 +11,8 @@
     padding: 10px 12px;
     border: 1px solid transparent;
     border-radius: 0px;
-    background-color: white;
-    box-shadow: 0 1px 3px 0 #e6ebf1;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px 0 #E6EBF1;
     -webkit-transition: box-shadow 150ms ease;
     transition: box-shadow 150ms ease;
 }
@@ -20,15 +20,15 @@
 .StripeElement--focus,
 .stripe-style-input:focus,
 .stripe-style-input:active {
-    box-shadow: 0 1px 3px 0 #cfd7df;
+    box-shadow: 0 1px 3px 0 #CFD7DF;
 }
 
 .StripeElement--webkit-autofill {
-    background-color: #fefde5 !important;
+    background-color: #FEFDE5 !important;
 }
 
 .stripe-style-input::placeholder {
-    color: #aab7c4;
+    color: #AAB7C4;
 }
 
 #payment-form .form-control,
@@ -36,6 +36,17 @@
     color: #000;
     border: 1px solid #000;
 }
+
+select,
+select option {
+    color: #000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #AAB7C4;
+}
+
 
 .field-set {
     position: relative;
