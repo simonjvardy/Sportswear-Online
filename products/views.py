@@ -7,6 +7,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import (
     Product, Gender, MasterCategory, SubCategory, ArticleType)
+from .forms import ProductForm
 
 
 """
@@ -111,3 +112,30 @@ def product_page(request, product_id):
     }
 
     return render(request, 'products/product_page.html', context)
+
+
+def add_product(request):
+    """
+    Add a new product to the store
+    """
+
+    # form post handler
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            product = form.save()
+            messages.success(request, 'Successfully added product!')
+            return redirect(reverse('product_page', args=[product.id]))
+        else:
+            messages.error(request,
+                           ('Failed to add product. '
+                            'Please ensure the form is valid.'))
+    else:
+        form = ProductForm()
+
+    template = 'products/add_product.html'
+    context = {
+        'form': form
+    }
+
+    return render(request, template, context)
