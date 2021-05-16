@@ -1,0 +1,24 @@
+Hello {{ order.first_name }} {{ order.last_name }},
+
+Thanks for your Sportswear Online order. We'll let you know when your item(s) have been dispatched.
+Your order information is below:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.order_date }}
+
+Order Total: £{{ order.order_total|floatformat:2 }}
+Delivery: £{{ order.delivery_cost|floatformat:2 }}
+Grand Total: £{{ order.grand_total|floatformat:2 }}
+
+Your order will be sent to:
+{{ order.address_line1 }},
+{{ order.town_or_city }},
+{{ order.country }}.
+
+We've got your phone number on file as {{ order.telephone }}.
+
+If you have any questions, feel free to contact us at {{ contact_email }}.
+
+We hope to see you again soon.
+
+Sportswear Online
