@@ -26,14 +26,13 @@
             Product Management
         </li>
 
-        <!-- Add a Product -->
+        <!-- Product Management -->
         <li class="breadcrumb-item active" aria-current="page">
-            Add a Product
+            Edit a Product
         </li>
     </ol>
 </nav>
 {% endblock %}
-
 
 {% block page_header %}
 <div class="container header-container">
@@ -50,14 +49,15 @@
         <div class="col-12 col-md-6">
             <hr>
             <h2 class="logo-font mb-4">Product Management</h2>
-            <h5 class="text-muted">Add a Product</h5>
+            <h5 class="text-muted">Edit a Product</h5>
             <hr>
         </div>
     </div>
 
     <div class="row">
         <div class="col-12 col-md-6">
-            <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
+            <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2"
+                enctype="multipart/form-data">
                 {% csrf_token %}
                 {% for field in form %}
                 {% if field.name != 'image' %}
@@ -68,7 +68,7 @@
                 {% endfor %}
                 <div class="text-right">
                     <a class="btn btn-outline-dark rounded-0" href="{% url 'products' %}">Cancel</a>
-                    <button class="btn btn-outline-success rounded-0" type="submit">Add Product</button>
+                    <button class="btn btn-outline-danger rounded-0" type="submit">Update Product</button>
                 </div>
             </form>
         </div>
