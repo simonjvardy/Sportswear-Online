@@ -141,6 +141,20 @@
                                         </a>
                                     </p>
                                     {% endif %}
+
+                                    <!-- Super User product edit & delete links -->
+                                    {% if request.user.is_superuser %}
+                                    <small class="ml-3">
+                                        <a class="text-info" href="{% url 'edit_product' product.id %}">
+                                            <i class="fas fa-edit fa-sm"></i>
+                                            Edit
+                                        </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                                        <a class="text-danger" href="{% url 'delete_product' product.id %}">
+                                            <i class="far fa-trash-alt fa-sm"></i>
+                                            Delete
+                                        </a>
+                                    </small>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
