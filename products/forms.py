@@ -1,6 +1,7 @@
 # Code adapted from CI Boutique Ado mini project
 
 from django import forms
+from .widgets import CustomClearableFileInput
 from .models import (
     Product, Gender, ArticleType, MasterCategory, SubCategory)
 
@@ -10,6 +11,11 @@ class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
         fields = '__all__'
+
+    image = forms.ImageField(
+        label='Image',
+        required=False,
+        widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
