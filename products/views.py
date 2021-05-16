@@ -3,16 +3,12 @@
 from django.shortcuts import (
     render, redirect, reverse, get_object_or_404)
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import (
     Product, Gender, MasterCategory, SubCategory, ArticleType)
 from .forms import ProductForm
-
-
-"""
-Adapted from Code Institute Boutique Ado mini project
-"""
 
 
 def all_products(request):
@@ -114,10 +110,14 @@ def product_page(request, product_id):
     return render(request, 'products/product_page.html', context)
 
 
+@login_required
 def add_product(request):
     """
-    Add a new product to the store
+    Add a product to the store
     """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
 
     # form post handler
     if request.method == 'POST':
@@ -141,6 +141,7 @@ def add_product(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_product(request, product_id):
     """
     Edit a product in the store
@@ -175,6 +176,7 @@ def edit_product(request, product_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_product(request, product_id):
     """
     Delete a product from the store
