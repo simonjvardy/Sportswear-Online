@@ -1,4 +1,4 @@
-Hello {{ order.first_name }} {{ order.last_name }},
+Hello {{ order.first_name|capfirst }} {{ order.last_name|capfirst }},
 
 Thanks for your Sportswear Online order. We'll let you know when your item(s) have been dispatched.
 Your order information is below:
