@@ -72,9 +72,8 @@ def checkout(request):
         if order_form.is_valid():
             order = order_form.save(commit=False)
             pid = []
-            if not request.POST.get('client_secret') == None:
+            if not request.POST.get('client_secret') is None:
                 pid = request.POST.get('client_secret').split('_secret')[0]
-            print(pid)
             order.stripe_pid = pid
             order.original_cart = json.dumps(cart)
             order.save()
@@ -137,8 +136,10 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY
         )
 
-        # Attempt to prefill the form with any info
-        # the user maintains in their profile
+        """
+        Attempt to prefill the form with any info
+        the user maintains in their profile
+        """
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)
