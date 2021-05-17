@@ -52,7 +52,7 @@
                         </small>
                     </div>
                 </div>
-
+                <hr>
                 <!-- Order Number -->
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -66,7 +66,6 @@
                         </p>
                     </div>
                 </div>
-
                 <!-- Order Date -->
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -80,7 +79,7 @@
                         </p>
                     </div>
                 </div>
-
+                <hr>
                 <!-- Order Detail Lines -->
                 <div class="row">
                     <div class="col">
@@ -89,7 +88,7 @@
                         </small>
                     </div>
                 </div>
-
+                <hr>
                 {% for item in order.lineitems.all %}
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -105,7 +104,7 @@
                     </div>
                 </div>
                 {% endfor %}
-
+                <hr>
                 <!-- Customer Details -->
                 <div class="row">
                     <div class="col">
@@ -114,7 +113,7 @@
                         </small>
                     </div>
                 </div>
-
+                <hr>
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 text-dark font-weight-bold">
@@ -223,7 +222,7 @@
                         <p class="mb-0">{{ order.country }}</p>
                     </div>
                 </div>
-
+                <hr>
                 <!-- Billing Section -->
                 <div class="row">
                     <div class="col">
@@ -232,7 +231,7 @@
                         </small>
                     </div>
                 </div>
-
+                <hr>
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 text-dark font-weight-bold">
@@ -273,30 +272,29 @@
                 </div>
             </div>
         </div>
-
-        <!-- Mega Offers CTA & Back to Profile Buttons -->
-        <div class="row">
-            <div class="col-12 col-lg7 text-right">
-                {% if from_profile %}
-                <a href="{% url 'profile' %}" class="btn btn-outline-dark rounded-0">
-                    <span class="icon mr-2">
-                        <i class="fas fa-angle-left"></i>
-                    </span>
-                    <span class="text-uppercase">
-                        Back to Profile
-                    </span>
-                </a>
-                {% else %}
-                <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-0">
-                    <span class="icon mr-2">
-                        <i class="fas fa-gifts"></i>
-                    </span>
-                    <span class="text-uppercase">
-                        Now check out our latest deals!
-                    </span>
-                </a>
-                {% endif %}
-            </div>
+    </div>
+    <!-- Mega Offers CTA & Back to Profile Buttons -->
+    <div class="row">
+        <div class="col-12 col-lg-7 text-right">
+            {% if from_profile %}
+            <a href="{% url 'profile' %}" class="btn btn-outline-dark rounded-0 my-2">
+                <span class="icon mr-2">
+                    <i class="fas fa-angle-left"></i>
+                </span>
+                <span class="text-uppercase">
+                    Back to Profile
+                </span>
+            </a>
+            {% else %}
+            <a href="{% url 'products' %}" class="btn btn-warning btn-mega-deals rounded-0 my-2">
+                <span class="icon mr-2">
+                    <i class="fas fa-gifts"></i>
+                </span>
+                <span class="text-uppercase">
+                    Now check out our latest deals!
+                </span>
+            </a>
+            {% endif %}
         </div>
     </div>
 </div>
