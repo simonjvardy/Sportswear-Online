@@ -4,6 +4,10 @@
 {% load static %}
 {% load cart_tools %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'cart/css/cart.css' %}">
+{% endblock %}
+
 {% block breadcrumbs %}
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb bg-white text-dark small">
@@ -57,14 +61,14 @@
                                 <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
                                 {% endif %}
                             </td>
-                            <td class="py-3">
+                            <td class="py-3 w-25">
                                 <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                                 <p class="my-0">Size:
                                     {% if item.product.sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
                                 <p class="my-0 small text-muted">Code: {{ item.product.sku }}</p>
                                 <p class="my-0 small text-success">In Stock</p>
                             </td>
-                            <td class="py-3">
+                            <td class="py-3 cart-price-input">
                                 <p class="my-0">£{{ item.product.discount_price }}</p>
                             </td>
                             <td class="py-3">
