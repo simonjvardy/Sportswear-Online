@@ -43,7 +43,7 @@ def cart_contents(request):
     if total < settings.FREE_DELIVERY_THRESHOLD:
 
         # Check if delivery is more than the minimum delivery cost
-        if ((total / Decimal(settings.STANDARD_DELIVERY_PERCENTAGE)) < Decimal(settings.MINIMUM_DELIVERY_COST)):
+        if ((total / Decimal(settings.STANDARD_DELIVERY_PERCENTAGE)) < Decimal(settings.MINIMUM_DELIVERY_COST)) and total > 0:
             delivery = Decimal(settings.MINIMUM_DELIVERY_COST)
         else:
             delivery = total / Decimal(settings.STANDARD_DELIVERY_PERCENTAGE)
