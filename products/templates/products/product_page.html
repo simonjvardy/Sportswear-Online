@@ -132,7 +132,25 @@
                     <!-- Item size & quantity selectors -->
                     <div class="form-row">
                         {% with product.sizes as s %}
-                        {% if s %}
+                        <!-- Shoe sizes -->
+                        {% if s and product.master_category.display_name == 'Footwear' %}
+                        <div class="col-12">
+                            <p><strong>Size:</strong></p>
+                            <select name="product_size" id="id_product_size" class="form-control rounded-0 w-25">
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9" selected>9</option>
+                                <option value="9.5">9.5</option>
+                                <option value="10">10</option>
+                                <option value="10.5">10.5</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                        {% elif s %}
+                        <!-- Clothing Sizes -->
                         <div class="col-12">
                             <p><strong>Size:</strong></p>
                             <select name="product_size" id="id_product_size" class="form-control rounded-0 w-25">
