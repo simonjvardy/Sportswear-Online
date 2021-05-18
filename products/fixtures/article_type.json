@@ -149,5 +149,29 @@
             "name": "tshirts",
             "display_name": "T-Shirts"
         }
+    },
+    {
+        "pk": 20,
+        "model": "products.articletype",
+        "fields": {
+            "name": "tennis_racket",
+            "display_name": "Tennis Racket"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.articletype",
+        "fields": {
+            "name": "tracksuits",
+            "display_name": "Tracksuits"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "products.articletype",
+        "fields": {
+            "name": "watches",
+            "display_name": "Watches"
+        }
     }
 ]
