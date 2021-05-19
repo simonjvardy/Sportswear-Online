@@ -54,7 +54,7 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container-fluid">
+<div class="container-fluid mb-5">
     <div class="row">
 
         <!-- Product Image Container -->
@@ -64,13 +64,15 @@
                 <!-- Display the product image -->
                 {% if product.image %}
                 <a href="{{ product.image.url }}" target="_blank">
-                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    <img class="card-img-top img-fluid" width="600px" height="450px" src="{{ product.image.url }}"
+                        alt="{{ product.name }}">
                 </a>
                 {% else %}
 
                 <!-- Else display the default "No Image" placeholder file -->
                 <a href="">
-                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                    <img class="card-img-top img-fluid" width="600px" height="450px" src="{{ MEDIA_URL }}noimage.png"
+                        alt="{{ product.name }}">
                 </a>
                 {% endif %}
             </div>
@@ -171,7 +173,8 @@
                                     <!-- minus button -->
                                     <div class="input-group-prepend">
                                         <button class="decrement-qty btn btn-outline-dark rounded-0"
-                                            data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                            data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}"
+                                            aria-label="decrease quantity">
                                             <span class="icon">
                                                 <i class="fas fa-minus"></i>
                                             </span>
@@ -180,11 +183,12 @@
                                     <!-- Qty input field -->
                                     <input class="form-control qty_input text-center" type="number" name="quantity"
                                         value="1" min="1" max="99" data-item_id="{{ product.id }}"
-                                        id="id_qty_{{ product.id }}" required>
+                                        id="id_qty_{{ product.id }}" aria-label="quantity input" required>
                                     <!-- plus button -->
                                     <div class="input-gtoup-append">
                                         <button class="increment-qty btn btn-outline-dark rounded-0"
-                                            data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+                                            data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}"
+                                            aria-label="increase quantity">
                                             <span class="icon">
                                                 <i class="fas fa-plus"></i>
                                             </span>

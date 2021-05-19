@@ -5,6 +5,10 @@
     text-transform: uppercase;
 }
 
+html {
+    height: 100%;
+}
+
 /* -------------------------------------HEADER SECTION */
 /* -------------------------------------Navbar */
 
@@ -12,6 +16,10 @@
 
 /* -------------------------------------TEMPLATE BODY STYLING */
 /* -------------------------------------Common Site Styling */
+
+/* .container {
+    height: calc(100vh - 100px);
+}*/
 
 
 
@@ -98,6 +106,11 @@
 
 .btn-white {
     background-color: #fff;
+    color: #000
+}
+
+.btn-white:hover {
+    background-color: #ffc107;
     color: #000
 }
 
@@ -248,7 +261,37 @@ input[name='q']::placeholder {
 
 /* -------------------------------------FOOTER SECTION */
 
+/* Sticky footer styling */
+body {
+    padding: 0px;
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
 
+main {
+    flex: 1 0 auto;
+}
+
+
+footer {
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+}
+
+.social-media i {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media i:hover {
+    color: #ffc107;
+}
 
 
 /* -------------------------------------Social Media & Sitemap links */

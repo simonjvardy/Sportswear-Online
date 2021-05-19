@@ -29,7 +29,7 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container mb-2">
+<div class="container mb-4">
     <div class="row">
         <div class="col">
             <hr>
@@ -80,7 +80,8 @@
                                             <div class="input-group-prepend">
                                                 <button class="decrement-qty btn btn-sm btn-outline-dark rounded-0"
                                                     data-item_id="{{ item.item_id }}"
-                                                    id="decrement-qty_{{ item.item_id }}">
+                                                    id="decrement-qty_{{ item.item_id }}"
+                                                    aria-label="decrease quantity">
                                                     <span>
                                                         <i class="fas fa-minus fa-sm"></i>
                                                     </span>
@@ -89,11 +90,12 @@
                                             <input class="form-control form-control-sm qty_input text-center"
                                                 type="number" name="quantity" value="{{ item.quantity }}" min="1"
                                                 max="99" data-item_id="{{ item.item_id }}"
-                                                id="id_qty_{{ item.item_id }}">
+                                                id="id_qty_{{ item.item_id }}" aria-label="quantity input" required>
                                             <div class="input-gtoup-append">
                                                 <button class="increment-qty btn btn-sm btn-outline-dark rounded-0"
                                                     data-item_id="{{ item.item_id }}"
-                                                    id="increment-qty_{{ item.item_id }}">
+                                                    id="increment-qty_{{ item.item_id }}"
+                                                    aria-label="increase quantity">
                                                     <span>
                                                         <i class="fas fa-plus fa-sm"></i>
                                                     </span>
