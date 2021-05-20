@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'home/css/home.css' %}">
+{% endblock %}
+
+
 {% block breadcrumbs %}
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb bg-white text-dark small">
@@ -22,43 +27,42 @@
 {% block content %}
 <div class="container-fluid">
     <!-- Hero Image & CTA -->
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid text-center">
         <div class="container">
-            <h1 class="display-4">SALE NOW ON!</h1>
-            <p class="lead">Get back to training with our latest deals.</p>
-            <a class="btn btn-primary btn-lg rounded-0 text-uppercase py-3" href="{% url 'products' %}"
-                role="button">Shop Now ></a>
+            <h1 class="display-4 font-weight-bolder text-white">SALE NOW ON!</h1>
+            <p class="lead text-white">Get back to training with our latest deals.</p>
+            <a class="btn btn-outline-dark btn-lg rounded-0 text-uppercase py-3" href="{% url 'products' %}"
+                role="button">Shop
+                Now ></a>
         </div>
     </div>
 
     <!-- Shop By Category cards -->
-    <div class="card-deck">
-        <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-img-overlay">
-                <h5 class="card-title">Shop Clothing</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
+    <div class="card-deck mb-5">
+        <div class="card d-flex text-center text-white rounded-0">
+            <a href="{% url 'products' %}?master_category=apparel,topwear,bottomwear">
+                <img src="{{ MEDIA_URL }}home_clothing.jpg" class="card-img-top" alt="woman boxer in a gym">
+                <div class="card-img-overlay align-items-center d-flex justify-content-center">
+                    <h2 class="card-title">Shop Clothing</h2>
+                </div>
+            </a>
         </div>
-        <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-img-overlay">
-                <h5 class="card-title">Shop Footwear</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
+        <div class="card d-flex text-center text-white rounded-0">
+            <a href="{% url 'products' %}?&master_category=footwear">
+                <img src="{{ MEDIA_URL }}home_shoes.jpg" class="card-img-top" alt="woman tying laces on training shoes">
+                <div class="card-img-overlay align-items-center d-flex justify-content-center">
+                    <h2 class="card-title">Shop Footwear</h2>
+                </div>
+            </a>
         </div>
-        <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-img-overlay">
-                <h5 class="card-title">Shop Accessories</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
+        <div class="card d-flex text-center text-white rounded-0">
+            <a href="{% url 'products' %}?&master_category=sporting_goods,accessories">
+                <img src="{{ MEDIA_URL }}home_sporting_goods.jpg" class="card-img-top"
+                    alt="tennis court with racket and balls">
+                <div class="card-img-overlay align-items-center d-flex justify-content-center">
+                    <h2 class="card-title">Shop Accessories</h2>
+                </div>
+            </a>
         </div>
     </div>
-</div>
-{% endblock %}
+    {% endblock %}

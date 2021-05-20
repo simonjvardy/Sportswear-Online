@@ -1,0 +1,52 @@
+/* -------------------------------------TEMPLATE BODY STYLING */
+/* -------------------------------------Jumbotron */
+
+/* created with CS Gradient https://cssgradient.io/ */
+
+div.jumbotron {
+    background: rgb(0, 130, 195);
+    background: -moz-radial-gradient(circle, rgba(0, 130, 195, 0.9) 0%, rgb(0, 125, 188) 66%, rgba(0, 104, 157, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(0, 130, 195, 0.9) 0%, rgb(0, 125, 188) 66%, rgba(0, 104, 157, 1) 100%);
+    background: radial-gradient(circle, rgba(0, 130, 195, 0.9) 0%, rgb(0, 125, 188) 66%, rgba(0, 104, 157, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0082c3", endColorstr="#00689d", GradientType=1);
+}
+
+
+div.jumbotron h1 {
+    font-size: 4.5rem;
+}
+
+div.jumbotron p {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+/* -------------------------------------Card Deck */
+
+h2.card-title {
+    text-decoration: none;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 0 0 4px #000;
+}
+
+a.btn-outline-dark {
+    color: #343a40;
+    border-color: #343a40;
+    background-color: #fff;
+}
+
+/* -------------------------------------Media Queries */
+/* -------------------------------------Responsive Design - MOBILE & TABLET */
+
+/* */
+@media only screen and (max-width: 880px) and (min-width: 575px) {
+    h2.card-title {
+        text-decoration: none;
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 700;
+        text-shadow: 0 0 4px #000;
+    }
+}
