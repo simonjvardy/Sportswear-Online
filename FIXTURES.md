@@ -30,7 +30,7 @@ The images needed to be curated down to a manageable number for this project and
 
 ### ***Curate the Images*** ##
 
-The image files were manually sorted through and any suitable images of sportswear related clothing, footwear or accessories were copied into a separate folder. The images files were reduced from 44,400 down to 212 images.
+The image files were manually sorted through and any suitable images of sportswear related clothing, footwear or accessories were copied into a separate folder. The images files were reduced from 44,400 down to 354 images.
 
 A small python utility app ([move_files.py](utilities/move_files.py)) was written to read the curated image file names and then move the associated JSON files into a separate folder, ready for further work.
 
