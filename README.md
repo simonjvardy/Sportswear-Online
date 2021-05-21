@@ -1,7 +1,7 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![SO logo](media/sportswear_online_logo.png)
 
 
-![Sportswear Online screenshot](wireframes/Boutique-Ado.png)
+![Sportswear Online screenshot](wireframes/Sportswear_online.png)
 ---
 
 ### **Contents** ###
@@ -137,16 +137,36 @@ The **goal** of this project is to build a
 - [JSON Formatter](https://jsonformatter.org/)
   - Online JSON Formatter, validator and conversion tool
 - [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/)
-  - The Django Secret Key Generator is used to generate a new SECRET_KEY for environment variables. 
-
+  - The Django Secret Key Generator is used to generate a new SECRET_KEY for environment variables.
+- [Adobe Lightroom](https://www.adobe.com/uk/products/photoshop-lightroom.html) 
+  - For batch photo resizing and exporting for web
+- [Adobe Spark](https://spark.adobe.com/sp)
+  - Used to create the Sportswear Online logo
+- [favicon.io](https://favicon.io/)
+  - Used to create the website favicons
+- [CSS Gradient Tool](https://cssgradient.io/)
+  - Used to create the jumbotron radial gradient
+- [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/)
+  - Used to greate the Django environment variables secret keys
 
 ---
 
 ## Credits ##
 
+### **Inspiration** ##
+
+The following sportswear online retailers' websites were the basis for the design and layout ideas:
+
+- [JD Sports](https://www.jdsports.co.uk/)
+- [Sports Direct](https://www.sportsdirect.com/)
+- [Decathlon](https://www.decathlon.co.uk/)
+- [Greaves Sports ](https://www.greavessports.com/)
+- [MA Sports](https://www.masports.co.uk/)
+- [MandM Direct](https://www.mandmdirect.com/)
+
 ### **Images** ###
 
-- [Fashion Product Images Dataset](https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset)
+- [Fashion Product Images Dataset](https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset) Credit: Param Aggarwal @ www.kaggle.com
   - The dataset consists of 44,440 images and associated individual JSON data files containing the product information.
 
 ### **Acknowledgements** ###
@@ -158,4 +178,20 @@ The **goal** of this project is to build a
 - [Daisy McGirr](https://github.com/Daisy-McG/ChatToTheMat) ChatToTheMat GitHub repo for inspiration and README.md content ideas
 - [Stack Overflow](https://stackoverflow.com/)
   - [Limiting Floats to 2 decimal places](https://stackoverflow.com/questions/455612/limiting-floats-to-two-decimal-points)
+  - [Writing json data to a file](https://stackoverflow.com/questions/12309269/how-do-i-write-json-data-to-a-file)
+  - [Append data to a json file](https://stackoverflow.com/questions/12994442/how-to-append-data-to-a-json-file)
+  - [Django test always returning code 301](https://stackoverflow.com/questions/21215035/django-test-always-returning-301)
+  - [Python - List all the files in a directory](https://stackoverflow.com/questions/12199120/python-list-all-the-file-names-in-a-directory-and-its-subdirectories-and-then-p)
+  - [Create a branch from another branch in git](https://stackoverflow.com/questions/4470523/create-a-branch-in-git-from-another-branch)
+  - [JS count the number of occurrences of a character in a string](https://stackoverflow.com/questions/881085/count-the-number-of-occurrences-of-a-character-in-a-string-in-javascript)
+  - [Django error: templatetag is not a registered tag library](https://stackoverflow.com/questions/40686201/django-1-10-1-my-templatetag-is-not-a-registered-tag-library-must-be-one-of)
 - [dev.to](https://dev.to/gajesh/the-complete-django-allauth-guide-la3) Django Allauth configuration tutorial
+- [Django Documentation](https://docs.djangoproject.com/en/3.2/)
+  - [Models: Options](https://docs.djangoproject.com/en/3.1/ref/models/options/)
+  - [Loading initial data fixtures](https://docs.djangoproject.com/en/dev/howto/initial-data/#automatically-loading-initial-data-fixtures)
+  - [Contrib: Admin](https://docs.djangoproject.com/en/3.2/ref/contrib/admin/)
+- [Kite](https://www.kite.com/python/answers/how-to-loop-through-all-nested-dictionary-values-using-a-for-loop-in-python
+) How to loop through all nested dictionary values using a for loop in Python
+- [W3Schools](https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp) How to hide number field arrows with CSS
+- [Bootstrap v4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/) Documentation and code snippets used to build the majority of the templates
+- [Coderwall](https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata) How to use Django dumpdata and loaddata
