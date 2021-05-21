@@ -70,7 +70,10 @@
         <div id="topnav" class="row bg-dark pt-lg-2 d-none d-lg-flex">
             <!-- Brand Logo Image -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="{% url 'home' %}" class="nav-link logo-img-link">Sportswear Online</a>
+                <a href="{% url 'home' %}" class="nav-link logo-img-link">
+                    <img src="{{ MEDIA_URL }}sportswear_online_logo_reverse.png" width="200" height="100"
+                        class="d-inline-block align-top mx-5" alt="" loading="lazy">
+                </a>
             </div>
 
             <!-- Search bar -->
@@ -193,12 +196,13 @@
     </div>
     {% endif %}
 
+    <main>
+        {% block page_header %}
+        {% endblock %}
 
-    {% block page_header %}
-    {% endblock %}
-
-    {% block content %}
-    {% endblock %}
+        {% block content %}
+        {% endblock %}
+    </main>
 
 
     <!-- Footer elements are placed in a separate partial HTML file -->
