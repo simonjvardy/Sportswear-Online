@@ -18,8 +18,8 @@ def json_data(path):
     """
     pk = 1
     filelist = os.listdir(path)
-    # write the data to a JSON file
 
+    # write the data to a JSON file
     for i in filelist:
         if i.endswith(".json"):
             with open(path + i, "r") as f:
