@@ -30,7 +30,7 @@ The images needed to be curated down to a manageable number for this project and
 
 ### ***Curate the Images*** ##
 
-The image files were manually sorted through and any suitable images of sportswear related clothing, footwear or accessories were copied into a separate folder. The images files were reduced from 44,400 down to 212 images.
+The image files were manually sorted through and any suitable images of sportswear related clothing, footwear or accessories were copied into a separate folder. The images files were reduced from 44,400 down to 354 images.
 
 A small python utility app ([move_files.py](utilities/move_files.py)) was written to read the curated image file names and then move the associated JSON files into a separate folder, ready for further work.
 
@@ -160,11 +160,22 @@ The source dataset was originally for an online store website based in India so 
 Unfortunately, the output file data isn't in true JSON format so the full list of JSON objects was copied into [JSON Formatter](https://jsonformatter.org/) to use the "Repair JSON" and Format / Beautify functions on the JSON objects.
 
 
-![JSON Formatter screenshot](readme_content/json_formatter.jpg)
+![JSON Formatter screenshot](readme_content/json-formatter.png)
 
 This formatted JSON data was copied back into [products.json](products/fixtures/products.json)
 
 The products.json file was further manually editied to cleanse the data of any noticeable errors and to replace string values for integer foreign keys when the [master_category](products/fixtures/master_category.json), [sub_category](products/fixtures/sub_category.json), [gender](products/fixtures/gender.json) and [article_type](products/fixtures/article_type.json) Fixture files were created. 
+
+
+Once the manual editing was completed and the data finalised, the development database tables were dumped back into json files ready for deployment to Heroku / PostgreSQL using the following commands in the Terminal:
+
+```Python
+python3 manage.py dumpdata products.product > products.json
+python3 manage.py dumpdata products.gender > gender.json
+python3 manage.py dumpdata products.mastercategory > master_category.json
+python3 manage.py dumpdata products.subcategory > sub_category.json
+python3 manage.py dumpdata products.articletype > article_type.json
+```
 
 ---
 
