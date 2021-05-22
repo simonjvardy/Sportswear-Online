@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import (
-    Product, Gender, ArticleType, MasterCategory, SubCategory
+    Product, Gender, ArticleType, MasterCategory, SubCategory, SpecialOffer
 )
 
 
@@ -19,7 +19,8 @@ class ProductAdmin(admin.ModelAdmin):
                 'gender',
                 'master_category',
                 'sub_category',
-                'article_type'),
+                'article_type',
+                'special_offer'),
         }),
     )
 
@@ -61,9 +62,16 @@ class SubCategoryAdmin(admin.ModelAdmin):
     )
 
 
+class SpecialOfferAdmin(admin.ModelAdmin):
+    list_display = (
+        'display_name',
+        'name',
+    )
+
 # Register your models here.
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Gender, GenderAdmin)
 admin.site.register(ArticleType, ArticleTypeAdmin)
 admin.site.register(MasterCategory, MasterCategoryAdmin)
 admin.site.register(SubCategory, SubCategoryAdmin)
+admin.site.register(SpecialOffer, SpecialOfferAdmin)

@@ -3,7 +3,7 @@
 from django import forms
 from .widgets import CustomClearableFileInput
 from .models import (
-    Product, Gender, ArticleType, MasterCategory, SubCategory)
+    Product, Gender, ArticleType, MasterCategory, SubCategory, SpecialOffer)
 
 
 class ProductForm(forms.ModelForm):
@@ -23,6 +23,7 @@ class ProductForm(forms.ModelForm):
         article_type = ArticleType.objects.all()
         master_category = MasterCategory.objects.all()
         sub_category = SubCategory.objects.all()
+        special_offer = SpecialOffer.objects.all()
         gender_display_name = [(
             g.id,
             g.gender_display_name()
@@ -39,10 +40,15 @@ class ProductForm(forms.ModelForm):
             sc.id,
             sc.sub_category_display_name()
         ) for sc in sub_category]
+        special_offer_display_name = [(
+            so.id,
+            so.special_offer_display_name()
+        ) for so in special_offer]
 
         self.fields['gender'].choices = gender_display_name
         self.fields['article_type'].choices = article_type_display_name
         self.fields['master_category'].choices = master_category_display_name
         self.fields['sub_category'].choices = sub_category_display_name
+        self.fields['special_offer'].choices = special_offer_display_name
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-dark rounded-0'

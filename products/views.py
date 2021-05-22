@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import (
-    Product, Gender, MasterCategory, SubCategory, ArticleType)
+    Product, Gender, MasterCategory, SubCategory, ArticleType, SpecialOffer)
 from .forms import ProductForm
 
 
@@ -24,6 +24,7 @@ def all_products(request):
     master_category = None
     sub_category = None
     article_type = None
+    special_offer = None
 
     if request.GET:
         if 'sort' in request.GET:
@@ -67,6 +68,13 @@ def all_products(request):
             article_type = ArticleType.objects.filter(
                 name__in=article_type)
 
+        if 'special_offer' in request.GET:
+            special_offer = request.GET['special_offer'].split(',')
+            products = products.filter(
+                special_offer__name__in=special_offer)
+            special_offer = SpecialOffer.objects.filter(
+                name__in=special_offer)
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -79,7 +87,8 @@ def all_products(request):
                 Q(gender__name__icontains=query) |
                 Q(master_category__name__icontains=query) |
                 Q(sub_category__name__icontains=query) |
-                Q(article_type__name__icontains=query))
+                Q(article_type__name__icontains=query) |
+                Q(special_offer__name__icontains=query))
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -90,6 +99,7 @@ def all_products(request):
         'current_master_category': master_category,
         'current_sub_category': sub_category,
         'current_article_type': article_type,
+        'current_special_offer': special_offer,
         'current_sorting': current_sorting,
     }
 

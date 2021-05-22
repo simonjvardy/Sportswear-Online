@@ -1,6 +1,6 @@
 from django.test import TestCase
 from .models import (
-    Product, Gender, ArticleType, MasterCategory, SubCategory)
+    Product, Gender, ArticleType, MasterCategory, SubCategory, SpecialOffer)
 
 
 class TestProductsModels(TestCase):
@@ -45,3 +45,10 @@ class TestProductsModels(TestCase):
             display_name='Test Display Name',
         )
         self.assertEqual(str(sub_category), 'Test Sub Category')
+
+    def test_special_offer_method_returns_display_name(self):
+        special_offer = SpecialOffer.objects.create(
+            name='Test Special Offer',
+            display_name='Test Display Name',
+        )
+        self.assertEqual(str(special_offer), 'Test Special Offer')
