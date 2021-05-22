@@ -1,0 +1,33 @@
+[{
+        "model": "products.specialoffer",
+        "pk": 1,
+        "fields": {
+            "name": "not_on_sale",
+            "display_name": "Not On Sale"
+        }
+    },
+    {
+        "model": "products.specialoffer",
+        "pk": 2,
+        "fields": {
+            "name": "new_arrivals",
+            "display_name": "New Arrivals"
+        }
+    },
+    {
+        "model": "products.specialoffer",
+        "pk": 3,
+        "fields": {
+            "name": "deals",
+            "display_name": "Deals"
+        }
+    },
+    {
+        "model": "products.specialoffer",
+        "pk": 4,
+        "fields": {
+            "name": "clearance",
+            "display_name": "Clearance"
+        }
+    }
+]

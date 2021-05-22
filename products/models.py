@@ -76,6 +76,23 @@ class SubCategory(models.Model):
         return self.display_name
 
 
+class SpecialOffer(models.Model):
+    """
+    Model SpecialOffers allows the grouping of products
+    for easier searches by adding an extra special offer category
+    """
+    name = models.CharField(
+        max_length=254)
+    display_name = models.CharField(
+        max_length=254)
+
+    def __str__(self):
+        return self.name
+
+    def special_offer_display_name(self):
+        return self.display_name
+
+
 class Product(models.Model):
     """
     Model Product contains the detailed product information
@@ -114,6 +131,11 @@ class Product(models.Model):
         on_delete=models.SET_NULL)
     article_type = models.ForeignKey(
         'ArticleType',
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL)
+    special_offer = models.ForeignKey(
+        'SpecialOffer',
         null=True,
         blank=True,
         on_delete=models.SET_NULL)
