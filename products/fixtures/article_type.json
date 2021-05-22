@@ -1,174 +1,174 @@
 [{
-        "pk": 1,
         "model": "products.articletype",
+        "pk": 1,
         "fields": {
             "name": "backpacks",
             "display_name": "Backpacks"
         }
     },
     {
-        "pk": 2,
         "model": "products.articletype",
+        "pk": 2,
         "fields": {
             "name": "basketballs",
             "display_name": "Basketballs"
         }
     },
     {
-        "pk": 3,
         "model": "products.articletype",
+        "pk": 3,
         "fields": {
             "name": "capris",
             "display_name": "Capris"
         }
     },
     {
-        "pk": 4,
         "model": "products.articletype",
+        "pk": 4,
         "fields": {
             "name": "caps",
             "display_name": "Caps"
         }
     },
     {
-        "pk": 5,
         "model": "products.articletype",
+        "pk": 5,
         "fields": {
             "name": "casual_shoes",
             "display_name": "Casual Shoes"
         }
     },
     {
-        "pk": 6,
         "model": "products.articletype",
+        "pk": 6,
         "fields": {
             "name": "duffel_bag",
             "display_name": "Duffel Bag"
         }
     },
     {
-        "pk": 7,
         "model": "products.articletype",
+        "pk": 7,
         "fields": {
             "name": "flip_flops",
             "display_name": "Flip Flops"
         }
     },
     {
-        "pk": 8,
         "model": "products.articletype",
+        "pk": 8,
         "fields": {
             "name": "footballs",
             "display_name": "Footballs"
         }
     },
     {
-        "pk": 9,
         "model": "products.articletype",
+        "pk": 9,
         "fields": {
             "name": "handbags",
             "display_name": "Handbags"
         }
     },
     {
-        "pk": 10,
         "model": "products.articletype",
+        "pk": 10,
         "fields": {
             "name": "sandals",
             "display_name": "Sandals"
         }
     },
     {
-        "pk": 11,
         "model": "products.articletype",
+        "pk": 11,
         "fields": {
             "name": "shorts",
             "display_name": "Shorts"
         }
     },
     {
-        "pk": 12,
         "model": "products.articletype",
+        "pk": 12,
         "fields": {
             "name": "socks",
             "display_name": "Socks"
         }
     },
     {
-        "pk": 13,
         "model": "products.articletype",
+        "pk": 13,
         "fields": {
             "name": "sports_shoes",
             "display_name": "Sports Shoes"
         }
     },
     {
-        "pk": 14,
         "model": "products.articletype",
+        "pk": 14,
         "fields": {
             "name": "water_bottle",
             "display_name": "Water Bottle"
         }
     },
     {
-        "pk": 15,
         "model": "products.articletype",
+        "pk": 15,
         "fields": {
             "name": "sweatshirts",
             "display_name": "Sweatshirts"
         }
     },
     {
-        "pk": 16,
         "model": "products.articletype",
+        "pk": 16,
         "fields": {
             "name": "swimwear",
             "display_name": "Swimwear"
         }
     },
     {
-        "pk": 17,
         "model": "products.articletype",
+        "pk": 17,
         "fields": {
             "name": "tops",
             "display_name": "Tops"
         }
     },
     {
-        "pk": 18,
         "model": "products.articletype",
+        "pk": 18,
         "fields": {
             "name": "track_pants",
             "display_name": "Track Pants"
         }
     },
     {
-        "pk": 19,
         "model": "products.articletype",
+        "pk": 19,
         "fields": {
             "name": "tshirts",
             "display_name": "T-Shirts"
         }
     },
     {
-        "pk": 20,
         "model": "products.articletype",
+        "pk": 20,
         "fields": {
             "name": "tennis_racket",
             "display_name": "Tennis Racket"
         }
     },
     {
-        "pk": 21,
         "model": "products.articletype",
+        "pk": 21,
         "fields": {
             "name": "tracksuits",
             "display_name": "Tracksuits"
         }
     },
     {
-        "pk": 22,
         "model": "products.articletype",
+        "pk": 22,
         "fields": {
             "name": "watches",
             "display_name": "Watches"
