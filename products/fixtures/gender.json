@@ -1,38 +1,38 @@
 [{
-        "pk": 1,
         "model": "products.gender",
+        "pk": 1,
         "fields": {
             "name": "men",
             "display_name": "Men"
         }
     },
     {
-        "pk": 2,
         "model": "products.gender",
+        "pk": 2,
         "fields": {
             "name": "women",
             "display_name": "Women"
         }
     },
     {
-        "pk": 3,
         "model": "products.gender",
+        "pk": 3,
         "fields": {
             "name": "unisex",
             "display_name": "Unisex"
         }
     },
     {
-        "pk": 4,
         "model": "products.gender",
+        "pk": 4,
         "fields": {
             "name": "boys",
             "display_name": "Boys"
         }
     },
     {
-        "pk": 5,
         "model": "products.gender",
+        "pk": 5,
         "fields": {
             "name": "girls",
             "display_name": "Girls"
