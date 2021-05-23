@@ -2,7 +2,7 @@
 
 <!-- Mobile Nav Searchbar -->
 <li class="list-inline-item">
-    <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown"
+    <a class="text-white nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
             <div><i class="fas fa-search fa-lg"></i></div>
@@ -28,7 +28,7 @@
 
 <!-- Mobile Nav My Account menu options-->
 <li class="list-inline-item dropdown">
-    <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options-mobile" data-toggle="dropdown"
+    <a class="text-white nav-link d-block d-lg-none" href="#" id="user-options-mobile" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
             <div><i class="fas fa-user fa-lg"></i></div>
@@ -51,7 +51,7 @@
 
 <!-- Mobile Nav Shopping Cart -->
 <li class="list-inline-item">
-    <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none"
+    <a class="{% if grand_total %}text-success font-weight-bold{% else %}text-white{% endif %} nav-link d-block d-lg-none"
         href="{% url 'view_cart' %}">
         <div class="text-center">
             <div><i class="fas fa-shopping-bag fa-lg"></i></div>

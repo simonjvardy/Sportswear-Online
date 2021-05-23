@@ -12,17 +12,22 @@ html {
 /* -------------------------------------HEADER SECTION */
 /* -------------------------------------Navbar */
 
+/*
+Default Bootstrap navbar-dark toggler is too dark,
+CSS added to lighten the hamburger icon and border
+*/
+.navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, 0.75);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-dark .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 
 
 /* -------------------------------------TEMPLATE BODY STYLING */
-/* -------------------------------------Common Site Styling */
-
-/* .container {
-    height: calc(100vh - 100px);
-}*/
-
-
-
 /* -------------------------------------Bootstrap Toast Messages*/
 /* from CI Boutique Ado mini project */
 .message-container {
@@ -284,6 +289,9 @@ footer {
     color: #fff;
 }
 
+
+/* -------------------------------------Social Media links */
+
 .social-media i {
     font-size: 2rem;
     color: #fff;
@@ -295,29 +303,18 @@ footer {
 }
 
 
-/* -------------------------------------Social Media & Sitemap links */
-
-
-
-
-/* -------------------------------------Copyright */
-
-
-
-
 /* -------------------------------------Media Queries */
 /* -------------------------------------Responsive Design - TABLET */
 
-/* From CI Boutique Ado mini project */
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
+/* From CI Boutique Ado mini project Slightly larger container on xl screens */
+@media only screen and (min-width: 1200px) {
     .container {
         max-width: 80%;
     }
 }
 
 /* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -327,5 +324,56 @@ footer {
     }
 }
 
+/* Reduce font size for Delivery Banner, adjust mobile navbar icons and toggler size
+on smaller displays */
+@media only screen and (max-width: 992px) {
+    #delivery-banner h4.logo-font {
+        font-size: 0.9rem;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    .btn.btn-outline-dark.rounded-0,
+    .btn.btn-outline-success.rounded-0,
+    .btn.btn-dark.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-dark.rounded-0.btn-lg,
+    .btn.btn-outline-success.rounded-0.btn-lg,
+    .btn.btn-dark.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: 1rem;
+    }
+
+
+    .increment-qty,
+    .decrement-qty {
+        padding: 0.25rem .5rem;
+         !important
+    }
+}
 
 /* -------------------------------------Responsive Design - MOBILE */
+/* Jumbotron CTA text resize for smaller display sizes */
+@media only screen and (max-width: 775px) {
+    .jumbotron h1.display-4 {
+        font-size: 2.5rem;
+    }
+
+    .jumbotron p.lead {
+        font-size: 1rem;
+    }
+
+}
