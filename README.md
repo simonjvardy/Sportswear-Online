@@ -195,3 +195,4 @@ The following sportswear online retailers' websites were the basis for the desig
 - [W3Schools](https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp) How to hide number field arrows with CSS
 - [Bootstrap v4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/) Documentation and code snippets used to build the majority of the templates
 - [Coderwall](https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata) How to use Django dumpdata and loaddata
+- [Stack Abuse](https://stackabuse.com/reading-and-writing-json-to-a-file-in-python/) Reading & writing json to a file in Python.
