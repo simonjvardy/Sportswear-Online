@@ -170,12 +170,11 @@ The products.json file was further manually editied to cleanse the data of any n
 Once the manual editing was completed and the data finalised, the development database tables were dumped back into json files ready for deployment to Heroku / PostgreSQL using the following commands in the Terminal:
 
 ```Python
-python3 manage.py dumpdata products.product > products.json
-python3 manage.py dumpdata products.gender > gender.json
-python3 manage.py dumpdata products.mastercategory > master_category.json
-python3 manage.py dumpdata products.subcategory > sub_category.json
-python3 manage.py dumpdata products.articletype > article_type.json
+python3 manage.py dumpdata --exclude auth.permission --exclude contenttypes --indent 2 > db.json
 ```
+
+***Note: db.json file has NOT been saved to GiHub as it contains user information that may be personally identifiable, such as real names or email addresses. The 6 original Products Fixtures JSON files have been kept to allow a fully functioning database to be deployed and allow the developer to create their own superusers and orders in their own project.***
+
 
 ---
 

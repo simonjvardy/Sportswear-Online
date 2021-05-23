@@ -300,7 +300,7 @@
             "master_category": 2,
             "sub_category": 4,
             "article_type": 18,
-            "special_offer": 1,
+            "special_offer": 4,
             "image": "1604.jpg"
         }
     },
@@ -318,7 +318,7 @@
             "master_category": 2,
             "sub_category": 4,
             "article_type": 18,
-            "special_offer": 1,
+            "special_offer": 4,
             "image": "1605.jpg"
         }
     },
@@ -336,7 +336,7 @@
             "master_category": 2,
             "sub_category": 4,
             "article_type": 18,
-            "special_offer": 1,
+            "special_offer": 4,
             "image": "1607.jpg"
         }
     },
@@ -354,7 +354,7 @@
             "master_category": 2,
             "sub_category": 4,
             "article_type": 18,
-            "special_offer": 1,
+            "special_offer": 4,
             "image": "1608.jpg"
         }
     },
@@ -5394,7 +5394,7 @@
             "master_category": 4,
             "sub_category": 10,
             "article_type": 2,
-            "special_offer": 1,
+            "special_offer": 3,
             "image": "4012.jpg"
         }
     },
@@ -5412,7 +5412,7 @@
             "master_category": 4,
             "sub_category": 10,
             "article_type": 2,
-            "special_offer": 1,
+            "special_offer": 3,
             "image": "4013.jpg"
         }
     },

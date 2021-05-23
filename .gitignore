@@ -6,3 +6,4 @@ __pycache__/
 *.py[cod]
 node_modules/
 *.sqlite3
+db.json
