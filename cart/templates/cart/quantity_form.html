@@ -1,0 +1,38 @@
+<form class="form update-form" method="POST" action="{% url 'update_cart' item.item_id %}">
+    {% csrf_token %}
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <button class="decrement-qty btn btn-sm btn-outline-dark rounded-0" data-item_id="{{ item.item_id }}"
+                    id="decrement-qty_{{ item.item_id }}" aria-label="decrease quantity">
+                    <span>
+                        <i class="fas fa-minus fa-sm"></i>
+                    </span>
+                </button>
+            </div>
+            <input class="form-control form-control-sm qty_input text-center" type="number" name="quantity"
+                value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}"
+                id="id_qty_{{ item.item_id }}" aria-label="quantity input" required>
+            <div class="input-gtoup-append">
+                <button class="increment-qty btn btn-sm btn-outline-dark rounded-0" data-item_id="{{ item.item_id }}"
+                    id="increment-qty_{{ item.item_id }}" aria-label="increase quantity">
+                    <span>
+                        <i class="fas fa-plus fa-sm"></i>
+                    </span>
+                </button>
+            </div>
+            {% if item.product.sizes %}
+            <input type="hidden" name="product_size" value="{{ item.size }}">
+            {% endif %}
+        </div>
+    </div>
+</form>
+<a class="update-link text-dark" data-toggle="tooltip" data-placement="bottom" title="Update item quantity">
+    <i class="fas fa-redo fa-sm"></i>
+    <small>Update</small>
+</a>
+<a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"
+    data-toggle="tooltip" data-placement="bottom" title="Remove the item">
+    <i class="far fa-trash-alt fa-sm"></i>
+    <small>Remove</small>
+</a>
