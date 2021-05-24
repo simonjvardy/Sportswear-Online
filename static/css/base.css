@@ -98,6 +98,11 @@ CSS added to lighten the hamburger icon and border
     overflow-y: auto;
 }
 
+/* Product RRP Price Strikethrough Text */
+span.strike-through-text {
+    text-decoration: line-through;
+}
+
 /* -------------------------------------Buttons */
 
 /* from Bulma */

@@ -64,14 +64,14 @@
                 <!-- Display the product image -->
                 {% if product.image %}
                 <a href="{{ product.image.url }}" target="_blank">
-                    <img class="card-img-top img-fluid" width="600px" height="450px" src="{{ product.image.url }}"
+                    <img class="card-img-top img-fluid" width="600" height="450" src="{{ product.image.url }}"
                         alt="{{ product.name }}">
                 </a>
                 {% else %}
 
                 <!-- Else display the default "No Image" placeholder file -->
                 <a href="">
-                    <img class="card-img-top img-fluid" width="600px" height="450px" src="{{ MEDIA_URL }}noimage.png"
+                    <img class="card-img-top img-fluid" width="600" height="450" src="{{ MEDIA_URL }}noimage.png"
                         alt="{{ product.name }}">
                 </a>
                 {% endif %}
@@ -93,7 +93,7 @@
                         £{{ product.discount_price }}
                     </span>
                     <span class="text-muted">
-                        RRP <strike>£{{ product.price }}</strike>
+                        RRP <span class="strike-through-text">£{{ product.price }}</span>
                     </span>
                 </p>
 
