@@ -27,22 +27,57 @@
 ---
 ## Automated Testing ##
 
+### Test Driven Development (TDD) ###
+
+
+[Django unittest documentation](https://docs.djangoproject.com/en/3.2/topics/testing/overview/)
+
+Using Django's standard unit test library module `unittest`, a class based approach was used to build tests for each app's functionality.
+
+For each app in the project, where applicable, the following files were tested:
+  - `views.py` tested by `test_views.py`
+  - `models.py` tested by `test_models.py`
+  - `forms.py` tested by `test_forms.py`
+
+
+
 ### Validation Services ###
 
 The following **validation services** and **linters** were used to check the validity of the website code.
 
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
   - This validator checks the validity of cascading style sheets (css) and (X)HTML documents with style sheets.
-    ![W3c CSS Results Image](static/images/readme-content/W3C-css-validdator.png)
+  - All css files passed the validation service. However, base.css passes with some warnings:
+
+    ![W3c CSS Results Image](readme_content/w3c_base_css.png)
+
+    ![W3c CSS Warnings Image](readme_content/w3c_warnings_base_css.png)
+
+  - The warnings are related to:
+    1. Allauth buttons styling borrowed from the Boutique Ado mini project. The default button was restyled to be a black submit button which has the same colour border.
+    2. The following code snippet was copied from [W3Schools.com](https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp) as a way to hide the up & down arrows / number spinners on the products page & shopping cart item quantity field. This provided a cleaner input filed with just the +/- buttons at the ends of the field.
+
+    ```CSS
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+    ```
 
 - [W3C Markup Validator](https://validator.w3.org/)
   - This validator checks the markup validity of Web documents in HTML, XHTML, SMIL, MathML, etc.
-  - The warning relates to a section containing Jinja2 templating language for the Flask flash messages.
-    ![W3C Markup Results image](static/images/readme-content/W3C-html-validdator.png)
+  - All site page urls were checked in turn and passed successfully.
+    ![W3C Markup Results image](readme_content/w3c_html_validation.png)
 
-- [PEP8 Online validation](http://pep8online.com/checkresult)
-  - This linter checks the validity of Python code against the PEP8 requirements
-    ![PEP8 results image](static/images/readme-content/pep8-online.png)
+- [Flake8 Python Lintier](http://pep8online.com/checkresult)
+  - This VSCode extension linter checks the validity of Python code against the PEP8 requirements. The code is reviewed and refactored during development.
 
 - [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse)
   - An open-source automated tool for improving webpages by running audits for performance, accessibility, progressive web apps, SEO etc.
@@ -53,8 +88,7 @@ The following **validation services** and **linters** were used to check the val
   - Mobile Performance
     ![Mobile Lighthouse](static/images/readme-content/lighthouse-mobile.png)
 
-  - The Lighthouse 'Best Practices' score was variable due to the 3rd party image  from Waterstones CDN being caught by the 
-    Chrome DevTools SameSite cookie policy treating the image links under cross-site cookie settings.
+  - GitHub [Issue #80](https://github.com/simonjvardy/Sportswear-Online/issues/80) describes the problem with site performance experienced after deployment to Heroku and serving the media & static files from an AWS S3 bucket. The performance drop was noticeable from the development environment with the same static files.
 
 ---
 ## Manual Testing ##
@@ -91,8 +125,8 @@ The following **validation services** and **linters** were used to check the val
     - iPad Pro 10.5"
     - iPhone XS Max
 - Tested Operating Systems:
-    - iOS 14.4
-    - iPadOS 14.4
+    - iOS 14.5
+    - iPadOS 14.5
 - Tested Browsers:
     - iOS / iPadOS
         - Chrome
@@ -103,25 +137,64 @@ The following **validation services** and **linters** were used to check the val
 ---
 ## Bugs discovered ##
 
-The issue log is managed on the [GitHub Project Issues section](https://github.com/simonjvardy/the-reading-room/issues) using the standard GitHub [bug\_report.md template](https://github.com/simonjvardy/the-reading-room/blob/master/.github/ISSUE_TEMPLATE/bug_report.md)
-and the [features_request.md template](https://github.com/simonjvardy/the-reading-room/blob/master/.github/ISSUE_TEMPLATE/feature_request.md)
+The issue log is managed on the [GitHub Project Issues section](https://github.com/simonjvardy/Sportswear-Online/issues) using the standard GitHub [bug\_report.md template](https://github.com/simonjvardy/Sportswear-Online/blob/main/.github/ISSUE_TEMPLATE/bug_report.md)
+
+The issues are logged within GitHub and linked to the [Bug Fixes](https://github.com/simonjvardy/Sportswear-Online/projects/2) Project.
+
+When an issue is resolved, it is linked to the pull request containing to the committed code, which closes the issue along with the pull request.
 
 
-#### Known Bugs ####
+### Bugs Overview ###
 
+There were 27 bug reported during unit testing of the site. Please visit the GitHub repository [closed issues](https://github.com/simonjvardy/Sportswear-Online/issues?q=is%3Aissue+is%3Aclosed) or click on the issue number links below for more detailed troubleshooting information and associated pull requests.
 
+A selection of the reported bugs are briefly described here:
 
-#### Unsolved Issues ####
+[Issue #80](https://github.com/simonjvardy/Sportswear-Online/issues/80)
+- **Unit Testing: Deployed Heroku site very poor Google Lighthouse performance**
+  - After deploying to Heroku and loading the static / media files to an AWS S3 bucket, running Goole DevTools Lighthouse showed a dramatic drop in performance score. Site load times were weel above 10s.
+  - Testing the site with differing amounts of product images showed the performance score change relation to the number of images displayed.
 
-[Issue #27](https://github.com/simonjvardy/alarm-clock/issues/4)
-- **Feature: How can the user account be set up as a Super User or Admin?**
-  - This is more of a functionality enhancement that an issue.
-  - The users documents contain `is_admin` and `is_super_user` flags on each user account. The default is set to 'off'.
-  - The usefulness of these flags weren't fully made use of in the app for restricting access to certain functions.
-    - Flask-Security may be a better option for creating user role management.
+Various Django errors:
 
-[Issue #51:](https://github.com/simonjvardy/the-reading-room/issues/51)
-- **Unit Testing: Favourite button adds same book multiple times**
-  - The book page favourite button functionality current doesn't disable the button after a user has clicked the  button once.
-  - This means the button could be clicked continuously and keep adding the same favourite book to the users collection document
-  - The button styling classes were changed using jQuery on click but this wasn't successfully implemented.
+[Issue #52:](https://github.com/simonjvardy/Sportswear-Online/issues/52)
+- **Unit Test: Django Error "AttributeError at /checkout/ 'NoneType' object has no attribute 'split'"**
+
+[Issue #45:](https://github.com/simonjvardy/Sportswear-Online/issues/45)
+- **Unit Test: Django error "NoReverseMatch at /checkout/ Reverse for 'product_detail' not found. 'product_detail' is not a valid view function or pattern name."**
+
+[Issue #44:](https://github.com/simonjvardy/Sportswear-Online/issues/44)
+- **Unit Test: Django error "NoReverseMatch at /checkout/ Reverse for 'cart' not found. 'cart' is not a valid view function or pattern name."**
+
+[Issue #43:](https://github.com/simonjvardy/Sportswear-Online/issues/43)
+- **Unit Test: Django error "TemplateSyntaxError at /checkout/ Invalid filter: 'calc_subtotal'"**
+
+[Issue #42:](https://github.com/simonjvardy/Sportswear-Online/issues/42)
+- **Unit Test: Django error "TemplateSyntaxError at /checkout/ Could not parse the remainder: ''checkout/css/checkout.css'' from '.'checkout/css/checkout.css''**
+
+[Issue #41:](https://github.com/simonjvardy/Sportswear-Online/issues/41)
+- **Unit Test: Django error "TemplateDoesNotExist at /checkout/ checkout/checkout.html"**
+
+[Issue #40:](https://github.com/simonjvardy/Sportswear-Online/issues/40)
+- **Unit Test: Django error "NoReverseMatch at /cart/ Reverse for 'checkout' not found. 'checkout' is not a valid view function or pattern name."**
+
+[Issue #35:](https://github.com/simonjvardy/Sportswear-Online/issues/35)
+- **Unit Test: Django error "TemplateSyntaxError at /cart/ 'cart_tools' is not a registered tag library."**
+
+[Issue #33:](https://github.com/simonjvardy/Sportswear-Online/issues/33)
+- **Unit Test: Django error "TypeError at /cart/update/1/" when entering zero as the update cart qty**
+
+[Issue #29:](https://github.com/simonjvardy/Sportswear-Online/issues/29)
+- **Unit Test: Django error "ValueError at cart/add/1/" - having a blank product item quantity field causes an error**
+
+[Issue #20:](https://github.com/simonjvardy/Sportswear-Online/issues/20)
+- **Unit Test: Django error "FieldError at /products/ Cannot resolve keyword 'lower_name' into field."**
+
+[Issue #17:](https://github.com/simonjvardy/Sportswear-Online/issues/17)
+- **Unit Test: Django error "FieldError at /products/ Cannot resolve keyword 'master' into field"**
+
+[Issue #15:](https://github.com/simonjvardy/Sportswear-Online/issues/15)
+- **Unit Test: Django error "UnboundLocalError at /products'"**
+
+[Issue #14:](https://github.com/simonjvardy/Sportswear-Online/issues/14)
+- **Unit Test: Django "FieldError at /products/ Related Field got invalid lookup: icontains"**
