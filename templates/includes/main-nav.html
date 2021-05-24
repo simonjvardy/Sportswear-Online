@@ -16,7 +16,7 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+            <div class="dropdown-menu border-0">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">
                     By Price
                 </a>
@@ -41,7 +41,7 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Men
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="menswear-link">
+            <div class="dropdown-menu border-0">
                 <a href="{% url 'products' %}?gender=men,unisex&master_category=footwear&sort=article_type&direction=asc"
                     class="dropdown-item"><strong>Footwear</strong></a>
                 <a href="{% url 'products' %}?gender=men,unisex&master_category=footwear&sub_category=shoes&sort=article_type&direction=asc"
@@ -86,7 +86,7 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Women
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="womenswear-link">
+            <div class="dropdown-menu border-0">
                 <a href="{% url 'products' %}?gender=women,unisex&master_category=footwear&sort=article_type&direction=asc"
                     class="dropdown-item"><strong>Footwear</strong></a>
                 <a href="{% url 'products' %}?gender=women,unisex&master_category=footwear&sub_category=shoes&sort=article_type&direction=asc"
@@ -132,7 +132,7 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Kids
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="kidswear-link">
+            <div class="dropdown-menu border-0">
                 <a href="{% url 'products' %}?gender=boys,girls&master_category=footwear&sort=article_type&direction=asc"
                     class="dropdown-item"><strong>Footwear</strong></a>
                 <a href="{% url 'products' %}?gender=boys,girls&master_category=footwear&sub_category=shoes&sort=article_type&direction=asc"
@@ -177,7 +177,7 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Mega Offers
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+            <div class="dropdown-menu border-0">
                 <a href="{% url 'products' %}?special_offer=new_arrivals&sort=article_type&direction=asc"
                     class="dropdown-item">
                     New Arrivals
