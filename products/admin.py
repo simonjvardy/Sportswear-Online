@@ -68,6 +68,7 @@ class SpecialOfferAdmin(admin.ModelAdmin):
         'name',
     )
 
+
 # Register your models here.
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Gender, GenderAdmin)

@@ -1,9 +1,6 @@
 from django.test import TestCase
 
 
-# Create your tests here.
-
-
 class TestProductsViews(TestCase):
     """
     Tests the products page renders the correct page

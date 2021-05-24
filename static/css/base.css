@@ -182,9 +182,6 @@ span.strike-through-text {
     color: #fff;
     text-align: center;
     vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     background-color: #000;
     border: 1px solid #000;
@@ -208,7 +205,6 @@ span.strike-through-text {
 /* Bootstrap text links colour */
 .allauth-form-inner-content a {
     color: #17a2b8;
-    /* text-info */
 }
 
 
@@ -234,7 +230,26 @@ input[type=number] {
 .form-row .form-group .input-group input {
     max-width: 60px;
     border: 1px solid;
-    height: 38.5px;
+}
+
+/* 
+Adpated Bootstrap form-control class to fix Firefox input form size mismatch
+Now cross-browser compatible with Chrome & Edge
+*/
+.form-control {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 /* -------------------------------------Allauth Forms */
@@ -365,8 +380,7 @@ on smaller displays */
 
     .increment-qty,
     .decrement-qty {
-        padding: 0.25rem .5rem;
-         !important
+        padding: 0.25rem .5rem !important;
     }
 
     .form-group input.form-control-sm {
