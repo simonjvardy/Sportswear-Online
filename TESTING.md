@@ -14,14 +14,14 @@
 - [Sportswear Online Project Testing Details](#sportswear-online-project-testing-details)
   - [Table of Contents](#table-of-contents)
   - [Automated Testing](#automated-testing)
+    - [Test Driven Development (TDD)](#test-driven-development-(tdd))
     - [Validation Services](#validation-services)
   - [Manual Testing](#manual-testing)
     - [Unit Testing](#unit-testing)
     - [Testing undertaken on desktop](#testing-undertaken-on-desktop)
     - [Testing undertaken on tablet and phone devices](#testing-undertaken-on-tablet-and-phone-devices)
   - [Bugs discovered](#bugs-discovered)
-      - [Known Bugs](#known-bugs)
-      - [Unsolved Issues](#unsolved-issues)
+
 
 
 ---
@@ -73,8 +73,37 @@ The following **validation services** and **linters** were used to check the val
 
 - [W3C Markup Validator](https://validator.w3.org/)
   - This validator checks the markup validity of Web documents in HTML, XHTML, SMIL, MathML, etc.
-  - All site page urls were checked in turn and passed successfully.
-    ![W3C Markup Results image](readme_content/w3c_html_validation.png)
+
+  - Home:
+    ![W3C Markup Results image](readme_content/w3c_html_validation_home.png)
+
+  - Products:
+    ![W3C Markup Results image](readme_content/w3c_html_validation_products.png)
+
+  - Product Page:
+    ![W3C Markup Results image](readme_content/w3c_html_validation_products_page.png)
+
+  - Add Product:
+    ![W3C Markup Results image](readme_content/w3c_html_validation_add_products.png)
+
+  - Edit Product:
+    ![W3C Markup Results image](readme_content/w3c_html_validation_edit_products.png)
+
+  - cart:
+    ![W3C Markup Results image](readme_content/w3c_html_validation_cart.png)
+
+  - Checkout:
+    ![W3C Markup Results image](readme_content/w3c_html_validation_checkout.png)
+
+  - Profile:
+    ![W3C Markup Results image](readme_content/w3c_html_validation_profile.png)
+
+  - Register:
+    ![W3C Markup Results image](readme_content/w3c_html_validation_signup.png)
+
+  - Login:
+    ![W3C Markup Results image](readme_content/w3c_html_validation_login.png)
+
 
 - [Flake8 Python Lintier](http://pep8online.com/checkresult)
   - This VSCode extension linter checks the validity of Python code against the PEP8 requirements. The code is reviewed and refactored during development.
