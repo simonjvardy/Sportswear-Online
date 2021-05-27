@@ -55,7 +55,7 @@ The following **validation services** and **linters** were used to check the val
 
   - The warnings are related to:
     1. Allauth buttons styling borrowed from the Boutique Ado mini project. The default button was restyled to be a black submit button which has the same colour border.
-    2. The following code snippet was copied from [W3Schools.com](https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp) as a way to hide the up & down arrows / number spinners on the products page & shopping cart item quantity field. This provided a cleaner input filed with just the +/- buttons at the ends of the field.
+    2. The following code snippet was copied from [W3Schools.com](https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp) as a way to hide the up & down arrows / number spinners on the products page & shopping cart item quantity field. This provided a cleaner input field with just the +/- buttons at the ends of the field.
 
     ```CSS
     /* Chrome, Safari, Edge, Opera */
@@ -75,33 +75,43 @@ The following **validation services** and **linters** were used to check the val
   - This validator checks the markup validity of Web documents in HTML, XHTML, SMIL, MathML, etc.
 
   - Home:
+
     ![W3C Markup Results image](readme_content/w3c_html_validation_home.png)
 
   - Products:
+
     ![W3C Markup Results image](readme_content/w3c_html_validation_products.png)
 
   - Product Page:
+
     ![W3C Markup Results image](readme_content/w3c_html_validation_products_page.png)
 
   - Add Product:
+
     ![W3C Markup Results image](readme_content/w3c_html_validation_add_products.png)
 
   - Edit Product:
+
     ![W3C Markup Results image](readme_content/w3c_html_validation_edit_products.png)
 
   - cart:
+
     ![W3C Markup Results image](readme_content/w3c_html_validation_cart.png)
 
   - Checkout:
+
     ![W3C Markup Results image](readme_content/w3c_html_validation_checkout.png)
 
   - Profile:
+
     ![W3C Markup Results image](readme_content/w3c_html_validation_profile.png)
 
   - Register:
+
     ![W3C Markup Results image](readme_content/w3c_html_validation_signup.png)
 
   - Login:
+
     ![W3C Markup Results image](readme_content/w3c_html_validation_login.png)
 
 
@@ -175,7 +185,7 @@ When an issue is resolved, it is linked to the pull request containing to the co
 
 ### Bugs Overview ###
 
-There were 27 bug reported during unit testing of the site. Please visit the GitHub repository [closed issues](https://github.com/simonjvardy/Sportswear-Online/issues?q=is%3Aissue+is%3Aclosed) or click on the issue number links below for more detailed troubleshooting information and associated pull requests.
+There were 27 bugs reported during unit testing of the site. Please visit the GitHub repository [closed issues](https://github.com/simonjvardy/Sportswear-Online/issues?q=is%3Aissue+is%3Aclosed) or click on the issue number links below for more detailed troubleshooting information and associated pull requests.
 
 A selection of the reported bugs are briefly described here:
 
