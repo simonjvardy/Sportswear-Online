@@ -25,7 +25,9 @@
 
 ---
 
-## UX (User Experience) ##
+## **UX DESIGN** ##
+
+## The Strategy Plane ##
 
 ### **Project Goals** ###
 
@@ -70,8 +72,47 @@ The **goal** of this project is to build a
 
 [Back to contents](#contents)
 
---- 
 
+## The Scope Plane ##
+
+### Site Features ###
+
+---
+
+## The Structure Plane ##
+
+---
+
+## The Skeleton Plane ##
+
+### Wireframes ###
+
+### Database Schema ###
+
+![Entity-Relationship Diagram](wireframes/schema/db_schema.png)
+
+
+---
+
+## Features ##
+
+
+### **Features Implemented** ###
+
+
+### **CRUD Functionality** ###
+
+
+| Site Page | Create | Read | Update | Delete |
+| --- | --- | --- | --- | --- |
+
+
+### **Defensive Programming** ###
+
+
+[Back to contents](#contents)
+
+---
 ## Technologies ##
 
 ### **Languages** ###
@@ -148,8 +189,79 @@ The **goal** of this project is to build a
   - Used to create the jumbotron radial gradient
 - [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/)
   - Used to greate the Django environment variables secret keys
+- [dbdiagrams.io](https://dbdiagram.io/home)
+  - Used to create the database entity-relationship diagram.
+
+
+[Back to contents](#contents)
 
 ---
+
+## Project Management ##
+
+GitHub [Projects](https://github.com/simonjvardy/Sportswear-Online/projects) are used to organize the planning and development of the website.
+Two GitHub projects are used to manage different aspects of the site development:
+- [Development](https://github.com/simonjvardy/Sportswear-Online/projects/1)
+  - Manages the project tasks and files.
+- [Bug Fixes](https://github.com/simonjvardy/Sportswear-Online/projects/2)
+  - Manages the triage and prioritization of the bug fixes.
+
+The Projects are created using the following GitHub templates:
+- `Automated kanban` template for the **Development** project.
+- `Bug Triage` template for the **Bug Fixes** project.
+
+![GitHub Projects](readme_content/github_projects.png)
+
+
+[Back to contents](#contents)
+
+
+---
+
+## Version Control ##
+**Version control** for this repository is managed within **GitHub** and **Gitpod** using separate [branches](https://github.com/simonjvardy/Sportswear-Online/branches)  used to work on specific aspects of the project.
+The following describes the repository branch structure:
+- **Main** - this is the default branch and the source for the repository deployment.
+    - **Docs** - this branch is used for updating the README.md and testing.md documentation only.
+    - **Development** - this branch is used as the main working branch for the website development.
+    - **Features** - this branch is used to try out new ideas and enhancements for the website.
+        - Features and enhancements that are accepted are merged down into the Development branch.
+    - Each individual **bug fixes** are raised within their own **separate branches** using the naming convention **\<GitHub Issue ID Number>-\<bug fix description>** e.g. branch name ***12-correct-navbar-links*** 
+
+
+[Back to contents](#contents)
+
+---
+## Testing ##
+
+- Testing information can be found in a separate [TESTING.md](TESTING.md) file.
+
+
+[Back to contents](#contents)
+
+---
+## Bugs ##
+
+To manage bugs and issues tracking, the default GitHub [bug_report.md template](https://github.com/simonjvardy/Sportswear-Online/blob/main/.github/ISSUE_TEMPLATE/bug_report.md) has been created and activated within the repository settings Features > Issues section.
+All new bugs and issues are tracked within the GitHub repository [Issues section](https://github.com/simonjvardy/Sportswear-Online/issues) .
+Open issues are managed within the [GitHub Bug Fixes Project](https://github.com/simonjvardy/Sportswear-Online/projects/2)
+
+Each branch is then **merged** into the **main branch** using a **pull request** that is **linked** to the **open issue**. Once merged, and the bug report **closed**, the branch is **deleted**.
+
+Fixed bugs and issues are marked as [closed](https://github.com/simonjvardy/Sportswear-Online/issues?q=is%3Aissue+is%3Aclosed).
+
+![GitHub Issues](readme_content/github_issues.png)
+
+
+[Back to contents](#contents)
+
+---
+
+## Deployment ##
+
+
+---
+
 
 ## Credits ##
 
