@@ -248,9 +248,11 @@ Open issues are managed within the [GitHub Bug Fixes Project](https://github.com
 
 Each branch is then **merged** into the **main branch** using a **pull request** that is **linked** to the **open issue**. Once merged, and the bug report **closed**, the branch is **deleted**.
 
-Fixed bugs and issues are marked as [closed](https://github.com/simonjvardy/Sportswear-Online/issues?q=is%3Aissue+is%3Aclosed).
+Fixed bugs and issues are marked as closed. Full details of all closed issues can be viewed [here](https://github.com/simonjvardy/Sportswear-Online/issues?q=is%3Aissue+is%3Aclosed).
 
 ![GitHub Issues](readme_content/github_issues.png)
+
+![GitHub Issues Example](readme_content/github_issues_example.png)
 
 
 [Back to contents](#contents)
