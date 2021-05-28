@@ -15,7 +15,11 @@ The site functionality will allow a common shopping experience for the visitor b
   - [Project Goals](#project-goals)
   - [User Goals](#user-goals)
   - [User Stories](#user-stories)
-  - [Site Owner Goals](#site-owner-goals)
+    - [Viewing & Navigation](#viewing-&-navigation)
+    - [Registration & User Accounts](#registration-&-user-accounts)
+    - [Sorting & Searching](#sorting-&-earching)
+    - [Purchasing & Checkout](#purchasing-&-checkout)
+    - [Admin & Store Management](#admin-&-store-management)
 - [Technologies](#technologies)
   - [Languages](#languages)
   - [Database](#database)
@@ -56,7 +60,7 @@ I achieve this by:
 
 ### **User Stories** ###
 
-#### Viewing and Navigation ####
+#### Viewing & Navigation ####
 
 1. As a **shopper**, I want to be able to view a list of products so that I can choose some items to purchase.
 2. As a **shopper**, I want to be able to filter products that I am interested in without searching through all the products.
@@ -95,50 +99,33 @@ I achieve this by:
 23. As a **store owner**, I want to be able to delete a product that is no longer for sale.
 
 
-
-
-
 [Back to contents](#contents)
 
-
-## The Scope Plane ##
-
-### Site Features ###
-
 ---
 
-## The Structure Plane ##
+## Design Choices ##
+
+
+### **Site Features** ###
 
 ---
-
-## The Skeleton Plane ##
-
-### Wireframes ###
-
-### Database Schema ###
-
-![Entity-Relationship Diagram](wireframes/schema/db_schema.png)
 
 
 ---
 
-## Features ##
 
+### **Wireframes** ###
 
-### **Features Implemented** ###
+I designed the site mock-ups using [Balsamiq wireframes](https://balsamiq.com/). I focussed on defining the basic layout structure of the site and identified how displays would change on different screen sizes such as mobile, tablet and desktop for each page.
 
+- [Home Page](wireframes/home.png)
+- [User Registration](wireframes/register.png)
+- [User Log In](wireframes/login.png)
+- [My Profile](wireframes/my-profile.png)
+- [Products](wireframes/products.png)
+- [Porduct Page](wireframes/product-page.png)
+- [Product Management](wireframes/product-management.png)
 
-### **CRUD Functionality** ###
-
-
-| Site Page | Create | Read | Update | Delete |
-| --- | --- | --- | --- | --- |
-
-
-### **Defensive Programming** ###
-
-
-[Back to contents](#contents)
 
 ---
 ## Technologies ##
@@ -224,6 +211,48 @@ I achieve this by:
 [Back to contents](#contents)
 
 ---
+
+## Features ##
+
+
+### **Features Implemented** ###
+
+The following section describes the site design and page layouts to demonstrate the features implementsed.
+
+### **Responsive Front-end Design** ###
+
+- Responsive mobile first design using a Bootstrap v4.6 framework
+- Django Template language is used to create the site's front-end dynamic content.
+
+### **Back-end Design** ###
+
+- The app is created using Python3 and Django framework to create an application structured using the Model-View-Controller (MVC) pattern.
+- The site is deployed via a Heroku app linked to a GitHub repository.
+- The dynamic content is served utilising a PostgreSQL relational database with static files and media stores on an AWS S3 bucket.
+
+
+### Database Schema ###
+
+![Entity-Relationship Diagram](wireframes/schema/db_schema.png)
+
+
+---
+
+### **CRUD Functionality** ###
+
+
+| Site Page | Create | Read | Update | Delete |
+| --- | --- | --- | --- | --- |
+
+
+### **Defensive Programming** ###
+
+
+[Back to contents](#contents)
+
+
+---
+
 
 ## Project Management ##
 
