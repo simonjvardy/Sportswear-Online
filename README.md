@@ -1,12 +1,13 @@
 ![SO logo](media/sportswear_online_logo.png)
 
-Sportswear Online is a (fictitious) online retailer providing sports clothing, footwear, equipment and accessories for sale. The ideas for this final milestone project is to provide the visitor with a fully functioning, interactive e-commerce website providing easy, familiar navigation and allowing the simulated purchase of items from the store.
+Sportswear Online is a (fictitious) online retailer providing sports clothing, footwear, equipment and accessories for sale. The idea for this final milestone project is to provide the visitor with a fully functioning, interactive e-commerce website providing easy, familiar navigation and allowing the simulated purchase of items from the store.
 
 The site functionality will allow a common shopping experience for the visitor by providing a shopping cart to save chosen items, a secure checkout / payment facility and order confirmation using both on-screen messages and friendly, personalised emailed message.
 
-***Please note: This site is purely for educational purposes only. The credit card payment facility is real but remains in test mode and so no payments will actually be taken. Please do not enter real credit card details when using this site.***
+***Please note: This site is purely for educational purposes only. The credit card payment facility is real but remains in test mode and so no payments will be taken. Please do not enter real credit card details when using this site.***
 
-![Sportswear Online screenshot](wireframes/Sportswear_online.png)
+![Sportswear Online screenshot](readme_content/am-i-responsive-sm.png)
+
 ---
 
 ### **Contents** ###
@@ -15,11 +16,11 @@ The site functionality will allow a common shopping experience for the visitor b
   - [Project Goals](#project-goals)
   - [User Goals](#user-goals)
   - [User Stories](#user-stories)
-    - [Viewing & Navigation](#viewing-&-navigation)
-    - [Registration & User Accounts](#registration-&-user-accounts)
-    - [Sorting & Searching](#sorting-&-earching)
-    - [Purchasing & Checkout](#purchasing-&-checkout)
-    - [Admin & Store Management](#admin-&-store-management)
+    - [Viewing and Navigation](#viewing-and-navigation)
+    - [Registration and User Accounts](#registration-and-user-accounts)
+    - [Sorting and Searching](#sorting-and-earching)
+    - [Purchasing and Checkout](#purchasing-and-checkout)
+    - [Admin and Store Management](#admin-and-store-management)
 - [Technologies](#technologies)
   - [Languages](#languages)
   - [Database](#database)
@@ -60,16 +61,16 @@ I achieve this by:
 
 ### **User Stories** ###
 
-#### Viewing & Navigation ####
+#### Viewing and Navigation ####
 
 1. As a **shopper**, I want to be able to view a list of products so that I can choose some items to purchase.
 2. As a **shopper**, I want to be able to filter products that I am interested in without searching through all the products.
 3. As a **shopper**, I want to be able to select individual products to see more detailed information and add the item to my shopping cart.
 4. As a **shopper**, I want to be able to see any product special offers, new arrivals and available deals, taking advantage of any reduced prices shown.
-5. As a **shopper**, I want to be able to see items I've placed in my shopping cart easily so that I can keep track oof what I am buying
+5. As a **shopper**, I want to be able to see items I have placed in my shopping cart easily so that I can keep track oof what I am buying
 6. As a **shopper**, I want to be able to see breadcrumb navigation links to see where I am on the site easily.
 
-#### Registration & User Accounts ####
+#### Registration and User Accounts ####
 
 7. As a **site user**, I want to be able to register for an account to make future purchases easier
 8. As a **site user**, I want to be able to easily log in and out of my account so that I can access my personal account information
@@ -77,14 +78,14 @@ I achieve this by:
 10. As a **site user**, I want to be able to log in and have a personal profile page containing my delivery details and order history
 11. As a **site user**, I want to be able to save and update my delivery information on my personal profile page.
 
-#### Sorting & Searching ####
+#### Sorting and Searching ####
 
 12. As a **shopper**, I want to be able to sort the available products by price, main category, sub-category or product type
 13. As a **shopper**, I want to be able to filter and group products for men, women, unisex or kids.
 14. As a **shopper**, I want to be able to see how many products are available based on the sorting / filtering I have applied
 15. As a **shopper**, I want to be able to search for a product by name, type or category.
 
-#### Purchasing & Checkout ####
+#### Purchasing and Checkout ####
 
 16. As a **shopper**, I want to be able to easily select the size and qualtity of a product when adding it to the shopping cart
 17. As a **shopper**, I want to be able to view the items in my shopping cart waiting to be purchased, seeing the sub-total, delivery costs and grand total amounts.
@@ -92,7 +93,7 @@ I achieve this by:
 19. As a **shopper**, I want to be able to checkout securely where I can enter my delivery and credit card payment details with confidence.
 20. As a **shopper**, I want to be able to view an order confirmation page as well as receive and email order confirmation once the transaction has succeeded.
 
-#### Admin & Store Management ###
+#### Admin and Store Management ###
 
 21. As a **store owner**, I want to be able to add new products to my store
 22. As a **store owner**, I want to be able to edit / update the current product details and replace the product image file
@@ -108,12 +109,6 @@ I achieve this by:
 
 ### **Site Features** ###
 
----
-
-
----
-
-
 ### **Wireframes** ###
 
 I designed the site mock-ups using [Balsamiq wireframes](https://balsamiq.com/). I focussed on defining the basic layout structure of the site and identified how displays would change on different screen sizes such as mobile, tablet and desktop for each page.
@@ -123,7 +118,7 @@ I designed the site mock-ups using [Balsamiq wireframes](https://balsamiq.com/).
 - [User Log In](wireframes/login.png)
 - [My Profile](wireframes/my-profile.png)
 - [Products](wireframes/products.png)
-- [Porduct Page](wireframes/product-page.png)
+- [Product Page](wireframes/product-page.png)
 - [Product Management](wireframes/product-management.png)
 
 
@@ -203,7 +198,7 @@ I designed the site mock-ups using [Balsamiq wireframes](https://balsamiq.com/).
 - [CSS Gradient Tool](https://cssgradient.io/)
   - Used to create the jumbotron radial gradient
 - [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/)
-  - Used to greate the Django environment variables secret keys
+  - Used to create the Django environment variables secret keys
 - [dbdiagrams.io](https://dbdiagram.io/home)
   - Used to create the database entity-relationship diagram.
 
@@ -228,10 +223,16 @@ The following section describes the site design and page layouts to demonstrate 
 
 - The app is created using Python3 and Django framework to create an application structured using the Model-View-Controller (MVC) pattern.
 - The site is deployed via a Heroku app linked to a GitHub repository.
-- The dynamic content is served utilising a PostgreSQL relational database with static files and media stores on an AWS S3 bucket.
+- The dynamic content is served utilising a PostgreSQL relational database with static files and media stored on an AWS S3 bucket.
 
 
-### Database Schema ###
+### **Site Construction** ##
+
+#### Topology ####
+
+
+
+### **Database Schema** ###
 
 ![Entity-Relationship Diagram](wireframes/schema/db_schema.png)
 
@@ -243,9 +244,49 @@ The following section describes the site design and page layouts to demonstrate 
 
 | Site Page | Create | Read | Update | Delete |
 | --- | --- | --- | --- | --- |
+| Products | | All Products | | |
+| Products | | | | Delete Single Product |
+| Product Page | | Single Product | | |
+| Product Page | | | | Delete Single Product |
+| Add Product | Add New Product | | | |
+| Edit Product | | Single Product | | |
+| Edit Product | | | Update Single Product | |
+| Shopping Cart | | All Products | | |
+| Shopping Cart | | | Update Product Quantity | |
+| Shopping Cart | | | | Remove Product |
+| Checkout | | All Products | | |
+| Checkout | Create Order | | | |
+| Checkout | Create Order Line Items | | | |
+| Sign Up | Add New User | | | |
+| Log In | | User Details | | |
+| Profile | | User Details | | |
+| Profile | | User's Orders | | |
+| Profile | | | Update Delivery Details | |
+
+
+### **Messages** ###
+
 
 
 ### **Defensive Programming** ###
+
+- In order to try to maintain the site security, defensive programming to prevent "brute force" loading of restricted pages was introduced.
+  - At its simplest level, certain pages are removed from view unless a user is authenticated by being logged in or not.
+  - Where appropriate, Python views functions are also modified by Django `@login_required` decorators to restrict user access to inappropriate pages.
+  - Editing of products is restricted to super-users or admins using if...else conditions to check user authentication.
+
+
+### **Additional Site Features** ###
+
+
+
+### **Future Features** ###
+
+- Django Pagination to allow limiting the number of products per page to vastly improve the site performance while allowing full product inventory to be displayed across multiple pages.
+
+- Account user registration using social media accounts such as Google, Facebook or LinkedIn.
+
+- Additional tables for stock inventory control to create dynamic updates of the available sizes, stock quantities and In Stock / Out Of Stock indicators.
 
 
 [Back to contents](#contents)
@@ -318,6 +359,100 @@ Fixed bugs and issues are marked as closed. Full details of all closed issues ca
 
 ## Deployment ##
 
+The website was developed using both Gitpod and Visual Studio Code and using Git pushed to GitHub, which hosts the repository. I made the following steps to deploy the site using Heroku:
+
+### **Cloning Sportswear Online from GitHub** ###
+
+#### **Prerequisites** ###
+
+Ensure the following are installed locally on your computer:
+
+- [Python 3.6 or higher](https://www.python.org/downloads/)
+- [PIP3](https://pypi.org/project/pip/) Python package installer
+- [Git](https://git-scm.com/) Version Control
+
+#### **Cloning the GitHub repository** ####
+
+- navigate to [simonjvardy/Sportswear-Online](https://github.com/simonjvardy/Sportswear-Online) GitHub repository.
+- Click the **Code** button
+- **Copy** the clone url in the dropdown menu
+- Using your favourite IDE open up your preferred terminal.
+- **Navigate** to your desired file location.
+
+Copy the following code and input it into your terminal to clone Sportswear-Online:
+
+```Python
+git clone https://github.com/simonjvardy/Sportswear-Online.git
+```
+
+
+#### **Creation of a Python Virtual Environment** ####
+
+
+*Note: The process may be different depending upon your own OS - please follow this [Python help guide](https://python.readthedocs.io/en/latest/library/venv.html) to understand how to create a virtual environment.*
+
+
+#### **Install the App dependencies and external libraries** ####
+
+- In your IDE terminal window, install the dependencies from the requirements.txt file with the following command:
+
+```Python
+pip3 install -r requirements.txt
+```
+
+
+#### **Create the database in sqlite3** ####
+
+The installaton of the requirements.txt file will initialise the sqlite3 development database locally.
+
+Run the following commands to create the database tables:
+
+- Check there are no changes to the models already configurred.
+
+```Python
+python3 manage.py makemigrations --dry-run
+```
+
+- Check which migrations will be applied.
+
+```Python
+python3 manage.py migrate --plan
+
+```
+
+- Apply the migrations.
+
+```Python
+python3 manage.py migrate
+```
+
+Load the fixtures files into the database in the following order:
+
+```Python
+python3 manage.py loaddata gender
+python3 manage.py loaddata master_category
+python3 manage.py loaddata sub_category
+python3 manage.py loaddata article_type
+python3 manage.py loaddata special_offer
+python3 manage.py loaddata products
+```
+
+#### **Create .env file** ####
+
+- Import and initialise environ in settings.py.
+  - A helpful guide can be found [here](https://alicecampkin.medium.com/how-to-set-up-environment-variables-in-django-f3c4db78c55f)
+- The .env file should contain at least the following information:
+
+```Python
+DEVELOPMENT=True
+SECRET_KEY=[YOUR SECRET KEY]
+STRIPE_PUBLIC_KEY=[YOUR STRIPE PUBLIC KEY]
+STRIPE_SECRET_KEY=[YOUR STRIPE SECRET KEY]
+STRIPE_WH_SECRET=[YOUR STRIPE WEBHOOK SECRET KEY]
+```
+
+
+
 
 ---
 
@@ -364,6 +499,6 @@ The following sportswear online retailers' websites were the basis for the desig
 - [Kite](https://www.kite.com/python/answers/how-to-loop-through-all-nested-dictionary-values-using-a-for-loop-in-python
 ) How to loop through all nested dictionary values using a for loop in Python
 - [W3Schools](https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp) How to hide number field arrows with CSS
-- [Bootstrap v4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/) Documentation and code snippets used to build the majority of the templates
+- [Bootstrap v4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/) Documentation and code snippets used to build most of the templates
 - [Coderwall](https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata) How to use Django dumpdata and loaddata
-- [Stack Abuse](https://stackabuse.com/reading-and-writing-json-to-a-file-in-python/) Reading & writing json to a file in Python.
+- [Stack Abuse](https://stackabuse.com/reading-and-writing-json-to-a-file-in-python/) Reading and writing json to a file in Python.
