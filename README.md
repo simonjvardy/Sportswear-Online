@@ -1,5 +1,10 @@
 ![SO logo](media/sportswear_online_logo.png)
 
+Sportswear Online is a (fictitious) online retailer providing sports clothing, footwear, equipment and accessories for sale. The ideas for this final milestone project is to provide the visitor with a fully functioning, interactive e-commerce website providing easy, familiar navigation and allowing the simulated purchase of items from the store.
+
+The site functionality will allow a common shopping experience for the visitor by providing a shopping cart to save chosen items, a secure checkout / payment facility and order confirmation using both on-screen messages and friendly, personalised emailed message.
+
+***Please note: This site is purely for educational purposes only. The credit card payment facility is real but remains in test mode and so no payments will actually be taken. Please do not enter real credit card details when using this site.***
 
 ![Sportswear Online screenshot](wireframes/Sportswear_online.png)
 ---
@@ -27,46 +32,69 @@
 
 ## **UX DESIGN** ##
 
-## The Strategy Plane ##
-
 ### **Project Goals** ###
 
-The **goal** of this project is to build a 
+The **goal** of this project is to build a fully functioning e-commerce website, similar in design to popular UK high street retailers, allow the user to browse a range of sports related products. 
+
+
+The **features** of the website will be:
+
+- Search for products by type, name or category.
+- Expanded menus displaying sub-categories of products to further filter the available products.
+- Select items to purchase by size and quantity placed in a shopping cart.
+- A checkout page where the items can be paid for with an integrated credit card payment facility.
+- User registration with a profile page showing order history and delivery address.
+- Order confirmation email functionality.
+
+I achieve this by:
+
+- Allowing purchases to be made whether the user is registered with an account or not.
+- Providing a registration form with username and password for users to create an account.
+- Providing a log in page for existing users to log in to their account.
+- Utilising Stripe online payments infrastructure to enable purchasing of products
+- Connecting Google Gmail to the website checkout functionality allowing order confirmation emails to be sent.
 
 ### **User Stories** ###
 
-| User Story ID | AS A / AN | I WANT TO BE ABLE TO... | SO THAT I CAN... |
-| --- | --- | --- | --- |
-| | | ***Viewing and Navigation*** | | 
-| 1 | Shopper | View a list of products | Select some to purchase |
-| 2 | Shopper | View a specific category of products | Quickly find product's I'm interested in without having to search through all products |
-| 3 | Shopper | View individual product details | Identify the price, description, product rating, product image and available sizes |
-| 4 | Shopper | Quickly identify deals, clearance items and special offers | Take advantage of special savings on products I'd like to purchase |
-| 5 | Shopper | Easily view the total of my purchases at any time | Avoid spending too much |
-| | | ***Registration & User Accounts*** | | 
-| 6 | Site User | Easily register for an account | Have a personal account and be able to view my profile |
-| 7 | Site User | Easily login or logout | Access my personal account information |
-| 8 | Site User | Easily recover my password in case I forget it | Recover access to my account |
-| 9 | Site User | Receive an email confirmation after registering | Verify that my account registration was successful |
-| 10 | Site User | Have a personalised user profile | View my personal order history and order confirmations and save my payment information |
-| | | ***Sorting & Searching*** | | 
-| 11 | Shopper | Sort the list of available products | Easily identify the best rated, best priced and categorically sorted products |
-| 12 | Shopper | Sort a specific category of product | Find the best-priced or best-rated product in a specific category or sort the products in that category by name |
-| 13 | Shopper | Sort multiple categories of products simultaneously | Find the best-priced or best-rated products across broad categories, such as "clothing" or "homeware" |
-| 14 | Shopper | Search for a product by name or description | Find a specific product I'd like to purchase |
-| 15 | Shopper | Easily see what I've searched for and the number of results | Quickly decide whether the product I want is available |
-| | | ***Purchasing & Checkout*** | | 
-| 16 | Shopper | Easily select the size and quamtity of a poduct when purchasing it | Ensure I don't accidentally select the wrong product, quantity or size |
-| 17 | Shopper | View items in my shopping bag to be purchased | Identify the total cost of my purchase and all items I will receive |
-| 18 | Shopper | Adjust the quantity of individual items in my bag | Easily make changes to my purchase before checkout |
-| 19 | Shopper | Easily enter my payment information | Checkout easily with no hassles |
-| 20 | Shopper | Feel my personal and payment information is secure | Confidently provide the needed information to make a purchase |
-| 21 | Shopper | View an order confirmation after checkout | Verify I have I haven't made any mistakes |
-| 22 | Shopper | Receive an email confirmation after checking out | Keep the confirmation of what I've purchased for my records |
-| | | ***Admin & Store Management*** | | 
-| 23 | Store Owner | Add a product | Add new items to my store |
-| 24 | Store Owner | Edit / update a product | Change product prices, descriptions, images,and other product criteria |
-| 25 | Store Owner | Delete a product | Remove items that are no longer for sale |
+#### Viewing and Navigation ####
+
+1. As a **shopper**, I want to be able to view a list of products so that I can choose some items to purchase.
+2. As a **shopper**, I want to be able to filter products that I am interested in without searching through all the products.
+3. As a **shopper**, I want to be able to select individual products to see more detailed information and add the item to my shopping cart.
+4. As a **shopper**, I want to be able to see any product special offers, new arrivals and available deals, taking advantage of any reduced prices shown.
+5. As a **shopper**, I want to be able to see items I've placed in my shopping cart easily so that I can keep track oof what I am buying
+6. As a **shopper**, I want to be able to see breadcrumb navigation links to see where I am on the site easily.
+
+#### Registration & User Accounts ####
+
+7. As a **site user**, I want to be able to register for an account to make future purchases easier
+8. As a **site user**, I want to be able to easily log in and out of my account so that I can access my personal account information
+9. As a **site user**, I want to be able to receive and email requireing me to verify my email account to finish account registeration.
+10. As a **site user**, I want to be able to log in and have a personal profile page containing my delivery details and order history
+11. As a **site user**, I want to be able to save and update my delivery information on my personal profile page.
+
+#### Sorting & Searching ####
+
+12. As a **shopper**, I want to be able to sort the available products by price, main category, sub-category or product type
+13. As a **shopper**, I want to be able to filter and group products for men, women, unisex or kids.
+14. As a **shopper**, I want to be able to see how many products are available based on the sorting / filtering I have applied
+15. As a **shopper**, I want to be able to search for a product by name, type or category.
+
+#### Purchasing & Checkout ####
+
+16. As a **shopper**, I want to be able to easily select the size and qualtity of a product when adding it to the shopping cart
+17. As a **shopper**, I want to be able to view the items in my shopping cart waiting to be purchased, seeing the sub-total, delivery costs and grand total amounts.
+18. As a **shopper**, I want to be able to easily update the items in the shopping cart by changing the quantities of products or remove them from the cart.
+19. As a **shopper**, I want to be able to checkout securely where I can enter my delivery and credit card payment details with confidence.
+20. As a **shopper**, I want to be able to view an order confirmation page as well as receive and email order confirmation once the transaction has succeeded.
+
+#### Admin & Store Management ###
+
+21. As a **store owner**, I want to be able to add new products to my store
+22. As a **store owner**, I want to be able to edit / update the current product details and replace the product image file
+23. As a **store owner**, I want to be able to delete a product that is no longer for sale.
+
+
 
 
 

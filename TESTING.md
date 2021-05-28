@@ -193,6 +193,7 @@ A selection of the reported bugs are briefly described here:
 - **Unit Testing: Deployed Heroku site very poor Google Lighthouse performance**
   - After deploying to Heroku and loading the static / media files to an AWS S3 bucket, running Goole DevTools Lighthouse showed a dramatic drop in performance score. Site load times were weel above 10s.
   - Testing the site with differing amounts of product images showed the performance score change relation to the number of images displayed.
+  - Django Paginator class was tested ([Django Pagination Documentation](https://docs.djangoproject.com/en/3.2/topics/pagination/)) with each page limited to 40 results per page and this worked successfully. However, when implementing this, the products filtering was inadvertently disabled and couldn't find a way to incorporate both filtered views and pagination in the time available.
 
 Various Django errors:
 
