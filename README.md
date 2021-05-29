@@ -213,7 +213,7 @@ I designed the site mock-ups using [Balsamiq wireframes](https://balsamiq.com/).
   - AWS SDK for Python (Boto3) used to create, configure, and manage AWS S3 services.
 - [jQuery](https://jquery.com/)
   - Used for the initialisation of the Bootstrap5 components functionality and enhance the shopping bag functionality.
-- [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+- [Django Template Language](https://docs.djangoproject.com/en/3.2/ref/templates/language/)
   - Templating language for Python.
 
 
