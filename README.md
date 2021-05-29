@@ -277,6 +277,46 @@ The following section describes the site design and page layouts to demonstrate 
 
 #### Topology ####
 
+- User Logged Out
+
+
+![Topology - User logged out](readme_content/topology_user_logged_out.png)
+
+
+- User Logged In
+
+
+![Topology - User logged out](readme_content/topology_user_logged_in.png)
+
+
+- Admin / Super User Logged In
+
+
+![Topology - User logged out](readme_content/topology_admin.png)
+
+
+### **User Story Features Implemented** ###
+
+| User Story ID | Features Implemented |
+| --- | --- |
+| 1 | The Products page shows a full list of products with a product image, name, price and category labels. The products are displayed in a grid format with 4 columns on larger displays and reducing down to 1 column on mobile displays. |
+| 2, 4 & 13 | The navbar allows users to filter the products by gender, category, sub-category and article type as well as special offers categories. The navbar menus are arranged to provide quick access to defined sorting criteria to assist the user to quickly find the types of products they want. |
+| 3 | Each product image in the Products page can be clicked to open the item product page selected. The product page includes all the same information as the Products page but includes a quantity selector and a size selector (product category dependant), as well as allowing the user to return to the main products page or add the item to the shopping cart. |
+| 5 & 17 | The user can click the shopping cart icon in the top right corner of the navbar to be taken to the cart page where each shopping cart item is listed with a product image, product details, unit price, quantity selector and a sub-total column. A toast message pop-up window appears each time the user adds an item to the shopping basket as a secondary way to easily keep track of the items to be purchased. Delivery cost and grand total amounts are also displayed on the shopping cart page. |
+| 6 | The breadcrumbs navigation links are shown just below the delivery banner in the upper left corner of the main page block. They show the current page and provide navigation links back to the Home page or other related pages. |
+| 7 & 9 | Users can click the My Account link in the navbar and select Register from the dropdown menu. The user is directed to the Sign Up page where they must enter their email address, username and a password. A email is sent to the user to verify the account email address before registration is complete.  |
+| 8 | Users can click the My Account link in the navbar and select Log In from the dropdown menu. The user is directed to the Log In page where they must enter their username and a password. Once logged in, users can click the My Account link in the navbar and select Logout from the dropdown menu.  |
+| 10 & 11 | Users who are logged in can click the My Account link in the navbar and select My Profile from the dropdown menu. The user is directed to the My Profile page where they can see their saved delivery details and order history records. Users can update and save their details from the My Profile page.|
+| 12 | A sorting selector is available on the Products page with a number of sorting options to list the products in both ascending or descending order. |
+| 14 | The products page displays the total number of products returned by the search query |
+| 15 | The navbar has a search box visible on larger displays or can be revealed when tapping the search icon on mobile displays. The user can search for a product by name, type or category. |
+| 16 | Users can select the size (product category dependant) and the quantity from the individual product page when adding the item to the shopping cart. |
+| 18 | Items in the shopping cart can have their individual quantities updated between 1 and 99 or remove the item if no longer needed. |
+| 19 | Secure checkout and payment is provided by the integrated Stripe online credit card payment system. |
+| 20 | Once an order is completed, the user is shown an order confirmation page detailing the oirder information, order details, delivery address and billing information. |
+| 21 | Logged in store owners (admin / super users) have access to a Product Management page where new products can be added. |
+| 22 & 23 | Logged in store owners (admin / super users) have access to edit and delete buttons for all products on the site. The edit button opens and edit product page where the store owner can update the product details. |
+
 
 
 ### **Database Schema** ###
@@ -314,6 +354,8 @@ The full description of the fixtures JSON files creation process can be found in
 | Checkout | Create Order Line Items | | | |
 | Checkout | | User Delivery Details | | |
 | Checkout | | | Update User Details | |
+| Checkout | | | Update Product Quantity (Session) | |
+| Checkout | | | | Remove Product (Session) |
 | Sign Up | Add New User | | | |
 | Log In | | User Details | | |
 | Profile | | User Details | | |
@@ -344,6 +386,8 @@ The full description of the fixtures JSON files creation process can be found in
 - Account user registration using social media accounts such as Google, Facebook or LinkedIn.
 
 - Additional tables for stock inventory control to create dynamic updates of the available sizes, stock quantities and In Stock / Out Of Stock indicators.
+
+- Discount codes functionality within the checkout app with a database table codes and validity from / to date ranges.
 
 
 [Back to contents](#contents)
