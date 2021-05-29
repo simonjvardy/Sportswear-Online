@@ -1,30 +1,65 @@
 ![SO logo](media/sportswear_online_logo.png)
 
-Sportswear Online is a (fictitious) online retailer providing sports clothing, footwear, equipment and accessories for sale. The ideas for this final milestone project is to provide the visitor with a fully functioning, interactive e-commerce website providing easy, familiar navigation and allowing the simulated purchase of items from the store.
+Sportswear Online is a (fictitious) online retailer providing sports clothing, footwear, equipment and accessories for sale. The idea for this final milestone project is to provide the visitor with a fully functioning, interactive e-commerce website providing easy, familiar navigation and allowing the simulated purchase of items from the store.
 
 The site functionality will allow a common shopping experience for the visitor by providing a shopping cart to save chosen items, a secure checkout / payment facility and order confirmation using both on-screen messages and friendly, personalised emailed message.
 
-***Please note: This site is purely for educational purposes only. The credit card payment facility is real but remains in test mode and so no payments will actually be taken. Please do not enter real credit card details when using this site.***
+***Please note: This site is purely for educational purposes only. The credit card payment facility is real but remains in test mode and so no payments will be taken. Please do not enter real credit card details when using this site.***
 
-![Sportswear Online screenshot](wireframes/Sportswear_online.png)
+![Sportswear Online screenshot](readme_content/am-i-responsive-sm.png)
+
 ---
 
 ### **Contents** ###
 
-- [UX (User Experience)](#ux-user-experience)
+- [UX Design](#ux-design)
   - [Project Goals](#project-goals)
-  - [User Goals](#user-goals)
   - [User Stories](#user-stories)
-    - [Viewing & Navigation](#viewing-&-navigation)
-    - [Registration & User Accounts](#registration-&-user-accounts)
-    - [Sorting & Searching](#sorting-&-earching)
-    - [Purchasing & Checkout](#purchasing-&-checkout)
-    - [Admin & Store Management](#admin-&-store-management)
+    - [Viewing and Navigation](#viewing-and-navigation)
+    - [Registration and User Accounts](#registration-and-user-accounts)
+    - [Sorting and Searching](#sorting-and-earching)
+    - [Purchasing and Checkout](#purchasing-and-checkout)
+    - [Admin and Store Management](#admin-and-store-management)
+- [Design Choices](#Design-Choices)
+  - [Colours](#Colours)
+  - [Wireframes](#Wireframes)
 - [Technologies](#technologies)
   - [Languages](#languages)
   - [Database](#database)
   - [Libraries](#libraries)
   - [Tools](#tools)
+- [Features](#Features)
+  - [Features Implemented](#Features-Implemented)
+  - [Responsive Front-end Design](#Responsive-Front-end-Design)
+  - [Back-end Design](#Back-end-Design)
+    - [Fixtures JSON File creation](#Fixtures-JSON-File-creation)
+  - [Site Construction](#Site-Construction)
+    - [Topology](#Topology)
+  - [Database Schema](#Database-Schema)
+  - [CRUD Functionality](#CRUD-Functionality)
+  - [Messages](#Messages)
+  - [Defensive Programming](#Defensive-Programming)
+  - [Additional Site Features](#Additional-Site-Features)
+  - [Future Features](#Future-Features)
+- [Project Management](#Project-Management)
+- [Version Control](#Version-Control)
+- [Testing](#Testing)
+- [Bugs](#Bugs)
+- [Deployment](#deployment)
+  - [Cloning Sportswear Online from GitHub](#cloning-sportswear-online-from-gitHub)
+    - [Prerequisites](#prerequisites)
+    - [Cloning the GitHub repository](#cloning-the-GitHub-repository)
+    - [Creation of a Python Virtual Environment](#Creation-of-a-Python-Virtual-Environment)
+    - [Install the App dependencies and external libraries](#Install-the-App-dependencies-and-external-libraries)
+    - [Create the database in sqlite3](#Create-the-database-in-sqlite3)
+    - [Create .env file](#Create-.env-file)
+    - [Run the application locally](#Run-the-application-locally)
+  - [Deploying Sportswear Online app to Heroku](#Deploying-Sportswear-Online-app-to-Heroku)
+    - [Creating the Heroku app](#Creating-the-Heroku-app)
+    - [Adding a PostgreSQL database to Heroku](#Adding-a-PostgreSQL-database-to-Heroku)
+    - [Load the data into PostgreSQL](#Load-the-data-into-PostgreSQL)
+    - [Push your repository to GitHub](#Push-you-repository-to-GitHub)
+    - [Launch the app](#Launch-the-app)
 - [Credits](#credits)
   - [Images](#images)
   - [Colour](#colour)
@@ -60,16 +95,16 @@ I achieve this by:
 
 ### **User Stories** ###
 
-#### Viewing & Navigation ####
+#### Viewing and Navigation ####
 
 1. As a **shopper**, I want to be able to view a list of products so that I can choose some items to purchase.
 2. As a **shopper**, I want to be able to filter products that I am interested in without searching through all the products.
 3. As a **shopper**, I want to be able to select individual products to see more detailed information and add the item to my shopping cart.
 4. As a **shopper**, I want to be able to see any product special offers, new arrivals and available deals, taking advantage of any reduced prices shown.
-5. As a **shopper**, I want to be able to see items I've placed in my shopping cart easily so that I can keep track oof what I am buying
+5. As a **shopper**, I want to be able to see items I have placed in my shopping cart easily so that I can keep track oof what I am buying
 6. As a **shopper**, I want to be able to see breadcrumb navigation links to see where I am on the site easily.
 
-#### Registration & User Accounts ####
+#### Registration and User Accounts ####
 
 7. As a **site user**, I want to be able to register for an account to make future purchases easier
 8. As a **site user**, I want to be able to easily log in and out of my account so that I can access my personal account information
@@ -77,14 +112,14 @@ I achieve this by:
 10. As a **site user**, I want to be able to log in and have a personal profile page containing my delivery details and order history
 11. As a **site user**, I want to be able to save and update my delivery information on my personal profile page.
 
-#### Sorting & Searching ####
+#### Sorting and Searching ####
 
 12. As a **shopper**, I want to be able to sort the available products by price, main category, sub-category or product type
 13. As a **shopper**, I want to be able to filter and group products for men, women, unisex or kids.
 14. As a **shopper**, I want to be able to see how many products are available based on the sorting / filtering I have applied
 15. As a **shopper**, I want to be able to search for a product by name, type or category.
 
-#### Purchasing & Checkout ####
+#### Purchasing and Checkout ####
 
 16. As a **shopper**, I want to be able to easily select the size and qualtity of a product when adding it to the shopping cart
 17. As a **shopper**, I want to be able to view the items in my shopping cart waiting to be purchased, seeing the sub-total, delivery costs and grand total amounts.
@@ -92,7 +127,7 @@ I achieve this by:
 19. As a **shopper**, I want to be able to checkout securely where I can enter my delivery and credit card payment details with confidence.
 20. As a **shopper**, I want to be able to view an order confirmation page as well as receive and email order confirmation once the transaction has succeeded.
 
-#### Admin & Store Management ###
+#### Admin and Store Management ###
 
 21. As a **store owner**, I want to be able to add new products to my store
 22. As a **store owner**, I want to be able to edit / update the current product details and replace the product image file
@@ -106,12 +141,19 @@ I achieve this by:
 ## Design Choices ##
 
 
-### **Site Features** ###
+### **Colours** ###
 
----
+I've chosen the colours mostly from the standard [Bootstrap Background Colours](https://getbootstrap.com/docs/4.0/utilities/colors/), applying classes to the template sections, as they conveniently fitted with the bold colours of the contemporary Sportwear Retailer sites this project site was modelled on:
 
+![Coolors.co Palette](readme_content/coolors_palette.png)
 
----
+- *bg-dark* (#343A40) - Gunmetal
+- *bg-warning* (#FFC107) - Mikado Yellow
+- *bg-success* (#28A745) - Green Pantone
+- *Logo Text* (#FFFFF0) - Ivory
+- *CTA Background Gradient 1* (#00689D) - Sapphire Blue
+- *CTA Background Gradient 2* (#007DBC) - Star Command Blue
+- *CTA Background Gradient 3* (#0082C3) - Green Blue Crayola
 
 
 ### **Wireframes** ###
@@ -123,7 +165,7 @@ I designed the site mock-ups using [Balsamiq wireframes](https://balsamiq.com/).
 - [User Log In](wireframes/login.png)
 - [My Profile](wireframes/my-profile.png)
 - [Products](wireframes/products.png)
-- [Porduct Page](wireframes/product-page.png)
+- [Product Page](wireframes/product-page.png)
 - [Product Management](wireframes/product-management.png)
 
 
@@ -203,7 +245,7 @@ I designed the site mock-ups using [Balsamiq wireframes](https://balsamiq.com/).
 - [CSS Gradient Tool](https://cssgradient.io/)
   - Used to create the jumbotron radial gradient
 - [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/)
-  - Used to greate the Django environment variables secret keys
+  - Used to create the Django environment variables secret keys
 - [dbdiagrams.io](https://dbdiagram.io/home)
   - Used to create the database entity-relationship diagram.
 
@@ -228,13 +270,21 @@ The following section describes the site design and page layouts to demonstrate 
 
 - The app is created using Python3 and Django framework to create an application structured using the Model-View-Controller (MVC) pattern.
 - The site is deployed via a Heroku app linked to a GitHub repository.
-- The dynamic content is served utilising a PostgreSQL relational database with static files and media stores on an AWS S3 bucket.
+- The dynamic content is served utilising a PostgreSQL relational database with static files and media stored on an AWS S3 bucket.
 
 
-### Database Schema ###
+### **Site Construction** ##
+
+#### Topology ####
+
+
+
+### **Database Schema** ###
 
 ![Entity-Relationship Diagram](wireframes/schema/db_schema.png)
 
+
+#### **Fixtures JSON File creation** ####
 
 ---
 
@@ -243,9 +293,49 @@ The following section describes the site design and page layouts to demonstrate 
 
 | Site Page | Create | Read | Update | Delete |
 | --- | --- | --- | --- | --- |
+| Products | | All Products | | |
+| Products | | | | Delete Single Product |
+| Product Page | | Single Product | | |
+| Product Page | | | | Delete Single Product |
+| Add Product | Add New Product | | | |
+| Edit Product | | Single Product | | |
+| Edit Product | | | Update Single Product | |
+| Shopping Cart | | All Products | | |
+| Shopping Cart | | | Update Product Quantity | |
+| Shopping Cart | | | | Remove Product |
+| Checkout | | All Products | | |
+| Checkout | Create Order | | | |
+| Checkout | Create Order Line Items | | | |
+| Sign Up | Add New User | | | |
+| Log In | | User Details | | |
+| Profile | | User Details | | |
+| Profile | | User's Orders | | |
+| Profile | | | Update Delivery Details | |
+
+
+### **Messages** ###
+
 
 
 ### **Defensive Programming** ###
+
+- In order to try to maintain the site security, defensive programming to prevent "brute force" loading of restricted pages was introduced.
+  - At its simplest level, certain pages are removed from view unless a user is authenticated by being logged in or not.
+  - Where appropriate, Python views functions are also modified by Django `@login_required` decorators to restrict user access to inappropriate pages.
+  - Editing of products is restricted to super-users or admins using if...else conditions to check user authentication.
+
+
+### **Additional Site Features** ###
+
+
+
+### **Future Features** ###
+
+- Django Pagination to allow limiting the number of products per page to vastly improve the site performance while allowing full product inventory to be displayed across multiple pages.
+
+- Account user registration using social media accounts such as Google, Facebook or LinkedIn.
+
+- Additional tables for stock inventory control to create dynamic updates of the available sizes, stock quantities and In Stock / Out Of Stock indicators.
 
 
 [Back to contents](#contents)
@@ -318,6 +408,189 @@ Fixed bugs and issues are marked as closed. Full details of all closed issues ca
 
 ## Deployment ##
 
+The website was developed using both Gitpod and Visual Studio Code and using Git pushed to GitHub, which hosts the repository. I made the following steps to deploy the site using Heroku:
+
+### **Cloning Sportswear Online from GitHub** ###
+
+#### **Prerequisites** ###
+
+Ensure the following are installed locally on your computer:
+
+- [Python 3.6 or higher](https://www.python.org/downloads/)
+- [PIP3](https://pypi.org/project/pip/) Python package installer
+- [Git](https://git-scm.com/) Version Control
+
+*Please ensure you have an account created at [Stripe](https://stripe.com/gb) in order to use the online payment processing for the checkout app.*
+
+#### **Cloning the GitHub repository** ####
+
+- navigate to [simonjvardy/Sportswear-Online](https://github.com/simonjvardy/Sportswear-Online) GitHub repository.
+- Click the **Code** button
+- **Copy** the clone url in the dropdown menu
+- Using your favourite IDE open up your preferred terminal.
+- **Navigate** to your desired file location.
+
+Copy the following code and input it into your terminal to clone Sportswear-Online:
+
+```Python
+git clone https://github.com/simonjvardy/Sportswear-Online.git
+```
+
+
+#### **Creation of a Python Virtual Environment** ####
+
+
+*Note: The process may be different depending upon your own OS - please follow this [Python help guide](https://python.readthedocs.io/en/latest/library/venv.html) to understand how to create a virtual environment.*
+
+
+#### **Install the App dependencies and external libraries** ####
+
+- In your IDE terminal window, install the dependencies from the requirements.txt file with the following command:
+
+```Python
+pip3 install -r requirements.txt
+```
+
+
+#### **Create the database in sqlite3** ####
+
+The installaton of the requirements.txt file will initialise the sqlite3 development database locally.
+
+Run the following commands to create the database tables:
+
+- Check there are no changes to the models already configurred.
+
+```Python
+python3 manage.py makemigrations --dry-run
+```
+
+- Check which migrations will be applied.
+
+```Python
+python3 manage.py migrate --plan
+
+```
+
+- Apply the migrations.
+
+```Python
+python3 manage.py migrate
+```
+
+Load the fixtures files into the database in the following order:
+
+```Python
+python3 manage.py loaddata gender
+python3 manage.py loaddata master_category
+python3 manage.py loaddata sub_category
+python3 manage.py loaddata article_type
+python3 manage.py loaddata special_offer
+python3 manage.py loaddata products
+```
+
+#### **Create .env file** ####
+
+- Import and initialise environ in settings.py.
+  - A helpful guide can be found [here](https://alicecampkin.medium.com/how-to-set-up-environment-variables-in-django-f3c4db78c55f)
+- The .env file should contain at least the following information:
+
+```Python
+DEVELOPMENT=True
+SECRET_KEY=[YOUR SECRET KEY]
+STRIPE_PUBLIC_KEY=[YOUR STRIPE PUBLIC KEY]
+STRIPE_SECRET_KEY=[YOUR STRIPE SECRET KEY]
+STRIPE_WH_SECRET=[YOUR STRIPE WEBHOOK SECRET KEY]
+```
+
+- Please ensure you add in your own `SECRET_KEY`, `STRIPE_PUBLIC_KEY`, `STRIPE_SECRET_KEY`  and `STRIPE_WH_SECRET` values.
+- The Stripe keys can be found in the Developers section under API Keys and Webhooks of your [Stripe Account](https://stripe.com/gb)
+- ***Important:*** Add the `.env` file to your `.gitignore` file before pushing your files to any public git repository.
+
+
+#### **Run the application locally** ####
+
+- To run the application enter the following command into the terminal window:
+
+```Python
+python3 manage.py runserver
+```
+
+### **Deploying Sportswear Online app to Heroku** ###
+
+#### **Creating the Heroku app** ####
+
+*Please ensure you have an account created at [Heroku](https://signup.heroku.com/login) in order to deploy the app.*
+
+- Log in to your Heroku account dashboard and create a new app.
+- Enter the App name.
+  - This needs to be unique and sportswear-online is already in use so choose a suitable alternative name for your own App.
+- Choose a geographical region closest to where you live.
+  - Options available on a free account are ***United States*** or ***Europe***
+
+
+#### **Adding a PostgreSQL database to Heroku** ####
+
+- Select the **Resources** tab on your Heroku app dashboard
+- Select `Heroku Postgres` as a new add-on with a Plan name of `Hobby Dev - Free`
+- Heroku will build the PostgresQL database instance and add a config variable automatically.
+
+
+#### **Load the data into PostgreSQL** ####
+
+- Add the following variable to the `.env` file:
+```Python
+DATABASE_URL=[YOUR POSTGRESQL DATABASE URL FROM HEROKU CONFIG VARS]
+```
+
+- Apply the migrations to the Heroku PostgreSQl database tables.
+
+```Python
+python3 manage.py migrate
+```
+
+- Load the fixtures files into the PostgreSQL database in the following order:
+
+```Python
+python3 manage.py loaddata gender
+python3 manage.py loaddata master_category
+python3 manage.py loaddata sub_category
+python3 manage.py loaddata article_type
+python3 manage.py loaddata special_offer
+python3 manage.py loaddata products
+```
+
+### **Push your repository to GitHub** ###
+ - In the Heroku App Settings page, open the section Config Vars
+ - Add all the environmant variables from your local `.env` file into the Heroku Config Vars:
+
+| Key | Value |
+| --- | --- |
+| SECRET_KEY | [YOUR SECRET KEY] |
+| STRIPE_PUBLIC_KEY | [YOUR STRIPE PUBLIC KEY] |
+| STRIPE_SECRET_KEY | [YOUR STRIPE SECRET KEY] |
+| STRIPE_WH_SECRET | [YOUR STRIPE WEBHOOK SECRET KEY] |
+| DATABASE_URL | [YOUR POSTGRESQL DATABASE URL] |
+| EMAIL_HOST_PASS | [YOUR GMAIL APP SIGNING PASSWORD] |
+| EMAIL_HOST_USER | [THE ORDER CONFIRMATION EMAIL ADDRESS FROM GMAIL]
+
+
+
+- In the Heroku App Deploy page:
+  - Select GitHub from the Deployment Method options.
+  - Select Connect to GitHub.
+  - Log in to your GitHub account from Heroku to link the App to GitHub.
+  - Search for and select the repository to be linked in Github.
+  - Select Connect.
+  - Select Enable Automatic Deployment from the GitHub Master / Main branch.
+
+#### **Launch the app** ####
+
+- Click Open App in Heroku to launch the App in a new browser window.
+
+***Note: The static files served from GitHub will be much slower to load than running locally. It is recommended to copy the static files to an online service such as an AWS S3 Bucket and connect this to Heroku.***
+
+
+[Back to contents](#contents)
 
 ---
 
@@ -364,6 +637,6 @@ The following sportswear online retailers' websites were the basis for the desig
 - [Kite](https://www.kite.com/python/answers/how-to-loop-through-all-nested-dictionary-values-using-a-for-loop-in-python
 ) How to loop through all nested dictionary values using a for loop in Python
 - [W3Schools](https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp) How to hide number field arrows with CSS
-- [Bootstrap v4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/) Documentation and code snippets used to build the majority of the templates
+- [Bootstrap v4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/) Documentation and code snippets used to build most of the templates
 - [Coderwall](https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata) How to use Django dumpdata and loaddata
-- [Stack Abuse](https://stackabuse.com/reading-and-writing-json-to-a-file-in-python/) Reading & writing json to a file in Python.
+- [Stack Abuse](https://stackabuse.com/reading-and-writing-json-to-a-file-in-python/) Reading and writing json to a file in Python.
