@@ -277,6 +277,46 @@ The following section describes the site design and page layouts to demonstrate 
 
 #### Topology ####
 
+- User Logged Out
+
+
+![Topology - User logged out](readme_content/topology_user_logged_out.png)
+
+
+- User Logged In
+
+
+![Topology - User logged out](readme_content/topology_user_logged_in.png)
+
+
+- Admin / Super User Logged In
+
+
+![Topology - User logged out](readme_content/topology_admin.png)
+
+
+### **User Story Features Implemented** ###
+
+| User Story ID | Features Implemented |
+| --- | --- |
+| 1 | The Products page shows a full list of products with a product image, name, price and category labels. The products are displayed in a grid format with 4 columns on larger displays and reducing down to 1 column on mobile displays. |
+| 2, 4 & 13 | The navbar allows users to filter the products by gender, category, sub-category and article type as well as special offers categories. The navbar menus are arranged to provide quick access to defined sorting criteria to assist the user to quickly find the types of products they want. |
+| 3 | Each product image in the Products page can be clicked to open the item product page selected. The product page includes all the same information as the Products page but includes a quantity selector and a size selector (product category dependant), as well as allowing the user to return to the main products page or add the item to the shopping cart. |
+| 5 & 17 | The user can click the shopping cart icon in the top right corner of the navbar to be taken to the cart page where each shopping cart item is listed with a product image, product details, unit price, quantity selector and a sub-total column. A toast message pop-up window appears each time the user adds an item to the shopping basket as a secondary way to easily keep track of the items to be purchased. Delivery cost and grand total amounts are also displayed on the shopping cart page. |
+| 6 | The breadcrumbs navigation links are shown just below the delivery banner in the upper left corner of the main page block. They show the current page and provide navigation links back to the Home page or other related pages. |
+| 7 & 9 | Users can click the My Account link in the navbar and select Register from the dropdown menu. The user is directed to the Sign Up page where they must enter their email address, username and a password. A email is sent to the user to verify the account email address before registration is complete.  |
+| 8 | Users can click the My Account link in the navbar and select Log In from the dropdown menu. The user is directed to the Log In page where they must enter their username and a password. Once logged in, users can click the My Account link in the navbar and select Logout from the dropdown menu.  |
+| 10 & 11 | Users who are logged in can click the My Account link in the navbar and select My Profile from the dropdown menu. The user is directed to the My Profile page where they can see their saved delivery details and order history records. Users can update and save their details from the My Profile page.|
+| 12 | A sorting selector is available on the Products page with a number of sorting options to list the products in both ascending or descending order. |
+| 14 | The products page displays the total number of products returned by the search query |
+| 15 | The navbar has a search box visible on larger displays or can be revealed when tapping the search icon on mobile displays. The user can search for a product by name, type or category. |
+| 16 | Users can select the size (product category dependant) and the quantity from the individual product page when adding the item to the shopping cart. |
+| 18 | Items in the shopping cart can have their individual quantities updated between 1 and 99 or remove the item if no longer needed. |
+| 19 | Secure checkout and payment is provided by the integrated Stripe online credit card payment system. |
+| 20 | Once an order is completed, the user is shown an order confirmation page detailing the oirder information, order details, delivery address and billing information. |
+| 21 | Logged in store owners (admin / super users) have access to a Product Management page where new products can be added. |
+| 22 & 23 | Logged in store owners (admin / super users) have access to edit and delete buttons for all products on the site. The edit button opens and edit product page where the store owner can update the product details. |
+
 
 
 ### **Database Schema** ###
@@ -285,6 +325,12 @@ The following section describes the site design and page layouts to demonstrate 
 
 
 #### **Fixtures JSON File creation** ####
+
+- To enable the large amout of products data to be loaded easily into the database, fixtures JSON files were created to remove the manual work to build by hand each time via the site admin page.
+
+- Utility apps were written in Python to sort through and extract information from the huge  [Fashion Product Images Dataset](https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset) from www.kaggle.com
+
+The full description of the fixtures JSON files creation process can be found in the [FIXTURES.md](https://github.com/simonjvardy/Sportswear-Online/blob/main/FIXTURES.md) document.
 
 ---
 
@@ -301,11 +347,15 @@ The following section describes the site design and page layouts to demonstrate 
 | Edit Product | | Single Product | | |
 | Edit Product | | | Update Single Product | |
 | Shopping Cart | | All Products | | |
-| Shopping Cart | | | Update Product Quantity | |
-| Shopping Cart | | | | Remove Product |
+| Shopping Cart | | | Update Product Quantity (Session) | |
+| Shopping Cart | | | | Remove Product (Session) |
 | Checkout | | All Products | | |
 | Checkout | Create Order | | | |
 | Checkout | Create Order Line Items | | | |
+| Checkout | | User Delivery Details | | |
+| Checkout | | | Update User Details | |
+| Checkout | | | Update Product Quantity (Session) | |
+| Checkout | | | | Remove Product (Session) |
 | Sign Up | Add New User | | | |
 | Log In | | User Details | | |
 | Profile | | User Details | | |
@@ -336,6 +386,8 @@ The following section describes the site design and page layouts to demonstrate 
 - Account user registration using social media accounts such as Google, Facebook or LinkedIn.
 
 - Additional tables for stock inventory control to create dynamic updates of the available sizes, stock quantities and In Stock / Out Of Stock indicators.
+
+- Discount codes functionality within the checkout app with a database table codes and validity from / to date ranges.
 
 
 [Back to contents](#contents)
@@ -369,10 +421,9 @@ The Projects are created using the following GitHub templates:
 **Version control** for this repository is managed within **GitHub** and **Gitpod** using separate [branches](https://github.com/simonjvardy/Sportswear-Online/branches)  used to work on specific aspects of the project.
 The following describes the repository branch structure:
 - **Main** - this is the default branch and the source for the repository deployment.
-    - **Docs** - this branch is used for updating the README.md and testing.md documentation only.
+    - **Docs** - this branch is used for updating the README.md, FIXTURES.md and TESTING.md documentation.
     - **Development** - this branch is used as the main working branch for the website development.
     - **Features** - this branch is used to try out new ideas and enhancements for the website.
-        - Features and enhancements that are accepted are merged down into the Development branch.
     - Each individual **bug fixes** are raised within their own **separate branches** using the naming convention **\<GitHub Issue ID Number>-\<bug fix description>** e.g. branch name ***12-correct-navbar-links*** 
 
 
@@ -570,7 +621,7 @@ python3 manage.py loaddata products
 | STRIPE_SECRET_KEY | [YOUR STRIPE SECRET KEY] |
 | STRIPE_WH_SECRET | [YOUR STRIPE WEBHOOK SECRET KEY] |
 | DATABASE_URL | [YOUR POSTGRESQL DATABASE URL] |
-| EMAIL_HOST_PASS | [YOUR GMAIL APP SIGNING PASSWORD] |
+| EMAIL_HOST_PASS | [YOUR GMAIL APP SIGN IN PASSWORD] |
 | EMAIL_HOST_USER | [THE ORDER CONFIRMATION EMAIL ADDRESS FROM GMAIL]
 
 
@@ -612,6 +663,12 @@ The following sportswear online retailers' websites were the basis for the desig
 
 - [Fashion Product Images Dataset](https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset) Credit: Param Aggarwal @ www.kaggle.com
   - The dataset consists of 44,440 images and associated individual JSON data files containing the product information.
+
+- **Home Page**
+  - All homepage images were source as free to use from Unsplash.com under their [license agreement](https://unsplash.com/license)
+  - [Woman Boxer](https://unsplash.com/photos/tECL4qZgRi0) - Photo by [H.F.E & CO](https://unsplash.com/@happyfaceemoji?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/collections/827737/sport?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+  - [Woman tying shoelaces](https://unsplash.com/photos/whNiXtKGeWs) - Photo by [Cristina Anne Costello](https://unsplash.com/@lightupphotos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/tennis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+  - [Tennis Racket, net, ball](https://unsplash.com/photos/POMeFvO3CwE) - Photo by [Cristina Anne Costello](https://unsplash.com/@lightupphotos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/tennis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 ### **Acknowledgements** ###
 
