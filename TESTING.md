@@ -40,6 +40,7 @@ For each app in the project, where applicable, the following files were tested:
   - `forms.py` tested by `test_forms.py`
 
 
+![Django Unit Test results](readme_content/django_unit_test.png)
 
 ### Validation Services ###
 
