@@ -12,20 +12,54 @@ The site functionality will allow a common shopping experience for the visitor b
 
 ### **Contents** ###
 
-- [UX (User Experience)](#ux-user-experience)
+- [UX Design](#ux-design)
   - [Project Goals](#project-goals)
-  - [User Goals](#user-goals)
   - [User Stories](#user-stories)
     - [Viewing and Navigation](#viewing-and-navigation)
     - [Registration and User Accounts](#registration-and-user-accounts)
     - [Sorting and Searching](#sorting-and-earching)
     - [Purchasing and Checkout](#purchasing-and-checkout)
     - [Admin and Store Management](#admin-and-store-management)
+- [Design Choices](#Design-Choices)
+  - [Colours](#Colours)
+  - [Wireframes](#Wireframes)
 - [Technologies](#technologies)
   - [Languages](#languages)
   - [Database](#database)
   - [Libraries](#libraries)
   - [Tools](#tools)
+- [Features](#Features)
+  - [Features Implemented](#Features-Implemented)
+  - [Responsive Front-end Design](#Responsive-Front-end-Design)
+  - [Back-end Design](#Back-end-Design)
+    - [Fixtures JSON File creation](#Fixtures-JSON-File-creation)
+  - [Site Construction](#Site-Construction)
+    - [Topology](#Topology)
+  - [Database Schema](#Database-Schema)
+  - [CRUD Functionality](#CRUD-Functionality)
+  - [Messages](#Messages)
+  - [Defensive Programming](#Defensive-Programming)
+  - [Additional Site Features](#Additional-Site-Features)
+  - [Future Features](#Future-Features)
+- [Project Management](#Project-Management)
+- [Version Control](#Version-Control)
+- [Testing](#Testing)
+- [Bugs](#Bugs)
+- [Deployment](#deployment)
+  - [Cloning Sportswear Online from GitHub](#cloning-sportswear-online-from-gitHub)
+    - [Prerequisites](#prerequisites)
+    - [Cloning the GitHub repository](#cloning-the-GitHub-repository)
+    - [Creation of a Python Virtual Environment](#Creation-of-a-Python-Virtual-Environment)
+    - [Install the App dependencies and external libraries](#Install-the-App-dependencies-and-external-libraries)
+    - [Create the database in sqlite3](#Create-the-database-in-sqlite3)
+    - [Create .env file](#Create-.env-file)
+    - [Run the application locally](#Run-the-application-locally)
+  - [Deploying Sportswear Online app to Heroku](#Deploying-Sportswear-Online-app-to-Heroku)
+    - [Creating the Heroku app](#Creating-the-Heroku-app)
+    - [Adding a PostgreSQL database to Heroku](#Adding-a-PostgreSQL-database-to-Heroku)
+    - [Load the data into PostgreSQL](#Load-the-data-into-PostgreSQL)
+    - [Push your repository to GitHub](#Push-you-repository-to-GitHub)
+    - [Launch the app](#Launch-the-app)
 - [Credits](#credits)
   - [Images](#images)
   - [Colour](#colour)
@@ -107,7 +141,20 @@ I achieve this by:
 ## Design Choices ##
 
 
-### **Site Features** ###
+### **Colours** ###
+
+I've chosen the colours mostly from the standard [Bootstrap Background Colours](https://getbootstrap.com/docs/4.0/utilities/colors/), applying classes to the template sections, as they conveniently fitted with the bold colours of the contemporary Sportwear Retailer sites this project site was modelled on:
+
+![Coolors.co Palette](readme_content/coolors_palette.png)
+
+- *bg-dark* (#343A40) - Gunmetal
+- *bg-warning* (#FFC107) - Mikado Yellow
+- *bg-success* (#28A745) - Green Pantone
+- *Logo Text* (#FFFFF0) - Ivory
+- *CTA Background Gradient 1* (#00689D) - Sapphire Blue
+- *CTA Background Gradient 2* (#007DBC) - Star Command Blue
+- *CTA Background Gradient 3* (#0082C3) - Green Blue Crayola
+
 
 ### **Wireframes** ###
 
@@ -236,6 +283,8 @@ The following section describes the site design and page layouts to demonstrate 
 
 ![Entity-Relationship Diagram](wireframes/schema/db_schema.png)
 
+
+#### **Fixtures JSON File creation** ####
 
 ---
 
@@ -371,6 +420,8 @@ Ensure the following are installed locally on your computer:
 - [PIP3](https://pypi.org/project/pip/) Python package installer
 - [Git](https://git-scm.com/) Version Control
 
+*Please ensure you have an account created at [Stripe](https://stripe.com/gb) in order to use the online payment processing for the checkout app.*
+
 #### **Cloning the GitHub repository** ####
 
 - navigate to [simonjvardy/Sportswear-Online](https://github.com/simonjvardy/Sportswear-Online) GitHub repository.
@@ -451,8 +502,95 @@ STRIPE_SECRET_KEY=[YOUR STRIPE SECRET KEY]
 STRIPE_WH_SECRET=[YOUR STRIPE WEBHOOK SECRET KEY]
 ```
 
+- Please ensure you add in your own `SECRET_KEY`, `STRIPE_PUBLIC_KEY`, `STRIPE_SECRET_KEY`  and `STRIPE_WH_SECRET` values.
+- The Stripe keys can be found in the Developers section under API Keys and Webhooks of your [Stripe Account](https://stripe.com/gb)
+- ***Important:*** Add the `.env` file to your `.gitignore` file before pushing your files to any public git repository.
 
 
+#### **Run the application locally** ####
+
+- To run the application enter the following command into the terminal window:
+
+```Python
+python3 manage.py runserver
+```
+
+### **Deploying Sportswear Online app to Heroku** ###
+
+#### **Creating the Heroku app** ####
+
+*Please ensure you have an account created at [Heroku](https://signup.heroku.com/login) in order to deploy the app.*
+
+- Log in to your Heroku account dashboard and create a new app.
+- Enter the App name.
+  - This needs to be unique and sportswear-online is already in use so choose a suitable alternative name for your own App.
+- Choose a geographical region closest to where you live.
+  - Options available on a free account are ***United States*** or ***Europe***
+
+
+#### **Adding a PostgreSQL database to Heroku** ####
+
+- Select the **Resources** tab on your Heroku app dashboard
+- Select `Heroku Postgres` as a new add-on with a Plan name of `Hobby Dev - Free`
+- Heroku will build the PostgresQL database instance and add a config variable automatically.
+
+
+#### **Load the data into PostgreSQL** ####
+
+- Add the following variable to the `.env` file:
+```Python
+DATABASE_URL=[YOUR POSTGRESQL DATABASE URL FROM HEROKU CONFIG VARS]
+```
+
+- Apply the migrations to the Heroku PostgreSQl database tables.
+
+```Python
+python3 manage.py migrate
+```
+
+- Load the fixtures files into the PostgreSQL database in the following order:
+
+```Python
+python3 manage.py loaddata gender
+python3 manage.py loaddata master_category
+python3 manage.py loaddata sub_category
+python3 manage.py loaddata article_type
+python3 manage.py loaddata special_offer
+python3 manage.py loaddata products
+```
+
+### **Push your repository to GitHub** ###
+ - In the Heroku App Settings page, open the section Config Vars
+ - Add all the environmant variables from your local `.env` file into the Heroku Config Vars:
+
+| Key | Value |
+| --- | --- |
+| SECRET_KEY | [YOUR SECRET KEY] |
+| STRIPE_PUBLIC_KEY | [YOUR STRIPE PUBLIC KEY] |
+| STRIPE_SECRET_KEY | [YOUR STRIPE SECRET KEY] |
+| STRIPE_WH_SECRET | [YOUR STRIPE WEBHOOK SECRET KEY] |
+| DATABASE_URL | [YOUR POSTGRESQL DATABASE URL] |
+| EMAIL_HOST_PASS | [YOUR GMAIL APP SIGNING PASSWORD] |
+| EMAIL_HOST_USER | [THE ORDER CONFIRMATION EMAIL ADDRESS FROM GMAIL]
+
+
+
+- In the Heroku App Deploy page:
+  - Select GitHub from the Deployment Method options.
+  - Select Connect to GitHub.
+  - Log in to your GitHub account from Heroku to link the App to GitHub.
+  - Search for and select the repository to be linked in Github.
+  - Select Connect.
+  - Select Enable Automatic Deployment from the GitHub Master / Main branch.
+
+#### **Launch the app** ####
+
+- Click Open App in Heroku to launch the App in a new browser window.
+
+***Note: The static files served from GitHub will be much slower to load than running locally. It is recommended to copy the static files to an online service such as an AWS S3 Bucket and connect this to Heroku.***
+
+
+[Back to contents](#contents)
 
 ---
 
