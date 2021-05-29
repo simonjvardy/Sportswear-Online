@@ -286,6 +286,12 @@ The following section describes the site design and page layouts to demonstrate 
 
 #### **Fixtures JSON File creation** ####
 
+- To enable the large amout of products data to be loaded easily into the database, fixtures JSON files were created to remove the manual work to build by hand each time via the site admin page.
+
+- Utility apps were written in Python to sort through and extract information from the huge  [Fashion Product Images Dataset](https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset) from www.kaggle.com
+
+The full description of the fixtures JSON files creation process can be found in the [FIXTURES.md](https://github.com/simonjvardy/Sportswear-Online/blob/main/FIXTURES.md) document.
+
 ---
 
 ### **CRUD Functionality** ###
@@ -301,11 +307,13 @@ The following section describes the site design and page layouts to demonstrate 
 | Edit Product | | Single Product | | |
 | Edit Product | | | Update Single Product | |
 | Shopping Cart | | All Products | | |
-| Shopping Cart | | | Update Product Quantity | |
-| Shopping Cart | | | | Remove Product |
+| Shopping Cart | | | Update Product Quantity (Session) | |
+| Shopping Cart | | | | Remove Product (Session) |
 | Checkout | | All Products | | |
 | Checkout | Create Order | | | |
 | Checkout | Create Order Line Items | | | |
+| Checkout | | User Delivery Details | | |
+| Checkout | | | Update User Details | |
 | Sign Up | Add New User | | | |
 | Log In | | User Details | | |
 | Profile | | User Details | | |
@@ -369,10 +377,9 @@ The Projects are created using the following GitHub templates:
 **Version control** for this repository is managed within **GitHub** and **Gitpod** using separate [branches](https://github.com/simonjvardy/Sportswear-Online/branches)  used to work on specific aspects of the project.
 The following describes the repository branch structure:
 - **Main** - this is the default branch and the source for the repository deployment.
-    - **Docs** - this branch is used for updating the README.md and testing.md documentation only.
+    - **Docs** - this branch is used for updating the README.md, FIXTURES.md and TESTING.md documentation.
     - **Development** - this branch is used as the main working branch for the website development.
     - **Features** - this branch is used to try out new ideas and enhancements for the website.
-        - Features and enhancements that are accepted are merged down into the Development branch.
     - Each individual **bug fixes** are raised within their own **separate branches** using the naming convention **\<GitHub Issue ID Number>-\<bug fix description>** e.g. branch name ***12-correct-navbar-links*** 
 
 
@@ -570,7 +577,7 @@ python3 manage.py loaddata products
 | STRIPE_SECRET_KEY | [YOUR STRIPE SECRET KEY] |
 | STRIPE_WH_SECRET | [YOUR STRIPE WEBHOOK SECRET KEY] |
 | DATABASE_URL | [YOUR POSTGRESQL DATABASE URL] |
-| EMAIL_HOST_PASS | [YOUR GMAIL APP SIGNING PASSWORD] |
+| EMAIL_HOST_PASS | [YOUR GMAIL APP SIGN IN PASSWORD] |
 | EMAIL_HOST_USER | [THE ORDER CONFIRMATION EMAIL ADDRESS FROM GMAIL]
 
 
@@ -612,6 +619,12 @@ The following sportswear online retailers' websites were the basis for the desig
 
 - [Fashion Product Images Dataset](https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset) Credit: Param Aggarwal @ www.kaggle.com
   - The dataset consists of 44,440 images and associated individual JSON data files containing the product information.
+
+- **Home Page**
+  - All homepage images were source as free to use from Unsplash.com under their [license agreement](https://unsplash.com/license)
+  - [Woman Boxer](https://unsplash.com/photos/tECL4qZgRi0) - Photo by [H.F.E & CO](https://unsplash.com/@happyfaceemoji?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/collections/827737/sport?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+  - [Woman tying shoelaces](https://unsplash.com/photos/whNiXtKGeWs) - Photo by [Cristina Anne Costello](https://unsplash.com/@lightupphotos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/tennis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+  - [Tennis Racket, net, ball](https://unsplash.com/photos/POMeFvO3CwE) - Photo by [Cristina Anne Costello](https://unsplash.com/@lightupphotos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/tennis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 ### **Acknowledgements** ###
 

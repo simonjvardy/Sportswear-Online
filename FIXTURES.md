@@ -30,7 +30,7 @@ The images needed to be curated down to a manageable number for this project and
 
 ### ***Curate the Images*** ##
 
-The image files were manually sorted through and any suitable images of sportswear related clothing, footwear or accessories were copied into a separate folder. The images files were reduced from 44,400 down to 354 images.
+The image files were manually sorted through and any suitable images of sportswear related clothing, footwear or accessories were copied into a separate folder. The images files were reduced from 44,400 down to 370 images.
 
 A small python utility app ([move_files.py](utilities/move_files.py)) was written to read the curated image file names and then move the associated JSON files into a separate folder, ready for further work.
 
@@ -85,7 +85,7 @@ The source JSON files contained extremely detailed product information and was f
 
 However, they did contain all the required name value pairs needed for the Sportswear Online products model.
 
-To extract only the required data from each of the 212 JSON source files, another Python utility app ([create_json.py](utilities/create_json.py)) was written to open and read all of the source JSON files from the local file directory and to loop through each one, extracting the required name value pairs, before appending the data to the products.json fixtures file.
+To extract only the required data from each of the 370 JSON source files, another Python utility app ([create_json.py](utilities/create_json.py)) was written to open and read all of the source JSON files from the local file directory and to loop through each one, extracting the required name value pairs, before appending the data to the products.json fixtures file.
 
 ```Python
 import json
