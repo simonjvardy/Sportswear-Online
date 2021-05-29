@@ -123,6 +123,8 @@ def json_data(path):
                 discount_price_new = float("{:.2f}".format(
                     (discount_price * 0.0096) * 0.90))
 
+                default_special_offer = 1
+
                 # Build the products JSON structure
                 json_data = {
                     "model": "products.product",
@@ -138,6 +140,7 @@ def json_data(path):
                         "master_category": json_data['data']['masterCategory']['typeName'],
                         "sub_category": json_data['data']['subCategory']['typeName'],
                         "article_type": json_data['data']['articleType']['typeName'],
+                        "special_offer": default_special_offer,
                         "image": str(json_data['data']['id']) + ".jpg",
                     }
                 }

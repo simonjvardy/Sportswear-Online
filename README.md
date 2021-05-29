@@ -1,4 +1,4 @@
-![SO logo](media/sportswear_online_logo.png)
+![Sportswear Online logo](media/sportswear_online_logo.png)
 
 Sportswear Online is a (fictitious) online retailer providing sports clothing, footwear, equipment and accessories for sale. The idea for this final milestone project is to provide the visitor with a fully functioning, interactive e-commerce website providing easy, familiar navigation and allowing the simulated purchase of items from the store.
 
@@ -622,7 +622,7 @@ python3 manage.py loaddata products
 | STRIPE_WH_SECRET | [YOUR STRIPE WEBHOOK SECRET KEY] |
 | DATABASE_URL | [YOUR POSTGRESQL DATABASE URL] |
 | EMAIL_HOST_PASS | [YOUR GMAIL APP SIGN IN PASSWORD] |
-| EMAIL_HOST_USER | [THE ORDER CONFIRMATION EMAIL ADDRESS FROM GMAIL]
+| EMAIL_HOST_USER | [YOUR ORDER CONFIRMATION EMAIL ADDRESS FROM GMAIL]
 
 
 
