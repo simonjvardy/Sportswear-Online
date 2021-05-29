@@ -1,4 +1,4 @@
-![SO logo](media/sportswear_online_logo.png)
+![Sportswear Online logo](media/sportswear_online_logo.png)
 
 Sportswear Online is a (fictitious) online retailer providing sports clothing, footwear, equipment and accessories for sale. The idea for this final milestone project is to provide the visitor with a fully functioning, interactive e-commerce website providing easy, familiar navigation and allowing the simulated purchase of items from the store.
 
@@ -46,7 +46,7 @@ The site functionality will allow a common shopping experience for the visitor b
 - [Testing](#Testing)
 - [Bugs](#Bugs)
 - [Deployment](#deployment)
-  - [Cloning Sportswear Online from GitHub](#cloning-sportswear-online-from-gitHub)
+  - [Cloning Sportswear Online from GitHub](#cloning-sportswear-online-from-github)
     - [Prerequisites](#prerequisites)
     - [Cloning the GitHub repository](#cloning-the-GitHub-repository)
     - [Creation of a Python Virtual Environment](#Creation-of-a-Python-Virtual-Environment)
@@ -187,7 +187,7 @@ I designed the site mock-ups using [Balsamiq wireframes](https://balsamiq.com/).
 ### **Database** ###
 
 - [PostgreSQL](https://www.postgresql.org/)
-  - A powerful, open source object-relational database.
+  - A powerful, open-source object-relational database.
 - [sqlite3](https://www.sqlitetutorial.net/sqlite-python/)
   - Default database created with Django used for app development on localhost.
 
@@ -304,10 +304,10 @@ The following section describes the site design and page layouts to demonstrate 
 | 3 | Each product image in the Products page can be clicked to open the item product page selected. The product page includes all the same information as the Products page but includes a quantity selector and a size selector (product category dependant), as well as allowing the user to return to the main products page or add the item to the shopping cart. |
 | 5 & 17 | The user can click the shopping cart icon in the top right corner of the navbar to be taken to the cart page where each shopping cart item is listed with a product image, product details, unit price, quantity selector and a sub-total column. A toast message pop-up window appears each time the user adds an item to the shopping basket as a secondary way to easily keep track of the items to be purchased. Delivery cost and grand total amounts are also displayed on the shopping cart page. |
 | 6 | The breadcrumbs navigation links are shown just below the delivery banner in the upper left corner of the main page block. They show the current page and provide navigation links back to the Home page or other related pages. |
-| 7 & 9 | Users can click the My Account link in the navbar and select Register from the dropdown menu. The user is directed to the Sign Up page where they must enter their email address, username and a password. A email is sent to the user to verify the account email address before registration is complete.  |
+| 7 & 9 | Users can click the My Account link in the navbar and select Register from the dropdown menu. The user is directed to the Sign-Up page where they must enter their email address, username and a password. An email is sent to the user to verify the account email address before registration is complete.  |
 | 8 | Users can click the My Account link in the navbar and select Log In from the dropdown menu. The user is directed to the Log In page where they must enter their username and a password. Once logged in, users can click the My Account link in the navbar and select Logout from the dropdown menu.  |
 | 10 & 11 | Users who are logged in can click the My Account link in the navbar and select My Profile from the dropdown menu. The user is directed to the My Profile page where they can see their saved delivery details and order history records. Users can update and save their details from the My Profile page.|
-| 12 | A sorting selector is available on the Products page with a number of sorting options to list the products in both ascending or descending order. |
+| 12 | A sorting selector is available on the Products page with a number of sorting options to list the products in both ascending and descending order. |
 | 14 | The products page displays the total number of products returned by the search query |
 | 15 | The navbar has a search box visible on larger displays or can be revealed when tapping the search icon on mobile displays. The user can search for a product by name, type or category. |
 | 16 | Users can select the size (product category dependant) and the quantity from the individual product page when adding the item to the shopping cart. |
@@ -365,7 +365,11 @@ The full description of the fixtures JSON files creation process can be found in
 
 ### **Messages** ###
 
-
+- [Bootstrap Toasts](https://getbootstrap.com/docs/4.3/components/toasts/) are used with customised templates to show:
+  - Errors - Django messages are displayed within the Toast body section with a red coloured top border of the header
+  - Info - Django messages are displayed within the Toast body section with a teal coloured top border of the header
+  - Success - Django messages are displayed within the Toast body section with a green coloured top border of the header
+    - If the shopping cart grand total is greater than zero, the success toast also shows the user their current shopping cart contents with sub-total, delivery and grand total amounts.
 
 ### **Defensive Programming** ###
 
@@ -377,7 +381,9 @@ The full description of the fixtures JSON files creation process can be found in
 
 ### **Additional Site Features** ###
 
-
+- A set of friendly HTTP Error landing pages for site visitors to see if a requested page is unavailable or cannot be accessed.
+  - The pages provide a message to the user and a button to click to return the visitor to the homepage.
+  - HTTP 404, 500 & 503 errors are handled with custom templates to cover the most common events.
 
 ### **Future Features** ###
 
@@ -385,7 +391,7 @@ The full description of the fixtures JSON files creation process can be found in
 
 - Account user registration using social media accounts such as Google, Facebook or LinkedIn.
 
-- Additional tables for stock inventory control to create dynamic updates of the available sizes, stock quantities and In Stock / Out Of Stock indicators.
+- Additional tables for stock inventory control to create dynamic updates of the available sizes, stock quantities and In Stock / Out of Stock indicators.
 
 - Discount codes functionality within the checkout app with a database table codes and validity from / to date ranges.
 
@@ -509,7 +515,7 @@ The installaton of the requirements.txt file will initialise the sqlite3 develop
 
 Run the following commands to create the database tables:
 
-- Check there are no changes to the models already configurred.
+- Check there are no changes to the models already configured.
 
 ```Python
 python3 manage.py makemigrations --dry-run
@@ -560,7 +566,7 @@ STRIPE_WH_SECRET=[YOUR STRIPE WEBHOOK SECRET KEY]
 
 #### **Run the application locally** ####
 
-- To run the application enter the following command into the terminal window:
+- To run the application, enter the following command into the terminal window:
 
 ```Python
 python3 manage.py runserver
@@ -622,7 +628,7 @@ python3 manage.py loaddata products
 | STRIPE_WH_SECRET | [YOUR STRIPE WEBHOOK SECRET KEY] |
 | DATABASE_URL | [YOUR POSTGRESQL DATABASE URL] |
 | EMAIL_HOST_PASS | [YOUR GMAIL APP SIGN IN PASSWORD] |
-| EMAIL_HOST_USER | [THE ORDER CONFIRMATION EMAIL ADDRESS FROM GMAIL]
+| EMAIL_HOST_USER | [YOUR ORDER CONFIRMATION EMAIL ADDRESS FROM GMAIL]
 
 
 
@@ -630,7 +636,7 @@ python3 manage.py loaddata products
   - Select GitHub from the Deployment Method options.
   - Select Connect to GitHub.
   - Log in to your GitHub account from Heroku to link the App to GitHub.
-  - Search for and select the repository to be linked in Github.
+  - Search for and select the repository to be linked in GitHub.
   - Select Connect.
   - Select Enable Automatic Deployment from the GitHub Master / Main branch.
 
