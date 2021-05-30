@@ -134,7 +134,7 @@ The following **validation services** and **linters** were used to check the val
 ## Manual Testing ##
 
 ### Unit Testing ###
-[Unit Testing document](testing/MS3-unit-test-plan.pdf) containing:
+[Unit Testing document](testing/unit-test_case_log.pdf) containing:
 - Unit Test scope,
 - The test cases,
 - The pass / fail record for each test case.

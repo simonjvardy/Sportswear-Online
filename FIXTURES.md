@@ -176,7 +176,7 @@ Once the manual editing was completed and the data finalised, the development da
 python3 manage.py dumpdata --exclude auth.permission --exclude contenttypes --indent 2 > db.json
 ```
 
-***Note: db.json file has NOT been saved to GiHub as it contains user information that may be personally identifiable, such as real names or email addresses. The 6 original Products Fixtures JSON files have been kept to allow a fully functioning database to be deployed and allow the developer to create their own superusers and orders in their own project.***
+***Note: db.json file has NOT been saved to GiHub as it contains user information that may be personally identifiable, such as real names or email addresses. The 6 original Products Fixtures JSON files have been kept to allow a fully functioning database to be deployed and allow the developer to load a clean dataset in their own project.***
 
 
 ---
