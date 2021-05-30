@@ -134,7 +134,7 @@ The following **validation services** and **linters** were used to check the val
 ## Manual Testing ##
 
 ### Unit Testing ###
-[Unit Testing document](testing/unit-test_case_log.pdf) containing:
+[Unit Testing document](https://github.com/simonjvardy/Sportswear-Online/blob/main/testing/unit_test_case_log.pdf) containing:
 - Unit Test scope,
 - The test cases,
 - The pass / fail record for each test case.
