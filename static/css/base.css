@@ -252,6 +252,11 @@ Now cross-browser compatible with Chrome & Edge
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+/* Fixes the quantity input field height in the Shopping cart for cross-browser support */
+.form-control.form-control-sm {
+    height: 30.5px;
+}
+
 /* -------------------------------------Allauth Forms */
 
 /* replicate Bootstrap text-secondary class */
