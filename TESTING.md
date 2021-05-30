@@ -122,12 +122,6 @@ The following **validation services** and **linters** were used to check the val
 - [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse)
   - An open-source automated tool for improving webpages by running audits for performance, accessibility, progressive web apps, SEO etc.
 
-  - Desktop Performance
-    ![Desktop Lighthouse](static/images/readme-content/lighthouse-desktop.png)
-  
-  - Mobile Performance
-    ![Mobile Lighthouse](static/images/readme-content/lighthouse-mobile.png)
-
   - GitHub [Issue #80](https://github.com/simonjvardy/Sportswear-Online/issues/80) describes the problem with site performance experienced after deployment to Heroku and serving the media & static files from an AWS S3 bucket. The performance drop was noticeable from the development environment with the same static files.
 
 ---
