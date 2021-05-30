@@ -32,10 +32,11 @@ The site functionality will allow a common shopping experience for the visitor b
   - [Features Implemented](#Features-Implemented)
   - [Responsive Front-end Design](#Responsive-Front-end-Design)
   - [Back-end Design](#Back-end-Design)
-    - [Fixtures JSON File creation](#Fixtures-JSON-File-creation)
+  - [User Stories Implemented](#User-Stories-Implemented)
   - [Site Construction](#Site-Construction)
     - [Topology](#Topology)
   - [Database Schema](#Database-Schema)
+    - [Fixtures JSON File creation](#Fixtures-JSON-File-creation)
   - [CRUD Functionality](#CRUD-Functionality)
   - [Messages](#Messages)
   - [Defensive Programming](#Defensive-Programming)
@@ -73,15 +74,15 @@ The site functionality will allow a common shopping experience for the visitor b
 
 ### **Project Goals** ###
 
-The **goal** of this project is to build a fully functioning e-commerce website, similar in design to popular UK high street retailers, allow the user to browse a range of sports related products. 
+The **goal** of this project is to build a fully functioning e-commerce website, similar in design to popular UK high street retailers, allowing the user to browse a range of sports related products. 
 
 
 The **features** of the website will be:
 
 - Search for products by type, name or category.
 - Expanded menus displaying sub-categories of products to further filter the available products.
-- Select items to purchase by size and quantity placed in a shopping cart.
-- A checkout page where the items can be paid for with an integrated credit card payment facility.
+- Select items to purchase by size and quantity, placed in a shopping cart.
+- A checkout page where the items can be paid for with a secure, integrated credit card payment facility.
 - User registration with a profile page showing order history and delivery address.
 - Order confirmation email functionality.
 
@@ -212,7 +213,7 @@ I designed the site mock-ups using [Balsamiq wireframes](https://balsamiq.com/).
 - [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
   - AWS SDK for Python (Boto3) used to create, configure, and manage AWS S3 services.
 - [jQuery](https://jquery.com/)
-  - Used for the initialisation of the Bootstrap5 components functionality and enhance the shopping bag functionality.
+  - Used for the initialisation of the Bootstrap components functionality and enhance the shopping bag functionality.
 - [Django Template Language](https://docs.djangoproject.com/en/3.2/ref/templates/language/)
   - Templating language for Python.
 
@@ -273,29 +274,7 @@ The following section describes the site design and page layouts to demonstrate 
 - The dynamic content is served utilising a PostgreSQL relational database with static files and media stored on an AWS S3 bucket.
 
 
-### **Site Construction** ##
-
-#### Topology ####
-
-- User Logged Out
-
-
-![Topology - User logged out](readme_content/topology_user_logged_out.png)
-
-
-- User Logged In
-
-
-![Topology - User logged out](readme_content/topology_user_logged_in.png)
-
-
-- Admin / Super User Logged In
-
-
-![Topology - User logged out](readme_content/topology_admin.png)
-
-
-### **User Story Features Implemented** ###
+### **User Stories Implemented** ###
 
 | User Story ID | Features Implemented |
 | --- | --- |
@@ -318,6 +297,26 @@ The following section describes the site design and page layouts to demonstrate 
 | 22 & 23 | Logged in store owners (admin / super users) have access to edit and delete buttons for all products on the site. The edit button opens and edit product page where the store owner can update the product details. |
 
 
+### **Site Construction** ##
+
+#### Topology ####
+
+- User Logged Out
+
+
+![Topology - User logged out](readme_content/topology_user_logged_out.png)
+
+
+- User Logged In
+
+
+![Topology - User logged out](readme_content/topology_user_logged_in.png)
+
+
+- Admin / Super User Logged In
+
+
+![Topology - User logged out](readme_content/topology_admin.png)
 
 ### **Database Schema** ###
 
