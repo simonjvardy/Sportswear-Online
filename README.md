@@ -388,6 +388,8 @@ The full description of the fixtures JSON files creation process can be found in
 
 - Django Pagination to allow limiting the number of products per page to vastly improve the site performance while allowing full product inventory to be displayed across multiple pages.
 
+- performance improvements with product image loading by replacing .jpg image media files with .webp versions to reduce the network payload by around 50% for mobile devices.
+
 - Account user registration using social media accounts such as Google, Facebook or LinkedIn.
 
 - Additional tables for stock inventory control to create dynamic updates of the available sizes, stock quantities and In Stock / Out of Stock indicators.
