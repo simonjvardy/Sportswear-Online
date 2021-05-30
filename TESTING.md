@@ -188,15 +188,27 @@ When an issue is resolved, it is linked to the pull request containing to the co
 
 There were 27 bugs reported during unit testing of the site. Please visit the GitHub repository [closed issues](https://github.com/simonjvardy/Sportswear-Online/issues?q=is%3Aissue+is%3Aclosed) or click on the issue number links below for more detailed troubleshooting information and associated pull requests.
 
-A selection of the reported bugs are briefly described here:
+#### **Known Bugs** ####
 
 [Issue #80](https://github.com/simonjvardy/Sportswear-Online/issues/80)
 - **Unit Testing: Deployed Heroku site very poor Google Lighthouse performance**
-  - After deploying to Heroku and loading the static / media files to an AWS S3 bucket, running Goole DevTools Lighthouse showed a dramatic drop in performance score. Site load times were weel above 10s.
+  - After deploying to Heroku and loading the static / media files to an AWS S3 bucket, running Goole DevTools Lighthouse showed a dramatic drop in performance score. Site load times were well above 10 seconds.
   - Testing the site with differing amounts of product images showed the performance score change relation to the number of images displayed.
-  - Django Paginator class was tested ([Django Pagination Documentation](https://docs.djangoproject.com/en/3.2/topics/pagination/)) with each page limited to 40 results per page and this worked successfully. However, when implementing this, the products filtering was inadvertently disabled and couldn't find a way to incorporate both filtered views and pagination in the time available so this solution was added to the README.md [Future Features](https://github.com/simonjvardy/Sportswear-Online/blob/main/README.md#Future-Features) section.
+  - Django Paginator class was tested ([Django Pagination Documentation](https://docs.djangoproject.com/en/3.2/topics/pagination/)) with each page limited to 40 results per page and this worked successfully. However, when implementing this, the products filtering was inadvertently disabled and I couldn't find a way to incorporate both filtered views and pagination in the time available so this solution was added to the README.md [Future Features](https://github.com/simonjvardy/Sportswear-Online/blob/main/README.md#Future-Features) section.
+  - An additional troubleshooting step was to convert the .jpg madia files to .webp format to reduce the network payload by around 50%. However, to incorporate the webp version into the templates and maintain browser support, the `<img>` tags would need to be replaced with something like:
+  ```HTML
+  <picture>
+    <source srcset="{{ product.image.url }}" type="image/webp">
+    <source srcset="{{ product.image.url }}" type="image/jpeg">
+    <img src="{{ product.image.url }}" alt="{{ product.name }}">
+  </picture>
+  ```
+    - The difficulty with this solution is there would need to be a 2nd image url field on the products model to store the webp image name which would cause too much work at this late stage of the project, so this solution was also added to the README.md [Future Features](https://github.com/simonjvardy/Sportswear-Online/blob/main/README.md#Future-Features)
+  - The current working solution to this problem is to reduce the number of available products from 370 down to 193 in the deployed Heroku database.
+    - This drastically reduces the load times but still allows the site to be used intuitively.
 
-Various Django errors:
+#### **Closed Bugs** ####
+A selection of the reported bugs are briefly described here:
 
 [Issue #52:](https://github.com/simonjvardy/Sportswear-Online/issues/52)
 - **Unit Test: Django Error "AttributeError at /checkout/ 'NoneType' object has no attribute 'split'"**
