@@ -167,7 +167,11 @@ I designed the site mock-ups using [Balsamiq wireframes](https://balsamiq.com/).
 - [My Profile](wireframes/my-profile.png)
 - [Products](wireframes/products.png)
 - [Product Page](wireframes/product-page.png)
-- [Product Management](wireframes/product-management.png)
+- [Product Management - Add a Product](wireframes/product-management.png)
+- [Product Management - Edit a product](wireframes/edit-product.png)
+- [Shopping Cart](wireframes/shopping-cart.png)
+- [Checkout](wireframes/checkout.png)
+- [Checkout Success](wireframes/checkout-success.png)
 
 
 ---
