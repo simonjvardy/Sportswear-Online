@@ -1,6 +1,4 @@
-from django.test import TestCase, Client
-from products.models import Product
-# Create your tests here.
+from django.test import TestCase
 
 
 class TestCartViews(TestCase):
@@ -11,6 +9,3 @@ class TestCartViews(TestCase):
         response = self.client.get('/cart', follow=True)
         self.assertEqual(response.status_code, 200)
         self. assertTemplateUsed(response, 'cart/cart.html')
-
-    def test_add_item_to_shopping_cart(self):
-        pass
